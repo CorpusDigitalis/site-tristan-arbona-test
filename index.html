@@ -3,82 +3,9 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Tristan Arbona</title>
+  <title>Tristan Arbona - Accueil</title>
   <link href="https://fonts.googleapis.com/css2?family=Alata&display=swap" rel="stylesheet">
-  <style>
-    body {
-      font-family: 'Alata', sans-serif;
-      background: #fefaf5;
-      margin: 0;
-      padding: 0;
-    }
-
-    header {
-      background: #1f1f1f;
-      color: white;
-      padding: 1rem;
-    }
-
-    nav {
-      max-width: 960px;
-      margin: auto;
-      display: flex;
-      justify-content: space-between;
-      flex-wrap: wrap;
-    }
-
-    nav a {
-      color: white;
-      text-decoration: none;
-      margin-left: 1rem;
-    }
-
-    .container {
-      max-width: 960px;
-      margin: 2rem auto;
-      padding: 1rem;
-    }
-
-    h1, h2 {
-      color: #222;
-    }
-
-    .main-content {
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      flex-wrap: wrap;
-    }
-
-    .main-content img {
-      max-width: 45%;
-      height: auto;
-      border-radius: 8px;
-    }
-
-    .main-content .description {
-      max-width: 45%;
-      font-size: 1.1rem;
-      color: #555;
-    }
-
-    @media (max-width: 768px) {
-      .main-content {
-        flex-direction: column;
-        text-align: center;
-      }
-
-      .main-content img {
-        max-width: 80%;
-        margin-bottom: 1rem;
-      }
-
-      .main-content .description {
-        max-width: 80%;
-        font-size: 1rem;
-      }
-    }
-  </style>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
@@ -94,7 +21,7 @@
 </header>
 
 <div class="container">
-  <h1>Bienvenue</h1>
+  <h1>Bienvenue sur le site de Tristan Arbona</h1>
   <div class="main-content">
     <img src="portrait.jpg" alt="Portrait de Tristan Arbona">
     <div class="description">
@@ -103,18 +30,15 @@
   </div>
 </div>
 
-<!-- Conteneur du footer -->
-<div id="footer-container"></div>
-
-<script>
-  // Charger le footer dans l'élément #footer-container
-  fetch('footer.html')
-    .then(response => response.text())
-    .then(data => {
-      document.getElementById('footer-container').innerHTML = data;
-    })
-    .catch(err => console.error('Erreur de chargement du footer:', err));
-</script>
+<footer>
+  <div class="footer-links">
+    <a href="mailto:tristanarbona@example.com">tristanarbona@example.com</a>
+    <a href="https://www.linkedin.com/in/tristanarbona" target="_blank">LinkedIn</a>
+    <a href="https://scholar.google.com/citations?user=tristanarbona" target="_blank">Google Scholar</a>
+    <a href="CV.pdf" target="_blank">CV</a>
+  </div>
+  <div class="small-text">CorpusDigitalis</div>
+</footer>
 
 </body>
 </html>
