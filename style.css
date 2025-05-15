@@ -1,3 +1,4 @@
+/* Base */
 body {
   font-family: 'Alata', sans-serif;
   background: #fefaf5;
@@ -7,16 +8,18 @@ body {
   flex-direction: column;
   min-height: 100vh;
   line-height: 1.6;
-  letter-spacing: 0.2px;
+  letter-spacing: 0.02em;
 }
 
+/* Header */
 header {
   background: #1f1f1f;
   color: white;
   padding: 1rem;
-  border-bottom: 1px solid #ccc;
+  border-bottom: 1px solid #ddd;
 }
 
+/* Navigation */
 nav {
   max-width: 960px;
   margin: auto;
@@ -29,6 +32,7 @@ nav a {
   color: white;
   text-decoration: none;
   margin-left: 1rem;
+  letter-spacing: 0.03em;
   transition: transform 0.2s ease;
 }
 
@@ -37,16 +41,17 @@ nav a:hover {
 }
 
 nav a:active {
-  color: #999;
+  color: #cccccc;
   transform: scale(0.92);
 }
 
+/* Contenu */
 .container {
   max-width: 960px;
   margin: 2rem auto;
   padding: 1rem;
   flex: 1;
-  border-bottom: 1px solid #ccc;
+  border-bottom: 1px solid #ddd;
 }
 
 .container::after {
@@ -55,10 +60,13 @@ nav a:active {
   height: 4rem;
 }
 
+/* Titres */
 h1, h2 {
   color: #222;
+  margin-bottom: 1rem;
 }
 
+/* Bouton */
 a.button {
   display: inline-block;
   margin-top: 1rem;
@@ -75,10 +83,11 @@ a.button:hover {
 }
 
 a.button:active {
-  color: #999;
+  background: #444;
   transform: scale(0.92);
 }
 
+/* Image + Texte accueil */
 .main-content {
   display: flex;
   flex-wrap: wrap;
@@ -98,13 +107,14 @@ a.button:active {
   min-width: 250px;
 }
 
+/* Footer */
 footer {
   background: #1f1f1f;
   color: white;
   padding: 1.5rem 1rem;
   text-align: center;
   margin-top: auto;
-  border-top: 1px solid #ccc;
+  border-top: 1px solid #ddd;
 }
 
 .footer-links {
@@ -126,7 +136,7 @@ footer {
 }
 
 .footer-links a:active {
-  color: #999;
+  color: #cccccc;
   transform: scale(0.92);
 }
 
@@ -135,6 +145,7 @@ footer {
   font-size: 0.8rem;
 }
 
+/* Responsive */
 @media (max-width: 768px) {
   .main-content {
     flex-direction: column;
