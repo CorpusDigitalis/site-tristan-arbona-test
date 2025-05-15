@@ -27,7 +27,9 @@ nav {
   flex-wrap: wrap;
 }
 
-nav a {
+/* Liens du header */
+nav a,
+.nav-link {
   color: white;
   text-decoration: none;
   margin-left: 1rem;
@@ -35,11 +37,11 @@ nav a {
   transition: transform 0.2s ease, color 0.1s ease;
 }
 
-nav a:hover {
+.nav-link:hover {
   transform: scale(0.95);
 }
 
-nav a:active {
+.nav-link:active {
   color: #cccccc;
   transform: scale(0.92);
 }
@@ -64,7 +66,7 @@ h1, h2 {
   margin-bottom: 1rem;
 }
 
-/* Boutons */
+/* Boutons personnalisés */
 a.button {
   display: inline-block;
   margin-top: 1rem;
