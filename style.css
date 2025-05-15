@@ -6,13 +6,15 @@ body {
   display: flex;
   flex-direction: column;
   min-height: 100vh;
+  letter-spacing: 0.3px;
+  line-height: 1.6;
 }
 
 header {
   background: #1f1f1f;
   color: white;
   padding: 1rem;
-  border-bottom: 2px solid #333; /* Ligne fine entre header et contenu */
+  border-bottom: 1px solid #444;
 }
 
 nav {
@@ -27,15 +29,17 @@ nav a {
   color: white;
   text-decoration: none;
   margin-left: 1rem;
-  position: relative;
-  transition: color 0.3s ease, transform 0.3s ease;
-  letter-spacing: 0.5px;
-  line-height: 1.5;
+  transition: transform 0.2s ease;
 }
 
 nav a:hover {
-  color: #ffcc00;
-  transform: scale(1.05); /* Effet léger au survol */
+  transform: scale(0.95);
+}
+
+nav a:active {
+  color: #cccccc;
+  transform: scale(0.92);
+  transition: none;
 }
 
 .container {
@@ -53,8 +57,6 @@ nav a:hover {
 
 h1, h2 {
   color: #222;
-  letter-spacing: 0.5px;
-  line-height: 1.5; /* Ajout d'interligne pour améliorer la lisibilité */
 }
 
 a.button {
@@ -65,19 +67,17 @@ a.button {
   padding: 0.5rem 1rem;
   text-decoration: none;
   border-radius: 6px;
-  transition: background-color 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease;
-  letter-spacing: 1px;
-  line-height: 1.4;
+  transition: transform 0.2s ease;
 }
 
 a.button:hover {
-  background-color: #ffcc00;
-  transform: scale(1.05); /* Zoom léger */
+  transform: scale(0.95);
 }
 
 a.button:active {
-  transform: scale(0.98); /* Effet "click" propre */
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2); /* Effet de click visible */
+  color: #cccccc;
+  transform: scale(0.92);
+  transition: none;
 }
 
 .main-content {
@@ -105,8 +105,7 @@ footer {
   padding: 1.5rem 1rem;
   text-align: center;
   margin-top: auto;
-  position: relative;
-  border-top: 2px solid #333; /* Ligne fine entre contenu et footer */
+  border-top: 1px solid #444;
 }
 
 .footer-links {
@@ -120,19 +119,22 @@ footer {
 .footer-links a {
   color: white;
   text-decoration: none;
-  letter-spacing: 0.5px;
-  line-height: 1.5;
+  transition: transform 0.2s ease;
 }
 
 .footer-links a:hover {
-  color: #ffcc00;
+  transform: scale(0.95);
+}
+
+.footer-links a:active {
+  color: #cccccc;
+  transform: scale(0.92);
+  transition: none;
 }
 
 .small-text {
   color: #1f1f1f;
   font-size: 0.8rem;
-  letter-spacing: 0.5px;
-  line-height: 1.5;
 }
 
 /* Responsive */
