@@ -27,21 +27,19 @@ nav {
   flex-wrap: wrap;
 }
 
-/* Liens du header */
-nav a,
-.nav-link {
+nav a {
   color: white;
   text-decoration: none;
   margin-left: 1rem;
   letter-spacing: 0.03em;
-  transition: transform 0.2s ease, color 0.1s ease;
+  transition: transform 0.2s ease, color 0.05s ease;
 }
 
-.nav-link:hover {
+nav a:hover {
   transform: scale(0.95);
 }
 
-.nav-link:active {
+nav a:active {
   color: #cccccc;
   transform: scale(0.92);
 }
@@ -66,7 +64,7 @@ h1, h2 {
   margin-bottom: 1rem;
 }
 
-/* Boutons personnalisés */
+/* Boutons */
 a.button {
   display: inline-block;
   margin-top: 1rem;
@@ -128,7 +126,7 @@ footer {
 .footer-links a {
   color: white;
   text-decoration: none;
-  transition: transform 0.2s ease, color 0.1s ease;
+  transition: transform 0.2s ease, color 0.05s ease;
 }
 
 .footer-links a:hover {
