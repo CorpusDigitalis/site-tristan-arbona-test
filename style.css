@@ -32,8 +32,8 @@ nav a {
   text-decoration: none;
   margin-left: 1rem;
   letter-spacing: 0.03em;
-  display: inline-block;
-  transition: transform 0.2s ease, color 0.05s ease;
+  transition: transform 0.2s ease, color 0.1s ease;
+  cursor: pointer;
 }
 
 nav a:hover {
@@ -41,8 +41,26 @@ nav a:hover {
 }
 
 nav a:active {
-  transform: scale(0.92);
   color: #cccccc;
+  transform: scale(0.92);
+}
+
+/* Neutraliser animation pour le logo "Tristan Arbona" */
+nav .logo-link {
+  color: white;
+  text-decoration: none;
+  margin-left: 0;
+  letter-spacing: 0.03em;
+  pointer-events: auto;
+  transition: none !important;
+  transform: none !important;
+  cursor: pointer;
+}
+
+nav .logo-link:hover,
+nav .logo-link:active {
+  color: white !important;
+  transform: none !important;
 }
 
 /* Contenu */
@@ -127,8 +145,8 @@ footer {
 .footer-links a {
   color: white;
   text-decoration: none;
-  display: inline-block;
-  transition: transform 0.2s ease, color 0.05s ease;
+  transition: transform 0.2s ease, color 0.1s ease;
+  cursor: pointer;
 }
 
 .footer-links a:hover {
