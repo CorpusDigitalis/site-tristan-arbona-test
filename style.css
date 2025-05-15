@@ -1,9 +1,5 @@
 /* Base */
 body {
-  border: 5px solid red !important;
-}
-
-body {
   font-family: 'Alata', sans-serif;
   background: #fefaf5;
   margin: 0;
@@ -13,6 +9,7 @@ body {
   min-height: 100vh;
   line-height: 1.6;
   letter-spacing: 0.02em;
+  color: #222;
 }
 
 /* Header */
@@ -20,7 +17,7 @@ header {
   background: #1f1f1f;
   color: white;
   padding: 1rem;
-  border-bottom: 1px solid #ddd;
+  border-bottom: 1px solid #ddd; /* ligne fine entre header et contenu */
 }
 
 nav {
@@ -29,23 +26,32 @@ nav {
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
+  align-items: center;
 }
 
-nav a {
+nav div:first-child {
+  font-weight: bold;
+  font-size: 1.2rem;
+}
+
+nav .nav-links a {
   color: white;
   text-decoration: none;
   margin-left: 1rem;
   letter-spacing: 0.03em;
-  transition: transform 0.2s ease, color 0.1s ease;
+  transition: transform 0.2s ease;
+  /* Pas de transition sur la couleur pour le clic */
 }
 
-nav a:hover {
+nav .nav-links a:hover {
   transform: scale(0.95);
+  color: white; /* couleur blanche fixe au survol */
 }
 
-nav a:active {
-  color: #cccccc;
-  transform: scale(0.92);
+nav .nav-links a:active {
+  color: #999999; /* couleur gris pro au clic */
+  transform: scale(0.92); /* léger rétrécissement aussi au clic */
+  transition: none; /* pas de transition pour l’instant du clic */
 }
 
 /* Contenu */
@@ -54,7 +60,7 @@ nav a:active {
   margin: 2rem auto;
   padding: 1rem;
   flex: 1;
-  border-bottom: 1px solid #ddd;
+  border-bottom: 1px solid #ddd; /* ligne fine entre contenu et footer */
 }
 
 .container::after {
@@ -68,7 +74,7 @@ h1, h2 {
   margin-bottom: 1rem;
 }
 
-/* Boutons */
+/* Boutons (liens avec classe "button") */
 a.button {
   display: inline-block;
   margin-top: 1rem;
@@ -77,36 +83,19 @@ a.button {
   padding: 0.5rem 1rem;
   text-decoration: none;
   border-radius: 6px;
-  transition: transform 0.2s ease, background 0.1s ease;
+  transition: transform 0.2s ease;
 }
 
 a.button:hover {
   transform: scale(0.95);
+  color: white; /* couleur fixe au survol */
 }
 
 a.button:active {
   background: #444;
+  color: #cccccc;
   transform: scale(0.92);
-}
-
-/* Accueil */
-.main-content {
-  display: flex;
-  flex-wrap: wrap;
-  align-items: center;
-  gap: 2rem;
-}
-
-.main-content img {
-  max-width: 100%;
-  width: 300px;
-  height: auto;
-  border-radius: 8px;
-}
-
-.description {
-  flex: 1;
-  min-width: 250px;
+  transition: none;
 }
 
 /* Footer */
@@ -116,7 +105,7 @@ footer {
   padding: 1.5rem 1rem;
   text-align: center;
   margin-top: auto;
-  border-top: 1px solid #ddd;
+  border-top: 1px solid #ddd; /* ligne fine entre contenu et footer */
 }
 
 .footer-links {
@@ -130,16 +119,18 @@ footer {
 .footer-links a {
   color: white;
   text-decoration: none;
-  transition: transform 0.2s ease, color 0.1s ease;
+  transition: transform 0.2s ease;
 }
 
 .footer-links a:hover {
   transform: scale(0.95);
+  color: white;
 }
 
 .footer-links a:active {
   color: #cccccc;
   transform: scale(0.92);
+  transition: none;
 }
 
 .small-text {
@@ -159,22 +150,11 @@ footer {
     align-items: center;
   }
 
-  nav div:last-child a {
-    margin: 0.5rem;
+  nav .nav-links a {
+    margin: 0.5rem 0 0 0;
   }
 
   .footer-links {
     flex-direction: column;
   }
-
-  nav a:hover {
-  transform: scale(0.95);
-  color: white !important;
-}
-
-nav a:active {
-  color: #cccccc !important;
-  transform: scale(0.92);
-}
-
 }
