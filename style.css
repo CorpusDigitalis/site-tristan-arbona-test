@@ -19,7 +19,6 @@ header {
   border-bottom: 1px solid #ddd;
 }
 
-/* Navigation */
 nav {
   max-width: 960px;
   margin: auto;
@@ -33,7 +32,7 @@ nav a {
   text-decoration: none;
   margin-left: 1rem;
   letter-spacing: 0.03em;
-  transition: transform 0.2s ease;
+  transition: transform 0.2s ease, color 0.1s ease;
 }
 
 nav a:hover {
@@ -60,13 +59,12 @@ nav a:active {
   height: 4rem;
 }
 
-/* Titres */
 h1, h2 {
   color: #222;
   margin-bottom: 1rem;
 }
 
-/* Bouton */
+/* Boutons */
 a.button {
   display: inline-block;
   margin-top: 1rem;
@@ -75,7 +73,7 @@ a.button {
   padding: 0.5rem 1rem;
   text-decoration: none;
   border-radius: 6px;
-  transition: transform 0.2s ease;
+  transition: transform 0.2s ease, background 0.1s ease;
 }
 
 a.button:hover {
@@ -87,7 +85,7 @@ a.button:active {
   transform: scale(0.92);
 }
 
-/* Image + Texte accueil */
+/* Accueil */
 .main-content {
   display: flex;
   flex-wrap: wrap;
@@ -128,7 +126,7 @@ footer {
 .footer-links a {
   color: white;
   text-decoration: none;
-  transition: transform 0.2s ease;
+  transition: transform 0.2s ease, color 0.1s ease;
 }
 
 .footer-links a:hover {
