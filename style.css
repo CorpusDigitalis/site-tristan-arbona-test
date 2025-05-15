@@ -1,5 +1,9 @@
 /* Base */
 body {
+  border: 5px solid red !important;
+}
+
+body {
   font-family: 'Alata', sans-serif;
   background: #fefaf5;
   margin: 0;
@@ -162,4 +166,15 @@ footer {
   .footer-links {
     flex-direction: column;
   }
+
+  nav a:hover {
+  transform: scale(0.95);
+  color: white !important;
+}
+
+nav a:active {
+  color: #cccccc !important;
+  transform: scale(0.92);
+}
+
 }
