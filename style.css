@@ -25,6 +25,7 @@ nav {
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
+  align-items: center;
 }
 
 nav a {
@@ -33,34 +34,23 @@ nav a {
   margin-left: 1rem;
   letter-spacing: 0.03em;
   transition: transform 0.2s ease, color 0.1s ease;
-  cursor: pointer;
 }
 
-nav a:hover {
+/* Animation pour tous les liens sauf ceux avec .no-animation */
+nav a:hover:not(.no-animation) {
   transform: scale(0.95);
 }
 
-nav a:active {
+nav a:active:not(.no-animation) {
   color: #cccccc;
   transform: scale(0.92);
 }
 
-/* Neutraliser animation pour le logo "Tristan Arbona" */
-nav .logo-link {
-  color: white;
-  text-decoration: none;
-  margin-left: 0;
-  letter-spacing: 0.03em;
-  pointer-events: auto;
-  transition: none !important;
+/* Désactiver animation pour Tristan Arbona */
+nav a.no-animation:hover,
+nav a.no-animation:active {
   transform: none !important;
-  cursor: pointer;
-}
-
-nav .logo-link:hover,
-nav .logo-link:active {
   color: white !important;
-  transform: none !important;
 }
 
 /* Contenu */
@@ -146,7 +136,6 @@ footer {
   color: white;
   text-decoration: none;
   transition: transform 0.2s ease, color 0.1s ease;
-  cursor: pointer;
 }
 
 .footer-links a:hover {
