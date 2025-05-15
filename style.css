@@ -32,6 +32,7 @@ nav a {
   text-decoration: none;
   margin-left: 1rem;
   letter-spacing: 0.03em;
+  display: inline-block;
   transition: transform 0.2s ease, color 0.05s ease;
 }
 
@@ -40,8 +41,8 @@ nav a:hover {
 }
 
 nav a:active {
-  color: #cccccc;
   transform: scale(0.92);
+  color: #cccccc;
 }
 
 /* Contenu */
@@ -126,6 +127,7 @@ footer {
 .footer-links a {
   color: white;
   text-decoration: none;
+  display: inline-block;
   transition: transform 0.2s ease, color 0.05s ease;
 }
 
