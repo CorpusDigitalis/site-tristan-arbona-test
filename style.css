@@ -6,15 +6,15 @@ body {
   display: flex;
   flex-direction: column;
   min-height: 100vh;
-  letter-spacing: 0.3px;
   line-height: 1.6;
+  letter-spacing: 0.2px;
 }
 
 header {
   background: #1f1f1f;
   color: white;
   padding: 1rem;
-  border-bottom: 1px solid #444;
+  border-bottom: 1px solid #ccc;
 }
 
 nav {
@@ -37,9 +37,8 @@ nav a:hover {
 }
 
 nav a:active {
-  color: #cccccc;
+  color: #999;
   transform: scale(0.92);
-  transition: none;
 }
 
 .container {
@@ -47,6 +46,7 @@ nav a:active {
   margin: 2rem auto;
   padding: 1rem;
   flex: 1;
+  border-bottom: 1px solid #ccc;
 }
 
 .container::after {
@@ -75,9 +75,8 @@ a.button:hover {
 }
 
 a.button:active {
-  color: #cccccc;
+  color: #999;
   transform: scale(0.92);
-  transition: none;
 }
 
 .main-content {
@@ -105,7 +104,7 @@ footer {
   padding: 1.5rem 1rem;
   text-align: center;
   margin-top: auto;
-  border-top: 1px solid #444;
+  border-top: 1px solid #ccc;
 }
 
 .footer-links {
@@ -127,9 +126,8 @@ footer {
 }
 
 .footer-links a:active {
-  color: #cccccc;
+  color: #999;
   transform: scale(0.92);
-  transition: none;
 }
 
 .small-text {
@@ -137,7 +135,6 @@ footer {
   font-size: 0.8rem;
 }
 
-/* Responsive */
 @media (max-width: 768px) {
   .main-content {
     flex-direction: column;
