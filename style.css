@@ -28,20 +28,18 @@ nav {
   align-items: center;
 }
 
+/* Ajout display inline-block pour bien gérer hover/transform */
 nav a {
   color: white;
   text-decoration: none;
+  display: inline-block;
   letter-spacing: 0.03em;
   transition: transform 0.2s ease, color 0.1s ease;
 }
 
-/* Espacement propre entre les liens */
-nav > div a {
+/* margin-left uniquement sur les liens sauf le premier dans la 2e div */
+nav div:last-child a:not(:first-child) {
   margin-left: 1rem;
-}
-
-nav > div:first-child a {
-  margin-left: 0;
 }
 
 /* Animation pour tous les liens sauf ceux avec .no-animation */
