@@ -28,22 +28,24 @@ nav {
   align-items: center;
 }
 
-nav a {
+nav a,
+.footer-links a {
   color: white;
   text-decoration: none;
   margin-left: 1rem;
   letter-spacing: 0.03em;
-  transition: transform 0.2s ease, color 0.1s ease;
+  transition: transform 0.25s ease, color 0.15s ease;
 }
 
-/* Animation pour tous les liens sauf ceux avec .no-animation */
-nav a:hover:not(.no-animation) {
+nav a:hover:not(.no-animation),
+.footer-links a:hover {
   transform: scale(0.95);
 }
 
-nav a:active:not(.no-animation) {
-  color: #cccccc;
+nav a:active:not(.no-animation),
+.footer-links a:active {
   transform: scale(0.92);
+  color: #cccccc;
 }
 
 /* Désactiver animation pour Tristan Arbona */
@@ -130,21 +132,6 @@ footer {
   justify-content: center;
   gap: 1rem;
   margin-bottom: 1rem;
-}
-
-.footer-links a {
-  color: white;
-  text-decoration: none;
-  transition: transform 0.2s ease, color 0.1s ease;
-}
-
-.footer-links a:hover {
-  transform: scale(0.95);
-}
-
-.footer-links a:active {
-  color: #cccccc;
-  transform: scale(0.92);
 }
 
 .small-text {
