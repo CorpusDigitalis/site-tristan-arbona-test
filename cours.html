@@ -3,169 +3,132 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Tristan Arbona - Cours</title>
+  <title>Tristan Arbona</title>
   <link href="https://fonts.googleapis.com/css2?family=Alata&display=swap" rel="stylesheet" />
-  <link rel="stylesheet" href="style.css" />
-  <style>
-    /* --- Styles spécifiques aux détails/accordéons --- */
-    details {
-      margin-bottom: 1rem;
-    }
-    details > summary {
-      font-size: 1.2rem;
-      font-weight: bold;
-      cursor: pointer;
-      padding: 0.5rem;
-      background: #f0f0f0;
-      border-radius: 4px;
-      list-style: none;
-    }
-    /* Retirer le triangle par défaut sur certains navigateurs */
-    details > summary::-webkit-details-marker { display: none; }
-    details > summary::before {
-      content: "▸";
-      display: inline-block;
-      width: 1em;
-      transition: transform 0.2s ease;
-    }
-    details[open] > summary::before {
-      transform: rotate(90deg);
-    }
-    /* Niveaux imbriqués */
-    details details {
-      margin-left: 1.5rem;
-      background: #fafafa;
-      padding: 0.5rem;
-      border-radius: 4px;
-    }
-    details details > summary {
-      font-size: 1rem;
-      background: #eaeaea;
-    }
-    /* Liste des liens PDF */
-    .resource-list {
-      list-style: none;
-      padding-left: 2rem;
-      margin-top: 0.5rem;
-    }
-    .resource-list li {
-      margin-bottom: 0.3rem;
-    }
-    .resource-list li a {
-      text-decoration: none;
-      color: #1f1f1f;
-      display: flex;
-      align-items: center;
-    }
-    .resource-list li a:hover {
-      text-decoration: underline;
-    }
-    /* Icône PDF très simple */
-    .resource-list li a::before {
-      content: "📄";
-      margin-right: 0.5rem;
-    }
-  </style>
+  <link rel="stylesheet" href="style.css?v=3" />
 </head>
 <body>
   <header>
     <nav>
-      <div><a href="index.html" class="no-animation">Tristan Arbona</a></div>
+      <div><a href="index.html" class="logo-link no-animation">Tristan Arbona</a></div>
       <div>
-        <a href="index.html">Accueil</a>
-        <a href="cours.html">Cours</a>
-        <a href="publications.html">Publications</a>
+        <a href="index.html" class="nav-link">Accueil</a>
+        <a href="cours.html" class="nav-link">Cours</a>
+        <a href="publications.html" class="nav-link">Publications</a>
       </div>
     </nav>
   </header>
 
   <div class="container">
     <h1>Cours</h1>
+    <p>Voici une sélection de cours organisés par chapitre et type de ressource.</p>
 
-    <!-- ==== Niveau 1 : Nom du cours ==== -->
     <details>
-      <summary>Exemple de nom de cours 1</summary>
-
-      <!-- ==== Niveau 2 : Type de ressource ==== -->
-      <details>
-        <summary>Slides</summary>
-        <!-- ==== Niveau 3 : Liens PDF ==== -->
-        <ul class="resource-list">
-          <li><a href="cours/1/slides.pdf" target="_blank">slides.pdf</a></li>
-          <li><a href="cours/1/slides.pdf" target="_blank">slides.pdf</a></li>
-          <li><a href="cours/1/slides.pdf" target="_blank">slides.pdf</a></li>
-        </ul>
-      </details>
-
-      <details>
-        <summary>Exercices</summary>
-        <ul class="resource-list">
-          <li><a href="cours/1/exercices.pdf" target="_blank">slides.pdf</a></li>
-          <li><a href="cours/1/exercices.pdf" target="_blank">slides.pdf</a></li>
-          <li><a href="cours/1/exercices.pdf" target="_blank">slides.pdf</a></li>
-        </ul>
-      </details>
-
-      <details>
-        <summary>Documents</summary>
-        <ul class="resource-list">
-          <li><a href="cours/1/documents.pdf" target="_blank">slides.pdf</a></li>
-          <li><a href="cours/1/documents.pdf" target="_blank">slides.pdf</a></li>
-          <li><a href="cours/1/documents.pdf" target="_blank">slides.pdf</a></li>
-        </ul>
-      </details>
-
-    </details>
-
-    <!-- Répète le bloc <details> pour les cours 2 et 3 -->
-    <details>
-      <summary>Exemple de nom de cours 2</summary>
-      <details><summary>Slides</summary>
-        <ul class="resource-list">
-          <li><a href="cours/2/slides.pdf" target="_blank">slides.pdf</a></li>
-          <li><a href="cours/2/slides.pdf" target="_blank">slides.pdf</a></li>
-          <li><a href="cours/2/slides.pdf" target="_blank">slides.pdf</a></li>
-        </ul>
-      </details>
-      <details><summary>Exercices</summary>
-        <ul class="resource-list">
-          <li><a href="cours/2/exercices.pdf" target="_blank">slides.pdf</a></li>
-          <li><a href="cours/2/exercices.pdf" target="_blank">slides.pdf</a></li>
-          <li><a href="cours/2/exercices.pdf" target="_blank">slides.pdf</a></li>
-        </ul>
-      </details>
-      <details><summary>Documents</summary>
-        <ul class="resource-list">
-          <li><a href="cours/2/documents.pdf" target="_blank">slides.pdf</a></li>
-          <li><a href="cours/2/documents.pdf" target="_blank">slides.pdf</a></li>
-          <li><a href="cours/2/documents.pdf" target="_blank">slides.pdf</a></li>
-        </ul>
-      </details>
+      <summary><strong>Exemple de nom de cours 1</strong></summary>
+      <ul>
+        <li>
+          <details>
+            <summary>Slides</summary>
+            <ul>
+              <li><a href="cours/1/slides1.pdf" target="_blank">📄 Slides Chapitre 1</a></li>
+              <li><a href="cours/1/slides2.pdf" target="_blank">📄 Slides Chapitre 2</a></li>
+              <li><a href="cours/1/slides3.pdf" target="_blank">📄 Slides Chapitre 3</a></li>
+            </ul>
+          </details>
+        </li>
+        <li>
+          <details>
+            <summary>Exercices</summary>
+            <ul>
+              <li><a href="cours/1/exos1.pdf" target="_blank">📄 Exercices Chapitre 1</a></li>
+              <li><a href="cours/1/exos2.pdf" target="_blank">📄 Exercices Chapitre 2</a></li>
+              <li><a href="cours/1/exos3.pdf" target="_blank">📄 Exercices Chapitre 3</a></li>
+            </ul>
+          </details>
+        </li>
+        <li>
+          <details>
+            <summary>Documents</summary>
+            <ul>
+              <li><a href="cours/1/doc1.pdf" target="_blank">📄 Document Chapitre 1</a></li>
+              <li><a href="cours/1/doc2.pdf" target="_blank">📄 Document Chapitre 2</a></li>
+              <li><a href="cours/1/doc3.pdf" target="_blank">📄 Document Chapitre 3</a></li>
+            </ul>
+          </details>
+        </li>
+      </ul>
     </details>
 
     <details>
-      <summary>Exemple de nom de cours 3</summary>
-      <details><summary>Slides</summary>
-        <ul class="resource-list">
-          <li><a href="cours/3/slides.pdf" target="_blank">slides.pdf</a></li>
-          <li><a href="cours/3/slides.pdf" target="_blank">slides.pdf</a></li>
-          <li><a href="cours/3/slides.pdf" target="_blank">slides.pdf</a></li>
-        </ul>
-      </details>
-      <details><summary>Exercices</summary>
-        <ul class="resource-list">
-          <li><a href="cours/3/exercices.pdf" target="_blank">slides.pdf</a></li>
-          <li><a href="cours/3/exercices.pdf" target="_blank">slides.pdf</a></li>
-          <li><a href="cours/3/exercices.pdf" target="_blank">slides.pdf</a></li>
-        </ul>
-      </details>
-      <details><summary>Documents</summary>
-        <ul class="resource-list">
-          <li><a href="cours/3/documents.pdf" target="_blank">slides.pdf</a></li>
-          <li><a href="cours/3/documents.pdf" target="_blank">slides.pdf</a></li>
-          <li><a href="cours/3/documents.pdf" target="_blank">slides.pdf</a></li>
-        </ul>
-      </details>
+      <summary><strong>Exemple de nom de cours 2</strong></summary>
+      <ul>
+        <li>
+          <details>
+            <summary>Slides</summary>
+            <ul>
+              <li><a href="cours/2/slides1.pdf" target="_blank">📄 Slides Chapitre 1</a></li>
+              <li><a href="cours/2/slides2.pdf" target="_blank">📄 Slides Chapitre 2</a></li>
+              <li><a href="cours/2/slides3.pdf" target="_blank">📄 Slides Chapitre 3</a></li>
+            </ul>
+          </details>
+        </li>
+        <li>
+          <details>
+            <summary>Exercices</summary>
+            <ul>
+              <li><a href="cours/2/exos1.pdf" target="_blank">📄 Exercices Chapitre 1</a></li>
+              <li><a href="cours/2/exos2.pdf" target="_blank">📄 Exercices Chapitre 2</a></li>
+              <li><a href="cours/2/exos3.pdf" target="_blank">📄 Exercices Chapitre 3</a></li>
+            </ul>
+          </details>
+        </li>
+        <li>
+          <details>
+            <summary>Documents</summary>
+            <ul>
+              <li><a href="cours/2/doc1.pdf" target="_blank">📄 Document Chapitre 1</a></li>
+              <li><a href="cours/2/doc2.pdf" target="_blank">📄 Document Chapitre 2</a></li>
+              <li><a href="cours/2/doc3.pdf" target="_blank">📄 Document Chapitre 3</a></li>
+            </ul>
+          </details>
+        </li>
+      </ul>
+    </details>
+
+    <details>
+      <summary><strong>Exemple de nom de cours 3</strong></summary>
+      <ul>
+        <li>
+          <details>
+            <summary>Slides</summary>
+            <ul>
+              <li><a href="cours/3/slides1.pdf" target="_blank">📄 Slides Chapitre 1</a></li>
+              <li><a href="cours/3/slides2.pdf" target="_blank">📄 Slides Chapitre 2</a></li>
+              <li><a href="cours/3/slides3.pdf" target="_blank">📄 Slides Chapitre 3</a></li>
+            </ul>
+          </details>
+        </li>
+        <li>
+          <details>
+            <summary>Exercices</summary>
+            <ul>
+              <li><a href="cours/3/exos1.pdf" target="_blank">📄 Exercices Chapitre 1</a></li>
+              <li><a href="cours/3/exos2.pdf" target="_blank">📄 Exercices Chapitre 2</a></li>
+              <li><a href="cours/3/exos3.pdf" target="_blank">📄 Exercices Chapitre 3</a></li>
+            </ul>
+          </details>
+        </li>
+        <li>
+          <details>
+            <summary>Documents</summary>
+            <ul>
+              <li><a href="cours/3/doc1.pdf" target="_blank">📄 Document Chapitre 1</a></li>
+              <li><a href="cours/3/doc2.pdf" target="_blank">📄 Document Chapitre 2</a></li>
+              <li><a href="cours/3/doc3.pdf" target="_blank">📄 Document Chapitre 3</a></li>
+            </ul>
+          </details>
+        </li>
+      </ul>
     </details>
 
   </div>
