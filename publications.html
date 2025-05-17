@@ -7,25 +7,67 @@
   <link href="https://fonts.googleapis.com/css2?family=Alata&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="style.css?v=2" />
   <style>
-    .container > h1 {
-      text-align: center;
+    body {
       font-family: 'Alata', sans-serif;
+      color: #1f1f1f;
+      margin: 0;
+      padding: 0;
+      background: #fff;
     }
-    .research-section {
+    .container {
+      max-width: 900px;
+      margin: 2rem auto 4rem auto;
+      padding: 0 1rem;
+    }
+    h1 {
       text-align: center;
-      font-family: 'Alata', sans-serif;
-      margin-top: 1rem;
+      margin-bottom: 2rem;
+      font-weight: normal;
     }
-    .research-section p {
-      margin: 0.5rem 0;
+    .publication-item {
+      border: 1px solid #ddd;
+      border-radius: 8px;
+      padding: 1rem 1.5rem;
+      margin-bottom: 1.5rem;
+      background: #fafafa;
+      box-shadow: 2px 2px 8px rgb(0 0 0 / 0.05);
+      transition: box-shadow 0.3s ease;
     }
-    .research-section a {
-      display: inline-block;
+    .publication-item:hover {
+      box-shadow: 4px 4px 12px rgb(0 0 0 / 0.15);
+    }
+    .publication-description {
+      margin-bottom: 0.7rem;
+      font-size: 1.1rem;
+      line-height: 1.4;
+    }
+    .publication-link {
       text-decoration: underline;
       color: #1f1f1f;
-      margin-bottom: 1.5rem;
+      font-weight: 600;
+      cursor: pointer;
+      transition: color 0.3s ease;
+      display: inline-block;
     }
-    .research-section a:hover {
+    .publication-link:hover {
+      color: #555;
+    }
+    footer {
+      background: #f9f9f9;
+      padding: 1rem 0;
+      text-align: center;
+      font-size: 0.9rem;
+      color: #666;
+      border-top: 1px solid #ddd;
+    }
+    .footer-links a {
+      margin: 0 0.8rem;
+      color: #1f1f1f;
+      text-decoration: none;
+      font-weight: 500;
+      transition: color 0.3s ease;
+    }
+    .footer-links a:hover {
       color: #555;
     }
   </style>
@@ -33,33 +75,41 @@
 <body>
   <header>
     <nav>
-      <div><a href="index.html" class="no-animation">Tristan Arbona</a></div>
-      <div>
-        <a href="index.html">Accueil</a>
-        <a href="cours.html">Cours</a>
-        <a href="publications.html">Publications</a>
+      <div style="max-width:900px; margin:0 auto; padding:0 1rem; display:flex; justify-content:space-between; align-items:center;">
+        <a href="index.html" class="no-animation" style="font-weight:bold; font-size:1.2rem;">Tristan Arbona</a>
+        <div>
+          <a href="index.html" style="margin-right:1rem;">Accueil</a>
+          <a href="cours.html" style="margin-right:1rem;">Cours</a>
+          <a href="publications.html">Publications</a>
+        </div>
       </div>
     </nav>
   </header>
 
-  <div class="container">
-    <h1>Publications</h1>
-    <div class="research-section">
-      <p>Recherche sur l’économie politique contemporaine.</p>
-      <a href="slides.pdf" target="_blank">Économie</a>
+  <main class="container">
+    <h1>Publications et travaux académiques</h1>
 
-      <p>Travaux empiriques en finance internationale.</p>
-      <a href="slides.pdf" target="_blank">Finance</a>
-
-      <p>Analyse des dynamiques de risque sur les marchés financiers.</p>
-      <a href="slides.pdf" target="_blank">Risque</a>
+    <div class="publication-item">
+      <p class="publication-description">Exemple d'article de recherche publié dans une revue scientifique.</p>
+      <a href="slides.pdf" target="_blank" class="publication-link">Télécharger le document</a>
     </div>
-  </div>
+
+    <div class="publication-item">
+      <p class="publication-description">Présentation d'une communication lors d'un colloque universitaire.</p>
+      <a href="slides.pdf" target="_blank" class="publication-link">Télécharger le document</a>
+    </div>
+
+    <div class="publication-item">
+      <p class="publication-description">Exposé de résultats de recherche sous forme de rapport.</p>
+      <a href="slides.pdf" target="_blank" class="publication-link">Télécharger le document</a>
+    </div>
+
+  </main>
 
   <footer>
     <div class="footer-links">
       <a href="mailto:tristan.arbona@gmail.com">tristan.arbona@gmail.com</a>
-      <a href="https://www.linkedin.com/in/tristanarbona" target="_blank">LinkedIn</a>
+      <a href="https://www.linkedin.com/in/tristan-arbona-a4829a269/" target="_blank">LinkedIn</a>
       <a href="https://scholar.google.com" target="_blank">Google Scholar</a>
       <a href="CV-Tristan-Arbona.pdf" target="_blank">CV</a>
     </div>
@@ -67,4 +117,3 @@
   </footer>
 </body>
 </html>
-
