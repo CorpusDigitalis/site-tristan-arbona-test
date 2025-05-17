@@ -5,106 +5,63 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Tristan Arbona - Publications</title>
   <link href="https://fonts.googleapis.com/css2?family=Alata&display=swap" rel="stylesheet" />
-  <link rel="stylesheet" href="style.css?v=2" />
+  <link rel="stylesheet" href="style.css" />
   <style>
-    body {
-      font-family: 'Alata', sans-serif;
-      color: #1f1f1f;
-      margin: 0;
-      padding: 0;
-      background: #fff;
-    }
-    .container {
-      max-width: 900px;
-      margin: 2rem auto 4rem auto;
-      padding: 0 1rem;
-    }
-    h1 {
+    .container > h1 {
       text-align: center;
-      margin-bottom: 2rem;
-      font-weight: normal;
+      font-family: 'Alata', sans-serif;
+      margin-bottom: 1rem;
+    }
+    .publications-text {
+      text-align: left;
+      max-width: 600px;
+      margin: 0 auto 2rem auto;
+      font-family: Arial, sans-serif;
+      font-size: 1rem;
+      line-height: 1.5;
     }
     .publication-item {
-      border: 1px solid #ddd;
-      border-radius: 8px;
-      padding: 1rem 1.5rem;
-      margin-bottom: 1.5rem;
-      background: #fafafa;
-      box-shadow: 2px 2px 8px rgb(0 0 0 / 0.05);
-      transition: box-shadow 0.3s ease;
+      margin-bottom: 1.2rem;
     }
-    .publication-item:hover {
-      box-shadow: 4px 4px 12px rgb(0 0 0 / 0.15);
-    }
-    .publication-description {
-      margin-bottom: 0.7rem;
-      font-size: 1.1rem;
-      line-height: 1.4;
-    }
-    .publication-link {
+    .publication-item a {
       text-decoration: underline;
       color: #1f1f1f;
-      font-weight: 600;
       cursor: pointer;
-      transition: color 0.3s ease;
-      display: inline-block;
     }
-    .publication-link:hover {
-      color: #555;
-    }
-    footer {
-      background: #f9f9f9;
-      padding: 1rem 0;
-      text-align: center;
-      font-size: 0.9rem;
-      color: #666;
-      border-top: 1px solid #ddd;
-    }
-    .footer-links a {
-      margin: 0 0.8rem;
-      color: #1f1f1f;
-      text-decoration: none;
-      font-weight: 500;
-      transition: color 0.3s ease;
-    }
-    .footer-links a:hover {
-      color: #555;
+    .publication-item a:hover {
+      color: #0077cc;
     }
   </style>
 </head>
-<body>
+<body style="outline: none;">
   <header>
     <nav>
-      <div style="max-width:900px; margin:0 auto; padding:0 1rem; display:flex; justify-content:space-between; align-items:center;">
-        <a href="index.html" class="no-animation" style="font-weight:bold; font-size:1.2rem;">Tristan Arbona</a>
-        <div>
-          <a href="index.html" style="margin-right:1rem;">Accueil</a>
-          <a href="cours.html" style="margin-right:1rem;">Cours</a>
-          <a href="publications.html">Publications</a>
-        </div>
+      <div>
+        <a href="index.html" class="no-animation">Tristan Arbona</a>
+      </div>
+      <div>
+        <a href="index.html">Accueil</a>
+        <a href="cours.html">Cours</a>
+        <a href="publications.html">Publications</a>
       </div>
     </nav>
   </header>
 
-  <main class="container">
-    <h1>Publications et travaux académiques</h1>
-
-    <div class="publication-item">
-      <p class="publication-description">Exemple d'article de recherche publié dans une revue scientifique.</p>
-      <a href="slides.pdf" target="_blank" class="publication-link">Télécharger le document</a>
+  <div class="container">
+    <h1>Publications</h1>
+    <p class="publications-text">Voici une sélection de mes travaux publiés en sciences économiques.</p>
+    <div class="publications-text">
+      <div class="publication-item">
+        Exemple d'article de recherche sur des thématiques économiques. <a href="slides.pdf" target="_blank">Consulter le document</a>
+      </div>
+      <div class="publication-item">
+        Exemple de communication présentée lors d’un colloque universitaire. <a href="slides.pdf" target="_blank">Voir la présentation</a>
+      </div>
+      <div class="publication-item">
+        Exemple d'étude approfondie publiée dans une revue spécialisée. <a href="slides.pdf" target="_blank">Accéder au PDF</a>
+      </div>
     </div>
-
-    <div class="publication-item">
-      <p class="publication-description">Présentation d'une communication lors d'un colloque universitaire.</p>
-      <a href="slides.pdf" target="_blank" class="publication-link">Télécharger le document</a>
-    </div>
-
-    <div class="publication-item">
-      <p class="publication-description">Exposé de résultats de recherche sous forme de rapport.</p>
-      <a href="slides.pdf" target="_blank" class="publication-link">Télécharger le document</a>
-    </div>
-
-  </main>
+  </div>
 
   <footer>
     <div class="footer-links">
