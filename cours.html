@@ -20,7 +20,6 @@
       border-radius: 4px;
       list-style: none;
     }
-    /* Retirer le triangle par défaut sur certains navigateurs */
     details > summary::-webkit-details-marker { display: none; }
     details > summary::before {
       content: "▸";
@@ -31,7 +30,6 @@
     details[open] > summary::before {
       transform: rotate(90deg);
     }
-    /* Niveaux imbriqués */
     details details {
       margin-left: 1.5rem;
       background: #fafafa;
@@ -42,7 +40,6 @@
       font-size: 1rem;
       background: #eaeaea;
     }
-    /* Liste des liens PDF */
     .resource-list {
       list-style: none;
       padding-left: 2rem;
@@ -60,10 +57,15 @@
     .resource-list li a:hover {
       text-decoration: underline;
     }
-    /* Icône PDF très simple */
     .resource-list li a::before {
       content: "📄";
       margin-right: 0.5rem;
+    }
+
+    /* Centrer uniquement le titre de cette page */
+    .container > h1 {
+      text-align: center;
+      font-family: 'Alata', sans-serif;
     }
   </style>
 </head>
@@ -82,63 +84,55 @@
   <div class="container">
     <h1>Cours</h1>
 
-    <!-- ==== Niveau 1 : Nom du cours ==== -->
     <details>
       <summary>Exemple de nom de cours 1</summary>
-
-      <!-- ==== Niveau 2 : Type de ressource ==== -->
       <details>
         <summary>Slides</summary>
-        <!-- ==== Niveau 3 : Liens PDF ==== -->
         <ul class="resource-list">
-          <li><a href="cours/1/slides.pdf" target="_blank">slides.pdf</a></li>
-          <li><a href="cours/1/slides.pdf" target="_blank">slides.pdf</a></li>
-          <li><a href="cours/1/slides.pdf" target="_blank">slides.pdf</a></li>
+          <li><a href="https://corpusdigitalis.github.io/site-tristan-arbona-test/slides.pdf" target="_blank">slides.pdf</a></li>
+          <li><a href="https://corpusdigitalis.github.io/site-tristan-arbona-test/slides.pdf" target="_blank">slides.pdf</a></li>
+          <li><a href="https://corpusdigitalis.github.io/site-tristan-arbona-test/slides.pdf" target="_blank">slides.pdf</a></li>
         </ul>
       </details>
-
       <details>
         <summary>Exercices</summary>
         <ul class="resource-list">
-          <li><a href="cours/1/exercices.pdf" target="_blank">slides.pdf</a></li>
-          <li><a href="cours/1/exercices.pdf" target="_blank">slides.pdf</a></li>
-          <li><a href="cours/1/exercices.pdf" target="_blank">slides.pdf</a></li>
+          <li><a href="https://corpusdigitalis.github.io/site-tristan-arbona-test/slides.pdf" target="_blank">slides.pdf</a></li>
+          <li><a href="https://corpusdigitalis.github.io/site-tristan-arbona-test/slides.pdf" target="_blank">slides.pdf</a></li>
+          <li><a href="https://corpusdigitalis.github.io/site-tristan-arbona-test/slides.pdf" target="_blank">slides.pdf</a></li>
         </ul>
       </details>
-
       <details>
         <summary>Documents</summary>
         <ul class="resource-list">
-          <li><a href="cours/1/documents.pdf" target="_blank">slides.pdf</a></li>
-          <li><a href="cours/1/documents.pdf" target="_blank">slides.pdf</a></li>
-          <li><a href="cours/1/documents.pdf" target="_blank">slides.pdf</a></li>
+          <li><a href="https://corpusdigitalis.github.io/site-tristan-arbona-test/slides.pdf" target="_blank">slides.pdf</a></li>
+          <li><a href="https://corpusdigitalis.github.io/site-tristan-arbona-test/slides.pdf" target="_blank">slides.pdf</a></li>
+          <li><a href="https://corpusdigitalis.github.io/site-tristan-arbona-test/slides.pdf" target="_blank">slides.pdf</a></li>
         </ul>
       </details>
-
     </details>
 
-    <!-- Répète le bloc <details> pour les cours 2 et 3 -->
     <details>
       <summary>Exemple de nom de cours 2</summary>
       <details><summary>Slides</summary>
         <ul class="resource-list">
-          <li><a href="cours/2/slides.pdf" target="_blank">slides.pdf</a></li>
-          <li><a href="cours/2/slides.pdf" target="_blank">slides.pdf</a></li>
-          <li><a href="cours/2/slides.pdf" target="_blank">slides.pdf</a></li>
+          <li><a href="https://corpusdigitalis.github.io/site-tristan-arbona-test/slides.pdf" target="_blank">slides.pdf</a></li>
+          <li><a href="https://corpusdigitalis.github.io/site-tristan-arbona-test/slides.pdf" target="_blank">slides.pdf</a></li>
+          <li><a href="https://corpusdigitalis.github.io/site-tristan-arbona-test/slides.pdf" target="_blank">slides.pdf</a></li>
         </ul>
       </details>
       <details><summary>Exercices</summary>
         <ul class="resource-list">
-          <li><a href="cours/2/exercices.pdf" target="_blank">slides.pdf</a></li>
-          <li><a href="cours/2/exercices.pdf" target="_blank">slides.pdf</a></li>
-          <li><a href="cours/2/exercices.pdf" target="_blank">slides.pdf</a></li>
+          <li><a href="https://corpusdigitalis.github.io/site-tristan-arbona-test/slides.pdf" target="_blank">slides.pdf</a></li>
+          <li><a href="https://corpusdigitalis.github.io/site-tristan-arbona-test/slides.pdf" target="_blank">slides.pdf</a></li>
+          <li><a href="https://corpusdigitalis.github.io/site-tristan-arbona-test/slides.pdf" target="_blank">slides.pdf</a></li>
         </ul>
       </details>
       <details><summary>Documents</summary>
         <ul class="resource-list">
-          <li><a href="cours/2/documents.pdf" target="_blank">slides.pdf</a></li>
-          <li><a href="cours/2/documents.pdf" target="_blank">slides.pdf</a></li>
-          <li><a href="cours/2/documents.pdf" target="_blank">slides.pdf</a></li>
+          <li><a href="https://corpusdigitalis.github.io/site-tristan-arbona-test/slides.pdf" target="_blank">slides.pdf</a></li>
+          <li><a href="https://corpusdigitalis.github.io/site-tristan-arbona-test/slides.pdf" target="_blank">slides.pdf</a></li>
+          <li><a href="https://corpusdigitalis.github.io/site-tristan-arbona-test/slides.pdf" target="_blank">slides.pdf</a></li>
         </ul>
       </details>
     </details>
@@ -147,23 +141,23 @@
       <summary>Exemple de nom de cours 3</summary>
       <details><summary>Slides</summary>
         <ul class="resource-list">
-          <li><a href="cours/3/slides.pdf" target="_blank">slides.pdf</a></li>
-          <li><a href="cours/3/slides.pdf" target="_blank">slides.pdf</a></li>
-          <li><a href="cours/3/slides.pdf" target="_blank">slides.pdf</a></li>
+          <li><a href="https://corpusdigitalis.github.io/site-tristan-arbona-test/slides.pdf" target="_blank">slides.pdf</a></li>
+          <li><a href="https://corpusdigitalis.github.io/site-tristan-arbona-test/slides.pdf" target="_blank">slides.pdf</a></li>
+          <li><a href="https://corpusdigitalis.github.io/site-tristan-arbona-test/slides.pdf" target="_blank">slides.pdf</a></li>
         </ul>
       </details>
       <details><summary>Exercices</summary>
         <ul class="resource-list">
-          <li><a href="cours/3/exercices.pdf" target="_blank">slides.pdf</a></li>
-          <li><a href="cours/3/exercices.pdf" target="_blank">slides.pdf</a></li>
-          <li><a href="cours/3/exercices.pdf" target="_blank">slides.pdf</a></li>
+          <li><a href="https://corpusdigitalis.github.io/site-tristan-arbona-test/slides.pdf" target="_blank">slides.pdf</a></li>
+          <li><a href="https://corpusdigitalis.github.io/site-tristan-arbona-test/slides.pdf" target="_blank">slides.pdf</a></li>
+          <li><a href="https://corpusdigitalis.github.io/site-tristan-arbona-test/slides.pdf" target="_blank">slides.pdf</a></li>
         </ul>
       </details>
       <details><summary>Documents</summary>
         <ul class="resource-list">
-          <li><a href="cours/3/documents.pdf" target="_blank">slides.pdf</a></li>
-          <li><a href="cours/3/documents.pdf" target="_blank">slides.pdf</a></li>
-          <li><a href="cours/3/documents.pdf" target="_blank">slides.pdf</a></li>
+          <li><a href="https://corpusdigitalis.github.io/site-tristan-arbona-test/slides.pdf" target="_blank">slides.pdf</a></li>
+          <li><a href="https://corpusdigitalis.github.io/site-tristan-arbona-test/slides.pdf" target="_blank">slides.pdf</a></li>
+          <li><a href="https://corpusdigitalis.github.io/site-tristan-arbona-test/slides.pdf" target="_blank">slides.pdf</a></li>
         </ul>
       </details>
     </details>
@@ -175,9 +169,7 @@
       <a href="mailto:tristan.arbona@email.com">tristan.arbona@email.com</a>
       <a href="https://www.linkedin.com/in/tristanarbona" target="_blank">LinkedIn</a>
       <a href="https://scholar.google.com" target="_blank">Google Scholar</a>
-      <a href="CV-Tristan-Arbona.pdf" target="_blank">CV</a>
     </div>
-    <div class="small-text">CorpusDigitalis</div>
   </footer>
 </body>
 </html>
