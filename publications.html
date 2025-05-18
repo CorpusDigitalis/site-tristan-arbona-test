@@ -9,42 +9,44 @@
   <style>
     body {
       margin: 0;
-      padding: 0;
       font-family: 'Alata', sans-serif;
       background-color: #f9f9f9;
       color: #1f1f1f;
     }
 
     .container {
-      max-width: 800px;
+      max-width: 900px;
       margin: 3rem auto;
       padding: 0 1rem;
     }
 
-    .container > h1 {
+    h1 {
       text-align: center;
-      font-size: 2.2rem;
-      margin-bottom: 1.5rem;
+      font-size: 2rem;
+      margin-bottom: 1rem;
     }
 
     .publications-text {
       text-align: center;
       font-size: 1.1rem;
       margin-bottom: 2rem;
-      color: #333;
     }
 
     .publication-item {
-      background-color: #fff;
+      background-color: #ffffff;
       border-radius: 12px;
       padding: 1rem 1.5rem;
-      box-shadow: 0 2px 6px rgba(0, 0, 0, 0.06);
+      box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
       margin-bottom: 1.5rem;
       display: flex;
       justify-content: space-between;
       align-items: center;
       flex-wrap: wrap;
-      gap: 1rem;
+    }
+
+    .publication-item span {
+      flex: 1;
+      min-width: 200px;
     }
 
     .publication-item a {
@@ -57,67 +59,10 @@
     .publication-item a:hover {
       color: #005999;
     }
-
-    footer {
-      margin-top: 4rem;
-      padding: 2rem 1rem;
-      background-color: #f1f1f1;
-      text-align: center;
-      border-top: 1px solid #ddd;
-    }
-
-    .footer-links {
-      margin-bottom: 0.5rem;
-    }
-
-    .footer-links a {
-      margin: 0 0.8rem;
-      color: #1f1f1f;
-      text-decoration: none;
-      font-size: 0.95rem;
-    }
-
-    .footer-links a:hover {
-      text-decoration: underline;
-    }
-
-    .small-text {
-      font-size: 0.8rem;
-      color: #888;
-    }
-
-    header {
-      background-color: #fff;
-      border-bottom: 1px solid #ddd;
-      padding: 1.2rem 2rem;
-    }
-
-    nav {
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      flex-wrap: wrap;
-    }
-
-    nav a {
-      text-decoration: none;
-      color: #1f1f1f;
-      margin: 0 1rem;
-      font-size: 1rem;
-      transition: color 0.3s ease;
-    }
-
-    nav a:hover {
-      color: #0077cc;
-    }
-
-    .no-animation {
-      font-weight: bold;
-      font-size: 1.2rem;
-    }
   </style>
 </head>
 <body style="outline: none;">
+  <!-- Header IDENTIQUE à l'accueil -->
   <header>
     <nav>
       <div>
@@ -151,6 +96,7 @@
     </div>
   </div>
 
+  <!-- Footer IDENTIQUE à l'accueil -->
   <footer>
     <div class="footer-links">
       <a href="mailto:tristan.arbona@gmail.com">tristan.arbona@gmail.com</a>
