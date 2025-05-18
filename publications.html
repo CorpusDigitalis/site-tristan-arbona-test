@@ -8,66 +8,67 @@
   <link rel="stylesheet" href="style.css" />
   <style>
     body {
-      margin: 0;
       font-family: 'Alata', sans-serif;
-      background-color: #f9f9f9;
-      color: #1f1f1f;
+      margin: 0;
+      padding: 0;
+      background-color: #fdfdfd;
     }
 
     .container {
       max-width: 900px;
-      margin: 3rem auto;
-      padding: 0 1rem;
+      margin: 0 auto;
+      padding: 2rem 1rem;
     }
 
-    h1 {
+    .container > h1 {
       text-align: center;
       font-size: 2rem;
-      margin-bottom: 1rem;
-    }
-
-    .publications-text {
-      text-align: center;
-      font-size: 1.1rem;
       margin-bottom: 2rem;
     }
 
-    .publication-item {
-      background-color: #ffffff;
-      border-radius: 12px;
-      padding: 1rem 1.5rem;
-      box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
-      margin-bottom: 1.5rem;
+    .publications-text {
+      margin-bottom: 2rem;
+      text-align: center;
+      font-size: 1rem;
+      color: #333;
+    }
+
+    .publication {
+      background-color: #f5f5f5;
+      padding: 1rem;
+      border-radius: 8px;
+      margin-bottom: 1.2rem;
       display: flex;
       justify-content: space-between;
       align-items: center;
       flex-wrap: wrap;
     }
 
-    .publication-item span {
-      flex: 1;
-      min-width: 200px;
+    .publication p {
+      margin: 0;
+      font-size: 1rem;
+      flex: 1 1 auto;
+      padding-right: 1rem;
     }
 
-    .publication-item a {
-      text-decoration: none;
+    .publication a {
+      text-decoration: underline;
       color: #0077cc;
-      font-weight: bold;
-      transition: color 0.3s ease;
+      white-space: nowrap;
+      font-size: 0.95rem;
+      margin-left: auto;
+      margin-top: 0.3rem;
     }
 
-    .publication-item a:hover {
-      color: #005999;
+    .publication a:hover {
+      color: #005fa3;
     }
   </style>
 </head>
-<body style="outline: none;">
-  <!-- Header IDENTIQUE à l'accueil -->
+<body>
   <header>
     <nav>
-      <div>
-        <a href="index.html" class="no-animation">Tristan Arbona</a>
-      </div>
+      <div><a href="index.html" class="no-animation">Tristan Arbona</a></div>
       <div>
         <a href="index.html">Accueil</a>
         <a href="cours.html">Cours</a>
@@ -80,23 +81,22 @@
     <h1>Publications</h1>
     <p class="publications-text">Voici une sélection de mes travaux publiés en sciences économiques.</p>
 
-    <div class="publication-item">
-      <span>Exemple d'article de recherche sur des thématiques économiques.</span>
+    <div class="publication">
+      <p>Exemple d'article de recherche sur des thématiques économiques.</p>
       <a href="slides.pdf" target="_blank">Consulter le document</a>
     </div>
 
-    <div class="publication-item">
-      <span>Exemple de communication présentée lors d’un colloque universitaire.</span>
+    <div class="publication">
+      <p>Exemple de communication présentée lors d’un colloque universitaire.</p>
       <a href="slides.pdf" target="_blank">Voir la présentation</a>
     </div>
 
-    <div class="publication-item">
-      <span>Exemple d'étude approfondie publiée dans une revue spécialisée.</span>
+    <div class="publication">
+      <p>Exemple d'étude approfondie publiée dans une revue spécialisée.</p>
       <a href="slides.pdf" target="_blank">Accéder au PDF</a>
     </div>
   </div>
 
-  <!-- Footer IDENTIQUE à l'accueil -->
   <footer>
     <div class="footer-links">
       <a href="mailto:tristan.arbona@gmail.com">tristan.arbona@gmail.com</a>
