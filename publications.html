@@ -2,86 +2,105 @@
 <html lang="fr">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Tristan Arbona - Publications</title>
   <link href="https://fonts.googleapis.com/css2?family=Alata&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="style.css" />
   <style>
-    .container > h1 {
-      text-align: center;
+    body {
+      margin: 0;
       font-family: 'Alata', sans-serif;
+      background-color: #f9f9f9;
+      color: #1f1f1f;
+    }
+
+    .container {
+      max-width: 900px;
+      margin: 3rem auto;
+      padding: 0 1rem;
+    }
+
+    h1 {
+      text-align: center;
+      font-size: 2rem;
       margin-bottom: 1rem;
-      color: #222; /* Couleur sombre, comme avant */
     }
+
     .publications-text {
-      max-width: 600px;
-      margin: 0 auto 2rem auto;
-      font-family: Arial, sans-serif;
-      font-size: 1rem;
-      line-height: 1.5;
-      background: #f7f7f7; /* Couleur claire douce, comme avant */
-      border-radius: 8px;
-      padding: 1rem 1.5rem;
-      box-shadow: 0 2px 6px rgb(0 0 0 / 0.1);
+      text-align: center;
+      font-size: 1.1rem;
+      margin-bottom: 2rem;
     }
+
     .publication-item {
+      background-color: #ffffff;
+      border-radius: 12px;
+      padding: 1rem 1.5rem;
+      box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+      margin-bottom: 1.5rem;
       display: flex;
       justify-content: space-between;
       align-items: center;
-      margin-bottom: 1.2rem;
-      color: #333;
+      flex-wrap: wrap;
     }
+
+    .publication-item span {
+      flex: 1;
+      min-width: 200px;
+    }
+
     .publication-item a {
-      text-decoration: underline;
+      text-decoration: none;
       color: #0077cc;
-      margin-left: 1rem; /* MARGE LÉGÈRE ENTRE TEXTE ET LIEN */
-      white-space: nowrap;
-      flex-shrink: 0;
-      cursor: pointer;
-      font-weight: 600;
+      font-weight: bold;
+      transition: color 0.3s ease;
+      margin-left: 1rem; /* <- MARGE LÉGÈRE ENTRE TEXTE ET LIEN */
     }
+
     .publication-item a:hover {
-      color: #005fa3;
+      color: #005999;
     }
-    body {
-      background-color: #fff; /* Fond blanc propre, comme avant */
-      margin: 0;
-      font-family: 'Alata', sans-serif;
-      color: #222;
-      -webkit-font-smoothing: antialiased;
-      -moz-osx-font-smoothing: grayscale;
-    }
+
+    /* Header et footer identiques à l'accueil */
     header, footer {
-      background-color: #222; /* Couleur sombre du header/footer */
+      background-color: #222;
       color: white;
       padding: 1rem 2rem;
       font-family: 'Alata', sans-serif;
       display: flex;
       justify-content: space-between;
       align-items: center;
+      flex-wrap: wrap;
     }
-    nav > div > a {
+
+    nav > div:first-child a,
+    nav > div:nth-child(2) a,
+    .footer-links a {
       color: white;
       margin-right: 1.5rem;
       text-decoration: none;
       font-weight: 600;
     }
-    nav > div > a:hover {
-      color: #0077cc;
-    }
-    .footer-links a {
-      color: white;
-      margin-right: 1.5rem;
-      text-decoration: none;
-      font-weight: 500;
-    }
+
+    nav > div:first-child a:hover,
+    nav > div:nth-child(2) a:hover,
     .footer-links a:hover {
       color: #0077cc;
       text-decoration: underline;
     }
+
+    .footer-links {
+      display: flex;
+      gap: 1.5rem;
+      flex-wrap: wrap;
+    }
+
     .small-text {
       font-size: 0.8rem;
       color: #bbb;
+      margin-top: 0.5rem;
+      width: 100%;
+      text-align: center;
     }
   </style>
 </head>
@@ -101,19 +120,21 @@
 
   <div class="container">
     <h1>Publications</h1>
-    <div class="publications-text">
-      <div class="publication-item">
-        Exemple d'article de recherche sur des thématiques économiques.
-        <a href="slides.pdf" target="_blank">Consulter le document</a>
-      </div>
-      <div class="publication-item">
-        Exemple de communication présentée lors d’un colloque universitaire.
-        <a href="slides.pdf" target="_blank">Voir la présentation</a>
-      </div>
-      <div class="publication-item">
-        Exemple d'étude approfondie publiée dans une revue spécialisée.
-        <a href="slides.pdf" target="_blank">Accéder au PDF</a>
-      </div>
+    <p class="publications-text">Voici une sélection de mes travaux publiés en sciences économiques.</p>
+
+    <div class="publication-item">
+      <span>Exemple d'article de recherche sur des thématiques économiques.</span>
+      <a href="slides.pdf" target="_blank">Consulter le document</a>
+    </div>
+
+    <div class="publication-item">
+      <span>Exemple de communication présentée lors d’un colloque universitaire.</span>
+      <a href="slides.pdf" target="_blank">Voir la présentation</a>
+    </div>
+
+    <div class="publication-item">
+      <span>Exemple d'étude approfondie publiée dans une revue spécialisée.</span>
+      <a href="slides.pdf" target="_blank">Accéder au PDF</a>
     </div>
   </div>
 
