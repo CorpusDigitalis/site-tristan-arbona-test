@@ -15,27 +15,6 @@
       color: #1f1f1f;
     }
 
-    header {
-      background-color: #ffffff;
-      padding: 1rem 2rem;
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      border-bottom: 1px solid #ddd;
-    }
-
-    nav a {
-      text-decoration: none;
-      color: #1f1f1f;
-      margin: 0 1rem;
-      font-size: 1rem;
-      transition: color 0.3s ease;
-    }
-
-    nav a:hover {
-      color: #0077cc;
-    }
-
     .container {
       max-width: 800px;
       margin: 3rem auto;
@@ -58,25 +37,17 @@
     .publication-item {
       background-color: #fff;
       border-radius: 12px;
-      padding: 1.2rem 1.5rem;
+      padding: 1rem 1.5rem;
       box-shadow: 0 2px 6px rgba(0, 0, 0, 0.06);
       margin-bottom: 1.5rem;
-      transition: transform 0.2s ease, box-shadow 0.2s ease;
       display: flex;
-      flex-direction: column;
-    }
-
-    .publication-item:hover {
-      transform: translateY(-3px);
-      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-    }
-
-    .publication-description {
-      margin-bottom: 0.8rem;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+      gap: 1rem;
     }
 
     .publication-item a {
-      align-self: flex-end;
       text-decoration: none;
       color: #0077cc;
       font-weight: bold;
@@ -114,18 +85,49 @@
       font-size: 0.8rem;
       color: #888;
     }
+
+    header {
+      background-color: #fff;
+      border-bottom: 1px solid #ddd;
+      padding: 1.2rem 2rem;
+    }
+
+    nav {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+    }
+
+    nav a {
+      text-decoration: none;
+      color: #1f1f1f;
+      margin: 0 1rem;
+      font-size: 1rem;
+      transition: color 0.3s ease;
+    }
+
+    nav a:hover {
+      color: #0077cc;
+    }
+
+    .no-animation {
+      font-weight: bold;
+      font-size: 1.2rem;
+    }
   </style>
 </head>
-<body>
-
+<body style="outline: none;">
   <header>
-    <div>
-      <a href="index.html" class="no-animation" style="font-weight: bold; font-size: 1.2rem;">Tristan Arbona</a>
-    </div>
     <nav>
-      <a href="index.html">Accueil</a>
-      <a href="cours.html">Cours</a>
-      <a href="publications.html">Publications</a>
+      <div>
+        <a href="index.html" class="no-animation">Tristan Arbona</a>
+      </div>
+      <div>
+        <a href="index.html">Accueil</a>
+        <a href="cours.html">Cours</a>
+        <a href="publications.html">Publications</a>
+      </div>
     </nav>
   </header>
 
@@ -134,17 +136,17 @@
     <p class="publications-text">Voici une sélection de mes travaux publiés en sciences économiques.</p>
 
     <div class="publication-item">
-      <div class="publication-description">Exemple d'article de recherche sur des thématiques économiques.</div>
+      <span>Exemple d'article de recherche sur des thématiques économiques.</span>
       <a href="slides.pdf" target="_blank">Consulter le document</a>
     </div>
 
     <div class="publication-item">
-      <div class="publication-description">Exemple de communication présentée lors d’un colloque universitaire.</div>
+      <span>Exemple de communication présentée lors d’un colloque universitaire.</span>
       <a href="slides.pdf" target="_blank">Voir la présentation</a>
     </div>
 
     <div class="publication-item">
-      <div class="publication-description">Exemple d'étude approfondie publiée dans une revue spécialisée.</div>
+      <span>Exemple d'étude approfondie publiée dans une revue spécialisée.</span>
       <a href="slides.pdf" target="_blank">Accéder au PDF</a>
     </div>
   </div>
@@ -158,6 +160,5 @@
     </div>
     <div class="small-text">CorpusDigitalis</div>
   </footer>
-
 </body>
 </html>
