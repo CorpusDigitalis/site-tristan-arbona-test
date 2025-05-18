@@ -16,12 +16,12 @@
     }
 
     header {
-      background-color: #fff;
-      border-bottom: 1px solid #ddd;
+      background-color: #ffffff;
       padding: 1rem 2rem;
       display: flex;
       justify-content: space-between;
       align-items: center;
+      border-bottom: 1px solid #ddd;
     }
 
     nav a {
@@ -62,6 +62,8 @@
       box-shadow: 0 2px 6px rgba(0, 0, 0, 0.06);
       margin-bottom: 1.5rem;
       transition: transform 0.2s ease, box-shadow 0.2s ease;
+      display: flex;
+      flex-direction: column;
     }
 
     .publication-item:hover {
@@ -69,9 +71,12 @@
       box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
     }
 
+    .publication-description {
+      margin-bottom: 0.8rem;
+    }
+
     .publication-item a {
-      display: inline-block;
-      margin-top: 0.5rem;
+      align-self: flex-end;
       text-decoration: none;
       color: #0077cc;
       font-weight: bold;
@@ -87,6 +92,7 @@
       padding: 2rem 1rem;
       background-color: #f1f1f1;
       text-align: center;
+      border-top: 1px solid #ddd;
     }
 
     .footer-links {
@@ -111,6 +117,7 @@
   </style>
 </head>
 <body>
+
   <header>
     <div>
       <a href="index.html" class="no-animation" style="font-weight: bold; font-size: 1.2rem;">Tristan Arbona</a>
@@ -127,17 +134,17 @@
     <p class="publications-text">Voici une sélection de mes travaux publiés en sciences économiques.</p>
 
     <div class="publication-item">
-      Exemple d'article de recherche sur des thématiques économiques.
+      <div class="publication-description">Exemple d'article de recherche sur des thématiques économiques.</div>
       <a href="slides.pdf" target="_blank">Consulter le document</a>
     </div>
 
     <div class="publication-item">
-      Exemple de communication présentée lors d’un colloque universitaire.
+      <div class="publication-description">Exemple de communication présentée lors d’un colloque universitaire.</div>
       <a href="slides.pdf" target="_blank">Voir la présentation</a>
     </div>
 
     <div class="publication-item">
-      Exemple d'étude approfondie publiée dans une revue spécialisée.
+      <div class="publication-description">Exemple d'étude approfondie publiée dans une revue spécialisée.</div>
       <a href="slides.pdf" target="_blank">Accéder au PDF</a>
     </div>
   </div>
@@ -151,5 +158,6 @@
     </div>
     <div class="small-text">CorpusDigitalis</div>
   </footer>
+
 </body>
 </html>
