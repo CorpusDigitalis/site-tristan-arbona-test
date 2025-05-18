@@ -1,55 +1,210 @@
-<details>
-  <summary>Exemple de nom de cours 2</summary>
-  <details>
-    <summary>Slides</summary>
-    <ul class="resource-list">
-      <li><a href="https://corpusdigitalis.github.io/site-tristan-arbona-test/slides.pdf" target="_blank">slides.pdf</a></li>
-      <li><a href="https://corpusdigitalis.github.io/site-tristan-arbona-test/slides.pdf" target="_blank">slides.pdf</a></li>
-      <li><a href="https://corpusdigitalis.github.io/site-tristan-arbona-test/slides.pdf" target="_blank">slides.pdf</a></li>
-    </ul>
-  </details>
-  <details>
-    <summary>Exercices</summary>
-    <ul class="resource-list">
-      <li><a href="https://corpusdigitalis.github.io/site-tristan-arbona-test/slides.pdf" target="_blank">slides.pdf</a></li>
-      <li><a href="https://corpusdigitalis.github.io/site-tristan-arbona-test/slides.pdf" target="_blank">slides.pdf</a></li>
-      <li><a href="https://corpusdigitalis.github.io/site-tristan-arbona-test/slides.pdf" target="_blank">slides.pdf</a></li>
-    </ul>
-  </details>
-  <details>
-    <summary>Documents</summary>
-    <ul class="resource-list">
-      <li><a href="https://corpusdigitalis.github.io/site-tristan-arbona-test/slides.pdf" target="_blank">slides.pdf</a></li>
-      <li><a href="https://corpusdigitalis.github.io/site-tristan-arbona-test/slides.pdf" target="_blank">slides.pdf</a></li>
-      <li><a href="https://corpusdigitalis.github.io/site-tristan-arbona-test/slides.pdf" target="_blank">slides.pdf</a></li>
-    </ul>
-  </details>
-</details>
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Tristan Arbona - Cours</title>
+  <link href="https://fonts.googleapis.com/css2?family=Alata&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+  <style>
+    body {
+      font-family: 'Alata', sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #f9f9f9;
+    }
 
-<details>
-  <summary>Exemple de nom de cours 3</summary>
-  <details>
-    <summary>Slides</summary>
-    <ul class="resource-list">
-      <li><a href="https://corpusdigitalis.github.io/site-tristan-arbona-test/slides.pdf" target="_blank">slides.pdf</a></li>
-      <li><a href="https://corpusdigitalis.github.io/site-tristan-arbona-test/slides.pdf" target="_blank">slides.pdf</a></li>
-      <li><a href="https://corpusdigitalis.github.io/site-tristan-arbona-test/slides.pdf" target="_blank">slides.pdf</a></li>
-    </ul>
-  </details>
-  <details>
-    <summary>Exercices</summary>
-    <ul class="resource-list">
-      <li><a href="https://corpusdigitalis.github.io/site-tristan-arbona-test/slides.pdf" target="_blank">slides.pdf</a></li>
-      <li><a href="https://corpusdigitalis.github.io/site-tristan-arbona-test/slides.pdf" target="_blank">slides.pdf</a></li>
-      <li><a href="https://corpusdigitalis.github.io/site-tristan-arbona-test/slides.pdf" target="_blank">slides.pdf</a></li>
-    </ul>
-  </details>
-  <details>
-    <summary>Documents</summary>
-    <ul class="resource-list">
-      <li><a href="https://corpusdigitalis.github.io/site-tristan-arbona-test/slides.pdf" target="_blank">slides.pdf</a></li>
-      <li><a href="https://corpusdigitalis.github.io/site-tristan-arbona-test/slides.pdf" target="_blank">slides.pdf</a></li>
-      <li><a href="https://corpusdigitalis.github.io/site-tristan-arbona-test/slides.pdf" target="_blank">slides.pdf</a></li>
-    </ul>
-  </details>
-</details>
+    details {
+      margin-bottom: 1rem;
+    }
+
+    details > summary {
+      font-size: 1.2rem;
+      font-weight: bold;
+      cursor: pointer;
+      padding: 0.5rem;
+      background: #f0f0f0;
+      border-radius: 4px;
+      list-style: none;
+    }
+
+    details > summary::-webkit-details-marker { display: none; }
+
+    details > summary::before {
+      content: "▸";
+      display: inline-block;
+      width: 1em;
+      transition: transform 0.2s ease;
+    }
+
+    details[open] > summary::before {
+      transform: rotate(90deg);
+    }
+
+    details details {
+      margin-left: 1.5rem;
+      background: #fafafa;
+      padding: 0.5rem;
+      border-radius: 4px;
+    }
+
+    details details > summary {
+      font-size: 1rem;
+      background: #eaeaea;
+    }
+
+    .resource-list {
+      list-style: none;
+      padding-left: 2rem;
+      margin-top: 0.5rem;
+    }
+
+    .resource-list li {
+      margin-bottom: 0.3rem;
+    }
+
+    .resource-list li a {
+      text-decoration: none;
+      color: #1f1f1f;
+      display: flex;
+      align-items: center;
+    }
+
+    .resource-list li a:hover {
+      text-decoration: underline;
+    }
+
+    .resource-list li a::before {
+      content: "📄";
+      margin-right: 0.5rem;
+    }
+
+    .container {
+      max-width: 900px;
+      margin: 3rem auto;
+      padding: 0 1rem;
+    }
+
+    .container > h1 {
+      text-align: center;
+      font-size: 2rem;
+      margin-bottom: 2rem;
+    }
+  </style>
+</head>
+<body>
+  <!-- HEADER IDENTIQUE -->
+  <header>
+    <nav>
+      <div><a href="index.html" class="no-animation">Tristan Arbona</a></div>
+      <div>
+        <a href="index.html">Accueil</a>
+        <a href="cours.html">Cours</a>
+        <a href="publications.html">Publications</a>
+      </div>
+    </nav>
+  </header>
+
+  <div class="container">
+    <h1>Cours</h1>
+
+    <!-- Cours 1 -->
+    <details>
+      <summary>Exemple de nom de cours 1</summary>
+      <details>
+        <summary>Slides</summary>
+        <ul class="resource-list">
+          <li><a href="slides.pdf" target="_blank">slides.pdf</a></li>
+          <li><a href="slides.pdf" target="_blank">slides.pdf</a></li>
+          <li><a href="slides.pdf" target="_blank">slides.pdf</a></li>
+        </ul>
+      </details>
+      <details>
+        <summary>Exercices</summary>
+        <ul class="resource-list">
+          <li><a href="slides.pdf" target="_blank">exercice.pdf</a></li>
+          <li><a href="slides.pdf" target="_blank">exercice.pdf</a></li>
+          <li><a href="slides.pdf" target="_blank">exercice.pdf</a></li>
+        </ul>
+      </details>
+      <details>
+        <summary>Documents</summary>
+        <ul class="resource-list">
+          <li><a href="slides.pdf" target="_blank">document.pdf</a></li>
+          <li><a href="slides.pdf" target="_blank">document.pdf</a></li>
+          <li><a href="slides.pdf" target="_blank">document.pdf</a></li>
+        </ul>
+      </details>
+    </details>
+
+    <!-- Cours 2 -->
+    <details>
+      <summary>Exemple de nom de cours 2</summary>
+      <details>
+        <summary>Slides</summary>
+        <ul class="resource-list">
+          <li><a href="slides.pdf" target="_blank">slides.pdf</a></li>
+          <li><a href="slides.pdf" target="_blank">slides.pdf</a></li>
+          <li><a href="slides.pdf" target="_blank">slides.pdf</a></li>
+        </ul>
+      </details>
+      <details>
+        <summary>Exercices</summary>
+        <ul class="resource-list">
+          <li><a href="slides.pdf" target="_blank">exercice.pdf</a></li>
+          <li><a href="slides.pdf" target="_blank">exercice.pdf</a></li>
+          <li><a href="slides.pdf" target="_blank">exercice.pdf</a></li>
+        </ul>
+      </details>
+      <details>
+        <summary>Documents</summary>
+        <ul class="resource-list">
+          <li><a href="slides.pdf" target="_blank">document.pdf</a></li>
+          <li><a href="slides.pdf" target="_blank">document.pdf</a></li>
+          <li><a href="slides.pdf" target="_blank">document.pdf</a></li>
+        </ul>
+      </details>
+    </details>
+
+    <!-- Cours 3 -->
+    <details>
+      <summary>Exemple de nom de cours 3</summary>
+      <details>
+        <summary>Slides</summary>
+        <ul class="resource-list">
+          <li><a href="slides.pdf" target="_blank">slides.pdf</a></li>
+          <li><a href="slides.pdf" target="_blank">slides.pdf</a></li>
+          <li><a href="slides.pdf" target="_blank">slides.pdf</a></li>
+        </ul>
+      </details>
+      <details>
+        <summary>Exercices</summary>
+        <ul class="resource-list">
+          <li><a href="slides.pdf" target="_blank">exercice.pdf</a></li>
+          <li><a href="slides.pdf" target="_blank">exercice.pdf</a></li>
+          <li><a href="slides.pdf" target="_blank">exercice.pdf</a></li>
+        </ul>
+      </details>
+      <details>
+        <summary>Documents</summary>
+        <ul class="resource-list">
+          <li><a href="slides.pdf" target="_blank">document.pdf</a></li>
+          <li><a href="slides.pdf" target="_blank">document.pdf</a></li>
+          <li><a href="slides.pdf" target="_blank">document.pdf</a></li>
+        </ul>
+      </details>
+    </details>
+  </div>
+
+  <!-- FOOTER IDENTIQUE -->
+  <footer>
+    <div class="footer-links">
+      <a href="mailto:tristan.arbona@gmail.com">tristan.arbona@gmail.com</a>
+      <a href="https://www.linkedin.com/in/tristan-arbona-a4829a269/" target="_blank">LinkedIn</a>
+      <a href="https://scholar.google.com" target="_blank">Google Scholar</a>
+      <a href="CV-Tristan-Arbona.pdf" target="_blank">CV</a>
+    </div>
+    <div class="small-text">CorpusDigitalis</div>
+  </footer>
+</body>
+</html>
