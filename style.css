@@ -1,187 +1,180 @@
-/* ===== Global styles ===== */
+/* Base */
 body {
-  margin: 0;
   font-family: 'Alata', sans-serif;
-  background-color: #f9f9f9;
-  color: #1f1f1f;
-}
-
-.container {
-  max-width: 900px;
-  margin: 3rem auto;
-  padding: 0 1rem;
-}
-
-h1 {
-  text-align: center;
-  font-size: 2.5rem;
-  margin-bottom: 1.5rem;
-}
-
-/* ===== Publications ===== */
-
-.publications-text {
-  text-align: center;
-  font-size: 1.1rem;
+  background: #fefaf5;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
   line-height: 1.6;
-  margin-bottom: 3rem;
+  letter-spacing: 0.02em;
 }
 
-.publication-item {
-  background-color: #ffffff;
-  border-radius: 12px;
-  padding: 1.2rem 1.5rem;
-  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
-  margin-bottom: 1.5rem;
+/* Header */
+header {
+  background: #1f1f1f;
+  color: white;
+  padding: 1rem;
+  border-bottom: 1px solid #ddd;
+}
+
+nav {
+  max-width: 960px;
+  margin: auto;
   display: flex;
   justify-content: space-between;
-  align-items: center;
   flex-wrap: wrap;
+  align-items: center;
 }
 
-.publication-item span {
-  flex: 1;
-  min-width: 200px;
-  font-size: 1rem;
-  line-height: 1.5;
-  color: #1f1f1f;
-}
-
-.publication-item a {
+/* Ajout display inline-block pour bien gérer hover/transform */
+nav a {
+  color: white;
   text-decoration: none;
-  color: #0077cc;
-  font-weight: bold;
-  transition: color 0.3s ease;
+  display: inline-block;
+  letter-spacing: 0.03em;
+  transition: transform 0.2s ease, color 0.1s ease;
+}
+
+/* margin-left uniquement sur les liens sauf le premier dans la 2e div */
+nav div:last-child a:not(:first-child) {
   margin-left: 1rem;
-  font-size: 1rem;
 }
 
-.publication-item a:hover {
-  color: #005999;
+/* Animation pour tous les liens sauf ceux avec .no-animation */
+nav a:hover:not(.no-animation) {
+  transform: scale(0.95);
 }
 
-/* ===== Cours ===== */
+nav a:active:not(.no-animation) {
+  color: #cccccc;
+  transform: scale(0.92);
+}
 
-details {
+/* Désactiver animation pour Tristan Arbona */
+nav a.no-animation:hover,
+nav a.no-animation:active {
+  transform: none !important;
+  color: white !important;
+}
+
+/* Contenu */
+.container {
+  max-width: 960px;
+  margin: 2rem auto;
+  padding: 1rem;
+  flex: 1;
+  border-bottom: 1px solid #ddd;
+}
+
+.container::after {
+  content: "";
+  display: block;
+  height: 4rem;
+}
+
+h1, h2 {
+  color: #222;
   margin-bottom: 1rem;
 }
 
-details > summary {
-  font-size: 1.2rem;
-  font-weight: bold;
-  cursor: pointer;
-  padding: 0.5rem;
-  background: #f0f0f0;
-  border-radius: 4px;
-  list-style: none;
-}
-
-details > summary::-webkit-details-marker {
-  display: none;
-}
-
-details > summary::before {
-  content: "▸";
+/* Boutons */
+a.button {
   display: inline-block;
-  width: 1em;
-  transition: transform 0.2s ease;
-}
-
-details[open] > summary::before {
-  transform: rotate(90deg);
-}
-
-details details {
-  margin-left: 1.5rem;
-  background: #fafafa;
-  padding: 0.5rem;
-  border-radius: 4px;
-}
-
-details details > summary {
-  font-size: 1rem;
-  background: #eaeaea;
-}
-
-.resource-list {
-  list-style: none;
-  padding-left: 2rem;
-  margin-top: 0.5rem;
-}
-
-.resource-list li {
-  margin-bottom: 0.3rem;
-}
-
-.resource-list li a {
+  margin-top: 1rem;
+  background: #1f1f1f;
+  color: white;
+  padding: 0.5rem 1rem;
   text-decoration: none;
-  color: #1f1f1f;
+  border-radius: 6px;
+  transition: transform 0.2s ease, background 0.1s ease;
+}
+
+a.button:hover {
+  transform: scale(0.95);
+}
+
+a.button:active {
+  background: #444;
+  transform: scale(0.92);
+}
+
+/* Accueil */
+.main-content {
   display: flex;
+  flex-wrap: wrap;
   align-items: center;
+  gap: 2rem;
 }
 
-.resource-list li a:hover {
-  text-decoration: underline;
+.main-content img {
+  max-width: 100%;
+  width: 300px;
+  height: auto;
+  border-radius: 8px;
 }
 
-.resource-list li a::before {
-  content: "📄";
-  margin-right: 0.5rem;
+.description {
+  flex: 1;
+  min-width: 250px;
 }
 
-/* ===== Footer ===== */
+/* Footer */
+footer {
+  background: #1f1f1f;
+  color: white;
+  padding: 1.5rem 1rem;
+  text-align: center;
+  margin-top: auto;
+  border-top: 1px solid #ddd;
+}
 
 .footer-links {
   display: flex;
-  gap: 1.5rem;
+  flex-wrap: wrap;
   justify-content: center;
-  margin: 2rem 0 1rem 0;
-}
-
-.footer-links a {
-  text-decoration: none;
-  color: #0077cc;
-  font-weight: 600;
-  transition: color 0.3s ease;
-}
-
-.footer-links a:hover {
-  color: #005999;
-}
-
-.small-text {
-  text-align: center;
-  font-size: 0.8rem;
-  color: #666666;
+  gap: 1rem;
   margin-bottom: 1rem;
 }
 
-/* ===== Header ===== */
-
-nav {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 1rem 2rem;
-  background-color: white;
-  box-shadow: 0 1px 5px rgba(0,0,0,0.1);
-}
-
-nav div:first-child a.no-animation {
-  font-weight: bold;
-  font-size: 1.4rem;
-  color: #1f1f1f;
+.footer-links a {
+  color: white;
   text-decoration: none;
+  transition: transform 0.2s ease, color 0.1s ease;
 }
 
-nav div:last-child a {
-  margin-left: 1.5rem;
+.footer-links a:hover {
+  transform: scale(0.95);
+}
+
+.footer-links a:active {
+  color: #cccccc;
+  transform: scale(0.92);
+}
+
+.small-text {
   color: #1f1f1f;
-  text-decoration: none;
-  font-weight: 600;
-  transition: color 0.3s ease;
+  font-size: 0.8rem;
 }
 
-nav div:last-child a:hover {
-  color: #0077cc;
+/* Responsive */
+@media (max-width: 768px) {
+  .main-content {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  nav {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  nav div:last-child a {
+    margin: 0.5rem;
+  }
+
+  .footer-links {
+    flex-direction: column;
+  }
 }
