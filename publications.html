@@ -2,12 +2,72 @@
 <html lang="fr">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Tristan Arbona - Publications</title>
   <link href="https://fonts.googleapis.com/css2?family=Alata&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="style.css" />
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Alata', sans-serif;
+      background-color: #f9f9f9;
+      color: #1f1f1f;
+    }
+
+    .container {
+      max-width: 900px;
+      margin: 3rem auto;
+      padding: 0 1rem;
+    }
+
+    h1 {
+      text-align: center;
+      font-size: 2.5rem;
+      margin-bottom: 1.5rem;
+    }
+
+    .publications-text {
+      text-align: center;
+      font-size: 1.1rem;
+      line-height: 1.6;
+      margin-bottom: 3rem;
+    }
+
+    .publication-item {
+      background-color: #ffffff;
+      border-radius: 12px;
+      padding: 1.2rem 1.5rem;
+      box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+      margin-bottom: 1.5rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+    }
+
+    .publication-item span {
+      flex: 1;
+      min-width: 200px;
+      font-size: 1rem;
+      line-height: 1.5;
+      color: #1f1f1f;
+    }
+
+    .publication-item a {
+      text-decoration: none;
+      color: #0077cc;
+      font-weight: bold;
+      transition: color 0.3s ease;
+      margin-left: 1rem;
+      font-size: 1rem;
+    }
+
+    .publication-item a:hover {
+      color: #005999;
+    }
+  </style>
 </head>
-<body>
+<body style="outline: none;">
   <header>
     <nav>
       <div>
@@ -21,34 +81,35 @@
     </nav>
   </header>
 
-  <main class="container publications-container">
+  <div class="container">
     <h1>Bienvenue</h1>
     <p class="publications-text">
-      Voici une sélection de mes travaux publiés en sciences économiques.
+      Je conçois des sites web professionnels sur mesure, pensés pour valoriser l’identité, les différents travaux et l’expertise de professionnels issus de divers secteurs.<br><br>
+      Chaque site est développé de manière personnalisée, avec une attention portée à la lisibilité, à la simplicité d’usage et à l’autonomie du client.
     </p>
 
     <div class="publication-item">
       <span>Exemple d'article de recherche sur des thématiques économiques.</span>
-      <a href="slides.pdf" target="_blank" rel="noopener noreferrer">Consulter le document</a>
+      <a href="slides.pdf" target="_blank">Consulter le document</a>
     </div>
 
     <div class="publication-item">
       <span>Exemple de communication présentée lors d’un colloque universitaire.</span>
-      <a href="slides.pdf" target="_blank" rel="noopener noreferrer">Voir la présentation</a>
+      <a href="slides.pdf" target="_blank">Voir la présentation</a>
     </div>
 
     <div class="publication-item">
       <span>Exemple d'étude approfondie publiée dans une revue spécialisée.</span>
-      <a href="slides.pdf" target="_blank" rel="noopener noreferrer">Accéder au PDF</a>
+      <a href="slides.pdf" target="_blank">Accéder au PDF</a>
     </div>
-  </main>
+  </div>
 
   <footer>
     <div class="footer-links">
       <a href="mailto:tristan.arbona@gmail.com">tristan.arbona@gmail.com</a>
-      <a href="https://www.linkedin.com/in/tristan-arbona-a4829a269/" target="_blank" rel="noopener noreferrer">LinkedIn</a>
-      <a href="https://scholar.google.com" target="_blank" rel="noopener noreferrer">Google Scholar</a>
-      <a href="CV-Tristan-Arbona.pdf" target="_blank" rel="noopener noreferrer">CV</a>
+      <a href="https://www.linkedin.com/in/tristan-arbona-a4829a269/" target="_blank">LinkedIn</a>
+      <a href="https://scholar.google.com" target="_blank">Google Scholar</a>
+      <a href="CV-Tristan-Arbona.pdf" target="_blank">CV</a>
     </div>
     <div class="small-text">CorpusDigitalis</div>
   </footer>
