@@ -9,6 +9,7 @@ body {
   min-height: 100vh;
   line-height: 1.6;
   letter-spacing: 0.02em;
+  color: #1f1f1f;
 }
 
 /* Header */
@@ -28,7 +29,6 @@ nav {
   align-items: center;
 }
 
-/* Ajout display inline-block pour bien gérer hover/transform */
 nav a {
   color: white;
   text-decoration: none;
@@ -37,12 +37,10 @@ nav a {
   transition: transform 0.2s ease, color 0.1s ease;
 }
 
-/* margin-left uniquement sur les liens sauf le premier dans la 2e div */
 nav div:last-child a:not(:first-child) {
   margin-left: 1rem;
 }
 
-/* Animation pour tous les liens sauf ceux avec .no-animation */
 nav a:hover:not(.no-animation) {
   transform: scale(0.95);
 }
@@ -52,14 +50,14 @@ nav a:active:not(.no-animation) {
   transform: scale(0.92);
 }
 
-/* Désactiver animation pour Tristan Arbona */
+/* Désactive animation pour Tristan Arbona */
 nav a.no-animation:hover,
 nav a.no-animation:active {
   transform: none !important;
   color: white !important;
 }
 
-/* Contenu */
+/* Container */
 .container {
   max-width: 960px;
   margin: 2rem auto;
@@ -68,39 +66,20 @@ nav a.no-animation:active {
   border-bottom: 1px solid #ddd;
 }
 
+/* Pour ajouter de l'espace en bas de container */
 .container::after {
   content: "";
   display: block;
   height: 4rem;
 }
 
+/* Titres */
 h1, h2 {
   color: #222;
   margin-bottom: 1rem;
 }
 
-/* Boutons */
-a.button {
-  display: inline-block;
-  margin-top: 1rem;
-  background: #1f1f1f;
-  color: white;
-  padding: 0.5rem 1rem;
-  text-decoration: none;
-  border-radius: 6px;
-  transition: transform 0.2s ease, background 0.1s ease;
-}
-
-a.button:hover {
-  transform: scale(0.95);
-}
-
-a.button:active {
-  background: #444;
-  transform: scale(0.92);
-}
-
-/* Accueil */
+/* Main content accueil */
 .main-content {
   display: flex;
   flex-wrap: wrap;
