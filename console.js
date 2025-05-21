@@ -1,6 +1,6 @@
 const siteData = {
   footer: {
-    email: "cacabunge@gmail.com",
+    email: "tristan.arbona@gmail.com",
     linkedin: "https://www.linkedin.com/in/tristan-arbona-a4829a269/",
     scholar: "https://scholar.google.com",
     cv: "https://drive.google.com/file/d/1iy_p1gbycwSr_AFHjfRfNRiofvvcXwD7/view"
