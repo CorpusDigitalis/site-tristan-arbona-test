@@ -6,15 +6,6 @@
   <title>Tristan Arbona</title>
   <link href="https://fonts.googleapis.com/css2?family=Alata&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="style.css" />
-  <style>
-    /* Style pour le canvas PDF */
-    #pdf-render {
-      border: 1px solid #ccc;
-      max-width: 100%;
-      height: auto;
-      margin: 20px 0;
-    }
-  </style>
 </head>
 <body style="outline: none;">
   <header>
@@ -42,49 +33,14 @@ Chaque site est développé de manière personnalisée, avec une attention port�
     </div>
   </div>
 
-  <!-- Zone d'affichage du CV intégré -->
-  <section class="cv-section" style="max-width: 800px; margin: auto;">
-    <h2>Mon CV</h2>
-    <canvas id="pdf-render"></canvas>
-  </section>
-
   <footer>
     <div class="footer-links">
       <a href="mailto:tristan.arbona@gmail.com">tristan.arbona@gmail.com</a>
-      <a href="https://www.linkedin.com/in/tristan-arbona-a4829a269/" target="_blank" rel="noopener noreferrer">LinkedIn</a>
-      <a href="https://scholar.google.com" target="_blank" rel="noopener noreferrer">Google Scholar</a>
-      <a href="https://drive.google.com/file/d/1iy_p1gbycwSr_AFHjfRfNRiofvvcXwD7/preview" target="_blank" rel="noopener noreferrer">CV</a>
+      <a href="https://www.linkedin.com/in/tristan-arbona-a4829a269/" target="_blank">LinkedIn</a>
+      <a href="https://scholar.google.com" target="_blank">Google Scholar</a>
+      <a href="https://drive.google.com/uc?export=view&id=1iy_p1gbycwSr_AFHjfRfNRiofvvcXwD7" target="_blank" rel="noopener noreferrer">CV</a>
     </div>
     <div class="small-text">CorpusDigitalis</div>
   </footer>
-
-  <!-- PDF.js CDN -->
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/pdf.js/3.8.162/pdf.min.js"></script>
-  <script>
-    const url = 'https://drive.google.com/uc?export=download&id=1iy_p1gbycwSr_AFHjfRfNRiofvvcXwD7';
-
-    const pdfjsLib = window['pdfjs-dist/build/pdf'];
-    pdfjsLib.GlobalWorkerOptions.workerSrc = 'https://cdnjs.cloudflare.com/ajax/libs/pdf.js/3.8.162/pdf.worker.min.js';
-
-    const canvas = document.getElementById('pdf-render');
-    const ctx = canvas.getContext('2d');
-
-    pdfjsLib.getDocument(url).promise.then(pdfDoc => {
-      pdfDoc.getPage(1).then(page => {
-        const viewport = page.getViewport({ scale: 1.5 });
-        canvas.height = viewport.height;
-        canvas.width = viewport.width;
-
-        const renderContext = {
-          canvasContext: ctx,
-          viewport: viewport
-        };
-        page.render(renderContext);
-      });
-    }).catch(err => {
-      console.error('Erreur chargement PDF:', err);
-      alert('Impossible de charger le CV.');
-    });
-  </script>
 </body>
 </html>
