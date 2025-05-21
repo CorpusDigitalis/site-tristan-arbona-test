@@ -1,149 +1,47 @@
 <!DOCTYPE html>
 <html lang="fr">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Tristan Arbona - Cours</title>
-  <link href="https://fonts.googleapis.com/css2?family=Alata&display=swap" rel="stylesheet" />
-  <link rel="stylesheet" href="style.css" />
-  <style>
-    body {
-      font-family: 'Alata', sans-serif;
-      margin: 0;
-      padding: 0;
-      background-color: #f9f9f9;
-    }
-
-    details {
-      margin-bottom: 1rem;
-    }
-
-    details > summary {
-      font-size: 1.2rem;
-      font-weight: bold;
-      cursor: pointer;
-      padding: 0.5rem;
-      background: #f0f0f0;
-      border-radius: 4px;
-      list-style: none;
-    }
-
-    details > summary::-webkit-details-marker { display: none; }
-
-    details > summary::before {
-      content: "▸";
-      display: inline-block;
-      width: 1em;
-      transition: transform 0.2s ease;
-    }
-
-    details[open] > summary::before {
-      transform: rotate(90deg);
-    }
-
-    details details {
-      margin-left: 1.5rem;
-      background: #fafafa;
-      padding: 0.5rem;
-      border-radius: 4px;
-    }
-
-    details details > summary {
-      font-size: 1rem;
-      background: #eaeaea;
-    }
-
-    .resource-list {
-      list-style: none;
-      padding-left: 2rem;
-      margin-top: 0.5rem;
-    }
-
-    .resource-list li {
-      margin-bottom: 0.3rem;
-    }
-
-    .resource-list li a {
-      text-decoration: none;
-      color: #1f1f1f;
-      display: flex;
-      align-items: center;
-    }
-
-    .resource-list li a:hover {
-      text-decoration: underline;
-    }
-
-    .resource-list li a::before {
-      content: "📄";
-      margin-right: 0.5rem;
-    }
-
-    .container {
-      max-width: 900px;
-      margin: 3rem auto;
-      padding: 0 1rem;
-    }
-
-    .container > h1 {
-      text-align: center;
-      font-size: 2rem;
-      margin-bottom: 2rem;
-    }
-  </style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cours</title>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
   <header>
+    <a href="index.html" class="logo">CorpusDigitalis</a>
     <nav>
-      <div><a href="index.html" class="no-animation">Tristan Arbona</a></div>
-      <div>
-        <a href="index.html">Accueil</a>
-        <a href="cours.html">Cours</a>
-        <a href="publications.html">Publications</a>
-      </div>
+      <ul>
+        <li><a href="index.html">Accueil</a></li>
+        <li><a href="cours.html">Cours</a></li>
+      </ul>
     </nav>
   </header>
 
-  <div class="container">
-    <h1>Cours</h1>
+  <main>
+    <section class="hero">
+      <h1 class="titre">Cours disponibles</h1>
+      <p class="soustitre principal">Retrouvez ici les documents pédagogiques mis à jour automatiquement.</p>
+    </section>
 
-    <!-- Exemple de cours (conserve tes autres détails comme tu le souhaites) -->
-    <details>
-      <summary>Exemple de nom de cours 1</summary>
-      <details>
-        <summary>Slides</summary>
-        <ul class="resource-list">
-          <li><a href="#" target="_blank">slides.pdf</a></li>
-        </ul>
-      </details>
-      <details>
-        <summary>Exercices</summary>
-        <ul class="resource-list">
-          <li><a href="#" target="_blank">exercice.pdf</a></li>
-        </ul>
-      </details>
-      <details>
-        <summary>Documents</summary>
-        <ul class="resource-list">
-          <li><a href="#" target="_blank">document.pdf</a></li>
-        </ul>
-      </details>
-    </details>
+    <section class="cours">
+      <h2>Cours</h2>
+      <ul>
+        <li><a href="https://drive.google.com/file/d/1BDRcp3WkYmSlGqFeAqNNX-AeHwCMbd7e/view" target="_blank">Économie Internationale – CM</a></li>
+        <li><a href="https://drive.google.com/file/d/12dxI7Jg5s-0K_hEzVZRG0n5eWduPV-Vv/view" target="_blank">Économie Internationale – TD</a></li>
+      </ul>
+    </section>
+  </main>
 
-    <!-- Ajoute ici les autres cours selon ton format habituel -->
-  </div>
-
-  <!-- Footer inséré dynamiquement -->
   <footer>
     <div class="footer-links">
-      <a id="email" href="#">email@exemple.com</a>
-      <a id="linkedin" href="#" target="_blank">LinkedIn</a>
-      <a id="scholar" href="#" target="_blank">Google Scholar</a>
-      <a id="cv" href="#" target="_blank">CV</a>
+      <a id="email"></a>
+      <a id="linkedin" target="_blank">LinkedIn</a>
+      <a id="scholar" target="_blank">Google Scholar</a>
+      <a id="cv" target="_blank" rel="noopener noreferrer">CV</a>
     </div>
     <div class="small-text">CorpusDigitalis</div>
   </footer>
 
-  <script src="console.js"></script>
+  <script src="controller.js"></script>
 </body>
 </html>
