@@ -8,18 +8,9 @@
   <link rel="stylesheet" href="style.css" />
 </head>
 <body style="outline: none;">
-  <header>
-    <nav>
-      <div>
-        <a href="index.html" class="no-animation">Tristan Arbona</a>
-      </div>
-      <div>
-        <a href="index.html">Accueil</a>
-        <a href="cours.html">Cours</a>
-        <a href="publications.html">Publications</a>
-      </div>
-    </nav>
-  </header>
+
+  <!-- Ici on charge dynamiquement le header -->
+  <div id="header-placeholder"></div>
 
   <div class="container">
     <div class="main-content">
@@ -27,20 +18,33 @@
       <div class="description">
         <h1>Bienvenue</h1>
         <p>Je conçois des sites web professionnels sur mesure, pensés pour valoriser l’identité, les différents travaux et l’expertise de professionnels issus de divers secteurs.<br>
-<br>
-Chaque site est développé de manière personnalisée, avec une attention portée à la lisibilité, à la simplicité d’usage et à l’autonomie du client.</p>
+        <br>
+        Chaque site est développé de manière personnalisée, avec une attention portée à la lisibilité, à la simplicité d’usage et à l’autonomie du client.</p>
       </div>
     </div>
   </div>
 
-  <footer>
-    <div class="footer-links">
-      <a href="mailto:tristan.arbona@gmail.com">tristan.arbona@gmail.com</a>
-      <a href="https://www.linkedin.com/in/tristan-arbona-a4829a269/" target="_blank">LinkedIn</a>
-      <a href="https://scholar.google.com" target="_blank">Google Scholar</a>
-      <a href="CV-Tristan-Arbona.pdf" target="_blank">CV</a>
-    </div>
-    <div class="small-text">CorpusDigitalis</div>
-  </footer>
+  <!-- Ici on charge dynamiquement le footer -->
+  <div id="footer-placeholder"></div>
+
+  <script>
+    function loadHTML(id, url) {
+      fetch(url)
+        .then(response => {
+          if (!response.ok) throw new Error('Erreur de chargement');
+          return response.text();
+        })
+        .then(data => {
+          document.getElementById(id).innerHTML = data;
+        })
+        .catch(error => {
+          console.error('Erreur:', error);
+        });
+    }
+
+    loadHTML('header-placeholder', 'header.html');
+    loadHTML('footer-placeholder', 'footer.html');
+  </script>
+
 </body>
 </html>
