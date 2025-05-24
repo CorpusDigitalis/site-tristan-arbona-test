@@ -73,18 +73,8 @@
   </style>
 </head>
 <body style="outline: none;">
-  <header>
-    <nav>
-      <div>
-        <a href="index.html" class="no-animation">Tristan Arbona</a>
-      </div>
-      <div>
-        <a href="index.html">Accueil</a>
-        <a href="cours.html">Cours</a>
-        <a href="publications.html">Publications</a>
-      </div>
-    </nav>
-  </header>
+
+  <div id="header-placeholder"></div>
 
   <div class="container">
     <h1>Publications</h1>
@@ -108,14 +98,26 @@
     </div>
   </div>
 
-  <footer>
-    <div class="footer-links">
-      <a href="mailto:tristan.arbona@gmail.com">tristan.arbona@gmail.com</a>
-      <a href="https://www.linkedin.com/in/tristan-arbona-a4829a269/" target="_blank">LinkedIn</a>
-      <a href="https://scholar.google.com" target="_blank">Google Scholar</a>
-      <a href="https://drive.google.com/file/d/1iy_p1gbycwSr_AFHjfRfNRiofvvcXwD7/view" target="_blank" rel="noopener noreferrer">CV</a>
-    </div>
-    <div class="small-text">CorpusDigitalis</div>
-  </footer>
+  <div id="footer-placeholder"></div>
+
+  <script>
+    function loadHTML(id, url) {
+      fetch(url)
+        .then(response => {
+          if (!response.ok) throw new Error('Erreur de chargement');
+          return response.text();
+        })
+        .then(data => {
+          document.getElementById(id).innerHTML = data;
+        })
+        .catch(error => {
+          console.error('Erreur:', error);
+        });
+    }
+
+    loadHTML('header-placeholder', 'header.html');
+    loadHTML('footer-placeholder', 'footer.html');
+  </script>
+
 </body>
 </html>
