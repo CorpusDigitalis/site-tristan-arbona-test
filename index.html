@@ -9,71 +9,54 @@
 </head>
 <body>
 
-  <!-- Ici on charge dynamiquement le header -->
+  <!-- Header dynamique -->
   <div id="header-placeholder"></div>
 
+  <!-- Contenu principal -->
   <div class="container">
     <div class="main-content">
       <img src="portrait.jpg" alt="Portrait de Tristan Arbona" />
       <div class="description">
         <h1>Bienvenue</h1>
-        <p>Je conçois des sites web professionnels sur mesure, pensés pour valoriser l’identité, les différents travaux et l’expertise de professionnels issus de divers secteurs.<br>
-        <br>
-        Chaque site est développé de manière personnalisée, avec une attention portée à la lisibilité, à la simplicité d’usage et à l’autonomie du client.</p>
+        <p>
+          Je conçois des sites web professionnels sur mesure, pensés pour valoriser l’identité,
+          les différents travaux et l’expertise de professionnels issus de divers secteurs.<br><br>
+          Chaque site est développé de manière personnalisée, avec une attention portée à la lisibilité,
+          à la simplicité d’usage et à l’autonomie du client.
+        </p>
       </div>
     </div>
   </div>
 
-  <!-- Ici on charge dynamiquement le footer -->
+  <!-- Footer dynamique -->
   <div id="footer-placeholder"></div>
 
+  <!-- Script pour charger header, footer puis controller -->
   <script>
-    const siteData = {
-      footer: {
-        email: "tristan.arbonaa@gmail.com",
-        linkedin: "https://www.linkedin.com/in/tristan-arbona-a4829a269/",
-        // scholar: "https://scholar.google.com", // <-- retirer la ligne pour masquer ce lien
-        cv: "https://drive.google.com/file/d/1iy_p1gbycwSr_AFHjfRfNRiofvvcXwD7/view"
-      }
-    };
-
     function loadHTML(id, url) {
       return fetch(url)
         .then(response => {
-          if (!response.ok) throw new Error('Erreur de chargement');
+          if (!response.ok) throw new Error(`Erreur de chargement de ${url}`);
           return response.text();
         })
-        .then(data => {
-          document.getElementById(id).innerHTML = data;
+        .then(html => {
+          document.getElementById(id).innerHTML = html;
         });
     }
 
-    loadHTML('header-placeholder', 'header.html');
-
-    loadHTML('footer-placeholder', 'footer.html')
-      .then(() => {
-        const f = siteData.footer;
-
-        ['email', 'linkedin', 'scholar', 'cv'].forEach(id => {
-          const el = document.getElementById(id);
-          if (el) {
-            if (f[id]) {
-              if (id === 'email') {
-                el.href = "mailto:" + f[id];
-                el.textContent = f[id];
-              } else {
-                el.href = f[id];
-              }
-              el.style.display = ''; // s'assurer que le lien est visible
-            } else {
-              el.style.display = 'none'; // masque le lien absent dans le contrôleur
-            }
-          }
-        });
-      })
-      .catch(error => {
-        console.error('Erreur:', error);
-      });
+    // Charger le header et le footer puis lancer controller.js
+    Promise.all([
+      loadHTML("header-placeholder", "header.html"),
+      loadHTML("footer-placeholder", "footer.html")
+    ])
+    .then(() => {
+      const script = document.createElement("script");
+      script.src = "controller.js";
+      document.body.appendChild(script);
+    })
+    .catch(error => {
+      console.error("Erreur de chargement des composants :", error);
+    });
   </script>
 
 </body>
