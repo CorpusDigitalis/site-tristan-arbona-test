@@ -31,7 +31,7 @@
   <!-- Footer dynamique -->
   <div id="footer-placeholder"></div>
 
-  <!-- Script pour charger header, footer puis controller -->
+  <!-- Script pour charger header et footer puis le contrôleur -->
   <script>
     function loadHTML(id, url) {
       return fetch(url)
@@ -49,6 +49,7 @@
       loadHTML("footer-placeholder", "footer.html")
     ])
     .then(() => {
+      // Charger le contrôleur une fois que le header est injecté
       const script = document.createElement("script");
       script.src = "controller.js";
       document.body.appendChild(script);
