@@ -7,56 +7,43 @@
   <link href="https://fonts.googleapis.com/css2?family=Alata&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="style.css" />
 </head>
-<body>
+<body style="outline: none;">
 
-  <!-- Header dynamique -->
+  <!-- Ici on charge dynamiquement le header -->
   <div id="header-placeholder"></div>
 
-  <!-- Contenu principal -->
   <div class="container">
     <div class="main-content">
       <img src="portrait.jpg" alt="Portrait de Tristan Arbona" />
       <div class="description">
         <h1>Bienvenue</h1>
-        <p>
-          Je conçois des sites web professionnels sur mesure, pensés pour valoriser l’identité,
-          les différents travaux et l’expertise de professionnels issus de divers secteurs.<br><br>
-          Chaque site est développé de manière personnalisée, avec une attention portée à la lisibilité,
-          à la simplicité d’usage et à l’autonomie du client.
-        </p>
+        <p>Je conçois des sites web professionnels sur mesure, pensés pour valoriser l’identité, les différents travaux et l’expertise de professionnels issus de divers secteurs.<br>
+        <br>
+        Chaque site est développé de manière personnalisée, avec une attention portée à la lisibilité, à la simplicité d’usage et à l’autonomie du client.</p>
       </div>
     </div>
   </div>
 
-  <!-- Footer dynamique -->
+  <!-- Ici on charge dynamiquement le footer -->
   <div id="footer-placeholder"></div>
 
-  <!-- Script pour charger header et footer puis le contrôleur -->
   <script>
     function loadHTML(id, url) {
-      return fetch(url)
+      fetch(url)
         .then(response => {
-          if (!response.ok) throw new Error(`Erreur de chargement de ${url}`);
+          if (!response.ok) throw new Error('Erreur de chargement');
           return response.text();
         })
-        .then(html => {
-          document.getElementById(id).innerHTML = html;
+        .then(data => {
+          document.getElementById(id).innerHTML = data;
+        })
+        .catch(error => {
+          console.error('Erreur:', error);
         });
     }
 
-    Promise.all([
-      loadHTML("header-placeholder", "header.html"),
-      loadHTML("footer-placeholder", "footer.html")
-    ])
-    .then(() => {
-      // Charger le contrôleur une fois que le header est injecté
-      const script = document.createElement("script");
-      script.src = "controller.js";
-      document.body.appendChild(script);
-    })
-    .catch(error => {
-      console.error("Erreur de chargement des composants :", error);
-    });
+    loadHTML('header-placeholder', 'header.html');
+    loadHTML('footer-placeholder', 'footer.html');
   </script>
 
 </body>
