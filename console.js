@@ -19,7 +19,9 @@ window.addEventListener("DOMContentLoaded", () => {
       el.href = value;
     },
     scholar: (el, value) => {
-      el.href = value;
+  console.log("Mise à jour scholar avec :", value);
+  el.href = value;
+  el.textContent = "Google Scholar"; // Mets un texte visible
     },
     cv: (el, value) => {
       el.href = value;
