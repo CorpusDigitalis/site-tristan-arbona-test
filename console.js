@@ -1,8 +1,8 @@
 const siteData = {
   footer: {
-    email: "tristan.arbona@gmail.com",
+    email: "tristan.arbonaa@gmail.com",
     linkedin: "https://www.linkedin.com/in/tristan-arbona-a4829a269/",
-    scholar: "https://scholar.google.com/",
+    scholar: "https://scholar.google.com",
     cv: "https://drive.google.com/file/d/1iy_p1gbycwSr_AFHjfRfNRiofvvcXwD7/view"
   }
 };
@@ -10,32 +10,18 @@ const siteData = {
 window.addEventListener("DOMContentLoaded", () => {
   const f = siteData.footer;
 
-  const elements = {
-    email: (el, value) => {
-      el.href = "mailto:" + value;
-      el.textContent = value;
-    },
-    linkedin: (el, value) => {
-      el.href = value;
-    },
-    scholar: (el, value) => {
-      console.log("Mise à jour scholar avec :", value);
-      console.log("Élément HTML trouvé :", el);
-      el.href = value;
-      el.textContent = "Google Scholar"; // Mets un texte visible
-    },
-    cv: (el, value) => {
-      el.href = value;
-    }
-  };
+  const emailEl = document.getElementById("email");
+  if(emailEl) {
+    emailEl.href = "mailto:" + f.email;
+    emailEl.textContent = f.email;
+  }
 
-  Object.entries(elements).forEach(([key, updater]) => {
-    const el = document.getElementById(key);
+  const linkedinEl = document.getElementById("linkedin");
+  if(linkedinEl) linkedinEl.href = f.linkedin;
 
-    if (f[key]) {
-      if (el) updater(el, f[key]);
-    } else {
-      if (el) el.remove(); // Supprime l’élément si pas dans siteData.footer
-    }
-  });
+  const scholarEl = document.getElementById("scholar");
+  if(scholarEl) scholarEl.href = f.scholar;
+
+  const cvEl = document.getElementById("cv");
+  if(cvEl) cvEl.href = f.cv;
 });
