@@ -52,6 +52,12 @@
     .then(() => {
       const script = document.createElement("script");
       script.src = "controller.js";
+      script.onload = () => {
+        // Appel de la fonction principale après chargement du script
+        if (typeof remplirHeaderEtFooter === "function") {
+          remplirHeaderEtFooter();
+        }
+      };
       document.body.appendChild(script);
     })
     .catch(error => {
