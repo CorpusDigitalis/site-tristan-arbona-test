@@ -40,7 +40,7 @@ function remplirHeaderEtFooter() {
   const headerContainer = document.getElementById("header-links");
   if (headerContainer && headerLinks.length > 0) {
     headerContainer.innerHTML = "";
-    headerLinks.forEach((link) => {
+    headerLinks.forEach(link => {
       const a = document.createElement("a");
       a.href = link.href;
       a.textContent = link.text;
