@@ -1,4 +1,3 @@
-// controller.js
 function remplirHeaderEtFooter() {
   const siteData = {
     header: {
@@ -75,4 +74,7 @@ function remplirHeaderEtFooter() {
     cvEl.textContent = f.cv.text;
   }
 }
+
+// ✅ Appelle la fonction après le chargement
+remplirHeaderEtFooter();
 
