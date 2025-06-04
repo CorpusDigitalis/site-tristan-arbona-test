@@ -24,10 +24,10 @@ function appliquerModifications() {
     "texte-publications": { text: "Publications" },
 
     // Liens + texte modifiables
-    "email": { text: "tristan@email.com", href: "mailto:tristan@email.com" },
-    "linkedin": { text: "Mon LinkedIn", href: "https://www.youtube.com/watch?v=9bZkp7q19f0" },
+    "email": { text: "tristan.arbona@gmail.com", href: "tristan.arbona@gmail.com" },
+    "linkedin": { text: "LinkedIn", href: "https://www.linkedin.com/in/tristan-arbona-a4829a269/" },
     "scholar": { text: "Google Scholar", href: "https://scholar.google.com/citations?user=XXXX" },
-    "cv": { text: "Voir mon CV", href: "cv.pdf" },
+    "cv": { text: "CV", href: "cv.pdf" },
 
     // Footer
     "signature": { text: "© Tristan Arbona 2025" },
