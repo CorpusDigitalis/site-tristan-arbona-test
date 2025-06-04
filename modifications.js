@@ -33,9 +33,10 @@ window.onload = () => {
       if (config.text !== undefined) {
         element.innerText = config.text;
       }
-      if (config.href !== undefined && element.tagName === "A") {
-        element.href = config.href;
+      if (config.href !== undefined && element.tagName.toLowerCase() === "a") {
+        element.setAttribute("href", config.href);
       }
     }
   }
 };
+
