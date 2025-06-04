@@ -1,7 +1,21 @@
-window.onload = () => {
-  // Objet contenant les modifications à appliquer
+function loadHTML(id, url, callback) {
+  fetch(url)
+    .then(response => {
+      if (!response.ok) throw new Error('Erreur de chargement');
+      return response.text();
+    })
+    .then(data => {
+      document.getElementById(id).innerHTML = data;
+      if (callback) callback();
+    })
+    .catch(error => {
+      console.error('Erreur:', error);
+    });
+}
+
+function appliquerModifications() {
   const modifications = {
-    // Exemples simples
+    // Exemple simple
     "titre-accueil": { text: "Bienvenue sur le site de Tristan" },
     "texte-description": { text: "Voici une nouvelle description." },
     "titre-header": { text: "Tristan Arbona" },
@@ -25,18 +39,20 @@ window.onload = () => {
     "cours-1-document-1": { text: "Document 1", href: "documents/eco1-doc1.pdf" },
   };
 
-  // Application des modifications
   for (const id in modifications) {
     const element = document.getElementById(id);
     if (element) {
       const config = modifications[id];
-      if (config.text !== undefined) {
-        element.innerText = config.text;
-      }
-      if (config.href !== undefined && element.tagName.toLowerCase() === "a") {
-        element.setAttribute("href", config.href);
-      }
+      if (config.text !== undefined) element.innerText = config.text;
+      if (config.href !== undefined && element.tagName === "A") element.href = config.href;
     }
   }
-};
+}
+
+// Chargement header + footer avec callback
+loadHTML('header-placeholder', 'header.html', appliquerModifications);
+loadHTML('footer-placeholder', 'footer.html', appliquerModifications);
+
+// Et pour les éléments qui sont dans la page principale (directement dans le HTML), on applique aussi au chargement complet du DOM :
+document.addEventListener('DOMContentLoaded', appliquerModifications);
 
