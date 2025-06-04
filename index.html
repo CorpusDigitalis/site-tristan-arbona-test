@@ -16,10 +16,15 @@
     <div class="main-content">
       <img src="portrait.jpg" alt="Portrait de Tristan Arbona" />
       <div class="description">
-        <h1>Bienvenue</h1>
-        <p>Je conçois des sites web professionnels sur mesure, pensés pour valoriser l’identité, les différents travaux et l’expertise de professionnels issus de divers secteurs.<br>
-        <br>
-        Chaque site est développé de manière personnalisée, avec une attention portée à la lisibilité, à la simplicité d’usage et à l’autonomie du client.</p>
+        <!-- ID ajouté ici -->
+        <h1 id="titre-accueil">Bienvenue</h1>
+
+        <!-- ID ajouté ici -->
+        <p id="texte-description">
+          Je conçois des sites web professionnels sur mesure, pensés pour valoriser l’identité, les différents travaux et l’expertise de professionnels issus de divers secteurs.<br>
+          <br>
+          Chaque site est développé de manière personnalisée, avec une attention portée à la lisibilité, à la simplicité d’usage et à l’autonomie du client.
+        </p>
       </div>
     </div>
   </div>
@@ -45,6 +50,9 @@
     loadHTML('header-placeholder', 'header.html');
     loadHTML('footer-placeholder', 'footer.html');
   </script>
-<script src="modifications.js"></script>
+
+  <!-- Script de modification dynamique -->
+  <script src="modifications.js"></script>
 </body>
 </html>
+
