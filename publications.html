@@ -84,40 +84,23 @@
 
     <div id="publication-1" class="publication-item">
       <span id="publication-1-texte">Exemple d'article de recherche sur des thématiques économiques.</span>
-      <a id="publication-1-lien" href="https://drive.google.com/file/d/1-IZoG-GmCkJKZ_duSRNgTxFpPJ11pmIs/view" target="_blank" rel="noopener noreferrer">Consulter le document</a>
+      <a id="publication-1-lien" href="#" target="_blank" rel="noopener noreferrer">Consulter le document</a>
     </div>
 
     <div id="publication-2" class="publication-item">
       <span id="publication-2-texte">Exemple de communication présentée lors d’un colloque universitaire.</span>
-      <a id="publication-2-lien" href="https://drive.google.com/file/d/1-IZoG-GmCkJKZ_duSRNgTxFpPJ11pmIs/view" target="_blank" rel="noopener noreferrer">Voir la présentation</a>
+      <a id="publication-2-lien" href="#" target="_blank" rel="noopener noreferrer">Voir la présentation</a>
     </div>
 
     <div id="publication-3" class="publication-item">
       <span id="publication-3-texte">Exemple d'étude approfondie publiée dans une revue spécialisée.</span>
-      <a id="publication-3-lien" href="https://drive.google.com/file/d/1-IZoG-GmCkJKZ_duSRNgTxFpPJ11pmIs/view" target="_blank" rel="noopener noreferrer">Accéder au PDF</a>
+      <a id="publication-3-lien" href="#" target="_blank" rel="noopener noreferrer">Accéder au PDF</a>
     </div>
   </div>
 
   <div id="footer-placeholder"></div>
 
-  <script>
-    function loadHTML(id, url) {
-      fetch(url)
-        .then(response => {
-          if (!response.ok) throw new Error('Erreur de chargement');
-          return response.text();
-        })
-        .then(data => {
-          document.getElementById(id).innerHTML = data;
-        })
-        .catch(error => {
-          console.error('Erreur:', error);
-        });
-    }
-
-    loadHTML('header-placeholder', 'header.html');
-    loadHTML('footer-placeholder', 'footer.html');
-  </script>
+  <!-- Import du script unique (il gère à la fois le chargement HTML + les modifications) -->
   <script src="modifications.js"></script>
 </body>
 </html>
