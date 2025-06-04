@@ -15,11 +15,11 @@ function loadHTML(id, url, callback) {
 
 function appliquerModifications() {
   const modifications = {
-    // Exemple simple
+    // Exemples simples
     "titre-accueil": { text: "Bienvenue" },
     "texte-description": { text: "Je conçois des sites web professionnels sur mesure, pensés pour valoriser l’identité, les différents travaux et l’expertise de professionnels issus de divers secteurs.<br><br>Chaque site est développé de manière personnalisée, avec une attention portée à la lisibilité, à la simplicité d’usage et à l’autonomie du client." },
     "titre-header": { text: "Tristan Arbona" },
-    "texte-accueil": { text: "Accueille" },
+    "texte-accueil": { text: "Accueil" },
     "texte-cours": { text: "Cours" },
     "texte-publications": { text: "Publications" },
 
@@ -43,7 +43,7 @@ function appliquerModifications() {
     const element = document.getElementById(id);
     if (element) {
       const config = modifications[id];
-      if (config.text !== undefined) element.innerText = config.text;
+      if (config.text !== undefined) element.innerHTML = config.text;
       if (config.href !== undefined && element.tagName === "A") element.href = config.href;
     }
   }
@@ -53,6 +53,5 @@ function appliquerModifications() {
 loadHTML('header-placeholder', 'header.html', appliquerModifications);
 loadHTML('footer-placeholder', 'footer.html', appliquerModifications);
 
-// Et pour les éléments qui sont dans la page principale (directement dans le HTML), on applique aussi au chargement complet du DOM :
+// Pour les éléments déjà présents dans index.html
 document.addEventListener('DOMContentLoaded', appliquerModifications);
-
