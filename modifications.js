@@ -16,10 +16,10 @@ function loadHTML(id, url, callback) {
 function appliquerModifications() {
   const modifications = {
     // Exemple simple
-    "titre-accueil": { text: "Bienvenue sur le site de Tristan" },
-    "texte-description": { text: "Voici une nouvelle description." },
+    "titre-accueil": { text: "Bienvenue" },
+    "texte-description": { text: "Je conçois des sites web professionnels sur mesure, pensés pour valoriser l’identité, les différents travaux et l’expertise de professionnels issus de divers secteurs.<br><br>Chaque site est développé de manière personnalisée, avec une attention portée à la lisibilité, à la simplicité d’usage et à l’autonomie du client." },
     "titre-header": { text: "Tristan Arbona" },
-    "texte-accueil": { text: "Accueil" },
+    "texte-accueil": { text: "Accueille" },
     "texte-cours": { text: "Cours" },
     "texte-publications": { text: "Publications" },
 
