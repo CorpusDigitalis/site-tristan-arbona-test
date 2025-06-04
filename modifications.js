@@ -27,10 +27,10 @@ function appliquerModifications() {
     "email": { text: "tristan.arbona@gmail.com", href: "tristan.arbona@gmail.com" },
     "linkedin": { text: "LinkedIn", href: "https://www.linkedin.com/in/tristan-arbona-a4829a269/" },
     "scholar": { text: "Google Scholar", href: "https://scholar.google.com/citations?user=XXXX" },
-    "cv": { text: "CV", href: "cv.pdf" },
+    "cv": { text: "CV", href: "https://drive.google.com/file/d/1iy_p1gbycwSr_AFHjfRfNRiofvvcXwD7/view" },
 
     // Footer
-    "signature": { text: "© Tristan Arbona 2025" },
+    "signature": { text: "© Corpus Digitalis" },
 
     // Exemple cours
     "cours-1-title": { text: "Économie ouverte - Partie 1" },
