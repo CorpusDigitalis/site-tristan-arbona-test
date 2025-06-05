@@ -77,7 +77,7 @@ function appliquerModifications() {
 "cours-1-slides-list": {},
 
 // Slides 1 à 20 avec texte et lien modifiables
-"cours-1-slide-1": { text: "Diapositive 1", href: "slides/eco1-slide1.pdf" },
+"cours-1-slide-1": { text: "En gros ca marche", href: "slides/eco1-slide1.pdf" },
 "cours-1-slide-2": { text: "Diapositive 2", href: "slides/eco1-slide2.pdf" },
 "cours-1-slide-3": { text: "Diapositive 3", href: "slides/eco1-slide3.pdf" },
 "cours-1-slide-4": { text: "Diapositive 4", href: "slides/eco1-slide4.pdf" },
