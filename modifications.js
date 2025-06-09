@@ -96,7 +96,7 @@ function appliquerModifications() {
 "cours-1-slide-17": { text: "Diapositive 17", href: "slides/eco1-slide17.pdf" },
 "cours-1-slide-18": { text: "Diapositive 18", href: "slides/eco1-slide18.pdf" },
 "cours-1-slide-19": { text: "Diapositive 19", href: "slides/eco1-slide19.pdf" },
-"cours-1-slide-20": { text: "Diapositive 20", href: "slides/eco1-slide20.pdf" },
+"cours-1-slide-20": { text: "ca saute", href: "slides/eco1-slide20.pdf" },
     
 // Exercises (conteneurs et titres)
 "cours-1-exercises": {},
