@@ -77,7 +77,7 @@ function appliquerModifications() {
 "cours-1-slides-list": {},
 
 // Slides 1 à 20 avec texte et lien modifiables
-"cours-1-slide-1": { text: "En gros ca marche", href: "slides/eco1-slide1.pdf" },
+"cours-1-slide-1": { text: "Diapositive 1", href: "slides/eco1-slide1.pdf" },
 "cours-1-slide-2": { text: "Diapositive 2", href: "slides/eco1-slide2.pdf" },
 "cours-1-slide-3": { text: "Diapositive 3", href: "slides/eco1-slide3.pdf" },
 "cours-1-slide-4": { text: "Diapositive 4", href: "slides/eco1-slide4.pdf" },
@@ -96,7 +96,7 @@ function appliquerModifications() {
 "cours-1-slide-17": { text: "Diapositive 17", href: "slides/eco1-slide17.pdf" },
 "cours-1-slide-18": { text: "Diapositive 18", href: "slides/eco1-slide18.pdf" },
 "cours-1-slide-19": { text: "Diapositive 19", href: "slides/eco1-slide19.pdf" },
-"cours-1-slide-20": { text: "ca saute", href: "slides/eco1-slide20.pdf" },
+"cours-1-slide-20": { text: "", href: "" },
     
 // Exercises (conteneurs et titres)
 "cours-1-exercises": {},
