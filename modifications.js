@@ -19,9 +19,13 @@ function loadHTML(id, url, callback) {
 }
 
 function appliquerModifications() {
+  console.log("modifications.js chargé");
+
   const modifications = {
     // Accueil / Général
-    "titre-accueil": { text: "Bienvenue" },
+    "titre-accueil": { 
+      text: "Bienvenue" 
+    },
     "texte-description": {
       text:
         "Je conçois des sites web professionnels sur mesure, pensés pour valoriser l’identité, les différents travaux et l’expertise de professionnels issus de divers secteurs.<br><br>Chaque site est développé de manière personnalisée, avec une attention portée à la lisibilité, à la simplicité d’usage et à l’autonomie du client."
@@ -158,20 +162,17 @@ function appliquerModifications() {
     "cours-1-document-20": { text: "", href: "" }
   };
 
+// Boucle d'application des modifications
 for (const id in modifications) {
-const element = document.getElementById(id);
-if (!element) continue;
+  const element = document.getElementById(id);
+  if (!element) continue;
 
-vbnet
-Copier
-Modifier
-const mod = modifications[id];
-if (mod.text !== undefined) element.innerHTML = mod.text;
-if (mod.href !== undefined) element.setAttribute("href", mod.href);
-}
+  const mod = modifications[id];
+  if (mod.text !== undefined) element.innerHTML = mod.text;
+  if (mod.href !== undefined) element.setAttribute("href", mod.href);
 }
 
-// Chargement du header et footer, puis exécution des modifications
-loadHTML("header", "header.html", () => {
-loadHTML("footer", "footer.html", appliquerModifications);
+// Important : utiliser les bons IDs correspondant au HTML !
+loadHTML("header-placeholder", "header.html", () => {
+  loadHTML("footer-placeholder", "footer.html", appliquerModifications);
 });
