@@ -159,20 +159,26 @@ function appliquerModifications() {
     "cours-1-document-17": { text: "Document 17", href: "documents/eco1-doc17.pdf" },
     "cours-1-document-18": { text: "Document 18", href: "documents/eco1-doc18.pdf" },
     "cours-1-document-19": { text: "Document 19", href: "documents/eco1-doc19.pdf" },
-    "cours-1-document-20": { text: "", href: "" }
+    "cours-1-document-20": { text: "Document 20", href: "documents/eco1-doc20.pdf" },
   };
 
-// Boucle d'application des modifications
-for (const id in modifications) {
-  const element = document.getElementById(id);
-  if (!element) continue;
+  for (const id in modifications) {
+    const elem = document.getElementById(id);
+    if (!elem) continue;
+    const mod = modifications[id];
+    if (mod.text !== undefined) {
+      if (elem.tagName === "INPUT" || elem.tagName === "TEXTAREA") {
+        elem.value = mod.text;
+      } else {
+        elem.innerHTML = mod.text;
+      }
+    }
+    if (mod.href !== undefined) {
+      elem.href = mod.href;
+    }
+  }
 
-  const mod = modifications[id];
-  if (mod.text !== undefined) element.innerHTML = mod.text;
-  if (mod.href !== undefined) element.setAttribute("href", mod.href);
+  loadHTML("header-placeholder", "header.html", () => {
+    loadHTML("footer-placeholder", "footer.html", appliquerModifications);
+  });
 }
-
-// Important : utiliser les bons IDs correspondant au HTML !
-loadHTML("header-placeholder", "header.html", () => {
-  loadHTML("footer-placeholder", "footer.html", appliquerModifications);
-});
