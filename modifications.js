@@ -150,16 +150,34 @@ function appliquerModifications() {
 "cours-1-document-17": { text: "Document 17", href: "documents/eco1-doc17.pdf" },
 "cours-1-document-18": { text: "Document 18", href: "documents/eco1-doc18.pdf" },
 "cours-1-document-19": { text: "Document 19", href: "documents/eco1-doc19.pdf" },
-"cours-1-document-20": { text: "Document 20", href: "documents/eco1-doc20.pdf" },
+"cours-1-document-20": { text: "Document 20", href: "" },
 
-  };
+};
 
-  for (const id in modifications) {
-    const element = document.getElementById(id);
-    if (element) {
-      const config = modifications[id];
-      if (config.text !== undefined) element.innerHTML = config.text;
-      if (config.href !== undefined && element.tagName === "A") element.href = config.href;
+for (const id in modifications) {
+  const element = document.getElementById(id);
+  if (element) {
+    const config = modifications[id];
+
+    if (config.text !== undefined) {
+      element.innerHTML = config.text;
+    }
+
+    // Gestion intelligente des liens : ajout, mise à jour ou suppression
+    if (element.tagName === "A") {
+      if (config.href === undefined) {
+        // Ne rien faire
+      } else if (config.href === null || config.href === "") {
+        element.removeAttribute("href");              // Supprimer le lien
+        element.style.pointerEvents = "none";         // Désactiver le clic
+        element.style.color = "gray";                 // Optionnel : griser
+        element.style.textDecoration = "none";        // Optionnel : enlever le soulignement
+      } else {
+        element.href = config.href;                   // Mettre à jour le lien
+        element.style.pointerEvents = "";             // Réactiver le lien
+        element.style.color = "";                     // Réinitialiser le style
+        element.style.textDecoration = "";
+      }
     }
   }
 }
