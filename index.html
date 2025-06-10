@@ -16,13 +16,9 @@
     <div class="main-content">
       <img src="portrait.jpg" alt="Portrait de Tristan Arbona" />
       <div class="description">
-        <!-- ID ajouté ici -->
         <h1 id="titre-accueil">Bienvenue</h1>
-
-        <!-- ID ajouté ici -->
         <p id="texte-description">
-          Je conçois des sites web professionnels sur mesure, pensés pour valoriser l’identité, les différents travaux et l’expertise de professionnels issus de divers secteurs.<br>
-          <br>
+          Je conçois des sites web professionnels sur mesure, pensés pour valoriser l’identité, les différents travaux et l’expertise de professionnels issus de divers secteurs.<br><br>
           Chaque site est développé de manière personnalisée, avec une attention portée à la lisibilité, à la simplicité d’usage et à l’autonomie du client.
         </p>
       </div>
@@ -33,7 +29,7 @@
   <div id="footer-placeholder"></div>
 
   <script>
-    function loadHTML(id, url) {
+    function loadHTML(id, url, callback) {
       fetch(url)
         .then(response => {
           if (!response.ok) throw new Error('Erreur de chargement');
@@ -41,20 +37,25 @@
         })
         .then(data => {
           document.getElementById(id).innerHTML = data;
+          if (callback) callback();
         })
         .catch(error => {
           console.error('Erreur:', error);
         });
-     }
+    }
 
-  loadHTML('header-placeholder', 'header.html');
-  loadHTML('footer-placeholder', 'footer.html');
-</script>
-
-<script src="modifications.js"></script>
-<script>
-  appliquerModifications();
-</script>
+    // On charge d'abord le header, puis le footer, puis modifications.js
+    loadHTML('header-placeholder', 'header.html', function () {
+      loadHTML('footer-placeholder', 'footer.html', function () {
+        const script = document.createElement('script');
+        script.src = 'modifications.js';
+        script.onload = function () {
+          appliquerModifications();
+        };
+        document.body.appendChild(script);
+      });
+    });
+  </script>
 
 </body>
 </html>
