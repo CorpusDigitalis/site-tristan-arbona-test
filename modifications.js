@@ -92,10 +92,10 @@ function appliquerModifications() {
 "cours-1-slide-13": { text: "Diapositive 13", href: "slides/eco1-slide13.pdf" },
 "cours-1-slide-14": { text: "Diapositive 14", href: "slides/eco1-slide14.pdf" },
 "cours-1-slide-15": { text: "Diapositive 15", href: "slides/eco1-slide15.pdf" },
-"cours-1-slide-16": { text: "Diapositive 16", href: "slides/eco1-slide16.pdf" },
-"cours-1-slide-17": { text: "Diapositive 17", href: "slides/eco1-slide17.pdf" },
-"cours-1-slide-18": { text: "Diapositive 18", href: "slides/eco1-slide18.pdf" },
-"cours-1-slide-19": { text: "Diapositive 19", href: "slides/eco1-slide19.pdf" },
+"cours-1-slide-16": { text: "", href: "slides/eco1-slide16.pdf" },
+"cours-1-slide-17": { text: "", href: "" },
+"cours-1-slide-18": { text: "", href: "" },
+"cours-1-slide-19": { text: "", href: "" },
 "cours-1-slide-20": { text: "", href: "" },
     
 // Exercises (conteneurs et titres)
