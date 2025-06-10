@@ -1,4 +1,4 @@
-on loadHTML(id, url, callback) {
+function loadHTML(id, url, callback) {
   fetch(url)
     .then(response => {
       if (!response.ok) throw new Error('Erreur de chargement');
@@ -160,27 +160,6 @@ function appliquerModifications() {
       const config = modifications[id];
       if (config.text !== undefined) element.innerHTML = config.text;
       if (config.href !== undefined && element.tagName === "A") element.href = config.href;
-    }
-  }
- // Supprimer complètement les éléments <li> parents des liens qui ont un texte vide ou href vide
-  for (let i = 1; i <= 20; i++) {
-    const id = `cours-1-document-${i}`;
-    const config = modifications[id];
-
-    const element = document.getElementById(id);
-    if (element) {
-      const isEmpty =
-        !config ||
-        (!config.text && (!config.href || config.href === "")) ||
-        (config.text === "" || config.href === "");
-
-      if (isEmpty) {
-        // Supprimer le <li> parent
-        const liParent = element.closest("li");
-        if (liParent) {
-          liParent.remove();
-        }
-      }
     }
   }
 }
