@@ -163,20 +163,20 @@ function appliquerModifications() {
     }
   }
    // Gérer les documents vides : masquer ceux sans texte ou lien
-  for (let i = 1; i <= 20; i++) {
-    const id = `cours-1-document-${i}`;
-    const config = modifications[id];
+ for (let i = 1; i <= 20; i++) {
+  const id = `cours-1-document-${i}`;
+  const config = modifications[id];
 
-    const element = document.getElementById(id);
-    if (element) {
-      const isEmpty =
-        !config || (!config.text && (!config.href || config.href === ""));
+  const element = document.getElementById(id);
+  if (element) {
+    const isEmpty = !config || (!config.text && (!config.href || config.href === ""));
+    
+    const container = element.closest("li"); // attrape le <li> parent
 
-      if (isEmpty) {
-        element.classList.add("masque");
-      } else {
-        element.classList.remove("masque");
-      }
+    if (isEmpty && container) {
+      container.classList.add("masque");
+    } else if (container) {
+      container.classList.remove("masque");
     }
   }
 }
