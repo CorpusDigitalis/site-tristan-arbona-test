@@ -45,14 +45,16 @@
         .catch(error => {
           console.error('Erreur:', error);
         });
-    }
+     }
 
-    loadHTML('header-placeholder', 'header.html');
-    loadHTML('footer-placeholder', 'footer.html');
-  </script>
+  loadHTML('header-placeholder', 'header.html');
+  loadHTML('footer-placeholder', 'footer.html');
+</script>
 
-  <!-- Script de modification dynamique -->
-  <script src="modifications.js"></script>
+<script src="modifications.js"></script>
+<script>
+  appliquerModifications();
+</script>
+
 </body>
 </html>
-
