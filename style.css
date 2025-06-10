@@ -178,3 +178,8 @@ footer {
     flex-direction: column;
   }
 }
+
+/* Masquage d'éléments */
+.masque {
+  display: none !important;
+}
