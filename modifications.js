@@ -162,21 +162,25 @@ function appliquerModifications() {
       if (config.href !== undefined && element.tagName === "A") element.href = config.href;
     }
   }
-   // Gérer les documents vides : masquer ceux sans texte ou lien
- for (let i = 1; i <= 20; i++) {
-  const id = `cours-1-document-${i}`;
-  const config = modifications[id];
+ // Supprimer complètement les éléments <li> parents des liens qui ont un texte vide ou href vide
+  for (let i = 1; i <= 20; i++) {
+    const id = `cours-1-document-${i}`;
+    const config = modifications[id];
 
-  const element = document.getElementById(id);
-  if (element) {
-    const isEmpty = !config || (!config.text && (!config.href || config.href === ""));
-    
-    const container = element.closest("li"); // attrape le <li> parent
+    const element = document.getElementById(id);
+    if (element) {
+      const isEmpty =
+        !config ||
+        (!config.text && (!config.href || config.href === "")) ||
+        (config.text === "" || config.href === "");
 
-    if (isEmpty && container) {
-      container.classList.add("masque");
-    } else if (container) {
-      container.classList.remove("masque");
+      if (isEmpty) {
+        // Supprimer le <li> parent
+        const liParent = element.closest("li");
+        if (liParent) {
+          liParent.remove();
+        }
+      }
     }
   }
 }
