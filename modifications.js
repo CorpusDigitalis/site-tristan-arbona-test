@@ -51,6 +51,8 @@ function appliquerModifications() {
       text: "Lire l'article complet",
       href: "https://nouveau-lien-article.com"
     },
+
+    
     "publication-2": {},
     "publication-2-texte": {
       text: "Présentation de recherche sur les taux d'intérêt réels."
@@ -59,12 +61,14 @@ function appliquerModifications() {
       text: "Voir la communication",
       href: "https://nouveau-lien-communication.com"
     },
+
+    
     "publication-3": {},
     "publication-3-texte": {
-      text: "Analyse approfondie publiée dans une revue spécialisée."
+      text: ""
     },
     "publication-3-lien": {
-      text: "Accéder à l'étude",
+      text: "",
       href: "https://nouveau-lien-etude.com"
     },
 
