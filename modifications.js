@@ -154,20 +154,19 @@ function appliquerModifications() {
 
   };
 
-   for (const id in modifications) {
+  for (const id in modifications) {
     const element = document.getElementById(id);
-    const config = modifications[id];
-
     if (element) {
-      if (config.text === "") {
-        const liParent = element.closest("li");
-        if (liParent) liParent.remove();
-      } else {
-        if (config.text !== undefined) element.innerHTML = config.text;
-        if (config.href !== undefined && element.tagName === "A") {
-          element.href = config.href;
-        }
-      }
+      const config = modifications[id];
+      if (config.text !== undefined) element.innerHTML = config.text;
+      if (config.href !== undefined && element.tagName === "A") element.href = config.href;
     }
   }
 }
+
+// Chargement header + footer avec callback
+loadHTML('header-placeholder', 'header.html', appliquerModifications);
+loadHTML('footer-placeholder', 'footer.html', appliquerModifications);
+
+// Pour les éléments déjà présents dans index.html
+document.addEventListener('DOMContentLoaded', appliquerModifications);
