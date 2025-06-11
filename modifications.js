@@ -147,27 +147,25 @@ function appliquerModifications() {
     "cours-1-document-20": { text: "Document 20", href: "documents/eco1-doc20.pdf" },
   };
 
- for (const [id, newText] of Object.entries(modifications)) {
-    const element = document.getElementById(id);
-    if (!element) {
-      console.warn(`Élément introuvable : ${id}`);
+   for (const [id, value] of Object.entries(modifications)) {
+    const el = document.getElementById(id);
+    if (!el) {
+      console.warn(`ID introuvable : ${id}`);
       continue;
     }
 
-    if (newText === null) {
-      const parentLi = element.closest("li") || element.parentElement;
-      if (parentLi) parentLi.remove();
+    if (value === null) {
+      const li = el.closest("li") || el;
+      li.remove();
     } else {
-      element.textContent = newText;
+      el.textContent = value;
     }
   }
 }
 
-// Chargement en chaîne : header → footer → cours → modifications
+// Charger header puis footer puis appliquer les modifs
 loadHTML('header-placeholder', 'header.html', () => {
   loadHTML('footer-placeholder', 'footer.html', () => {
-    loadHTML('cours-placeholder', 'cours.html', () => {
-      appliquerModifications(); // Appelé uniquement une fois que tout est chargé
-    });
+    appliquerModifications(); // plus besoin d’attendre un cours.html externe
   });
 });
