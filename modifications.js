@@ -146,15 +146,14 @@ function appliquerModifications() {
     "cours-1-document-20": { text: "Document 20", href: "documents/eco1-doc20.pdf" },
   };
 
-  for (const id in modifications) {
+for (const id in modifications) {
     const element = document.getElementById(id);
     if (element) {
       const config = modifications[id];
 
-     if ((config.text === undefined || config.text === "") && config.href === undefined) {
-  // suppression
-}
-        const parentLi = element.closest("li");
+      //  Modification 1 : suppression si pas de texte et pas de lien
+      if ((config.text === undefined || config.text === "") && config.href === undefined) {
+        const parentLi = element.closest("li"); //  Modification 2
         if (parentLi) {
           parentLi.remove();
         } else {
@@ -163,17 +162,21 @@ function appliquerModifications() {
         continue;
       }
 
+      //  Modification 3 : texte (innerHTML)
       if (config.text !== undefined) element.innerHTML = config.text;
-      if (config.href !== undefined && element.tagName === "A") element.href = config.href;
+
+      //  Modification 4 : lien si <a>
+      if (config.href !== undefined && element.tagName === "A") {
+        element.href = config.href;
+      }
     }
   }
 }
 
-// Chargement header + footer avec callback unique
 document.addEventListener("DOMContentLoaded", () => {
   loadHTML('header-placeholder', 'header.html', () => {
     loadHTML('footer-placeholder', 'footer.html', () => {
-      appliquerModifications(); // Appelé après que tout soit chargé
+      appliquerModifications();
     });
   });
 });
