@@ -154,45 +154,47 @@ function appliquerModifications() {
 
   };
 
-   // Fonction pour supprimer récursivement les conteneurs vides jusqu'à la racine "bloc-cours-1"
-  function supprimerConteneursVides(element, racineId) {
+ function supprimerConteneursVides(element, racineId) {
     let parent = element.parentElement;
     while (parent && parent.id !== racineId) {
-      // Vérifie si le parent est vide (aucun enfant élément et texte vide)
       if (parent.children.length === 0 && parent.textContent.trim() === "") {
-        let parentASupprimer = parent;
-        parent = parent.parentElement; // remonte avant suppression
-        parentASupprimer.remove();
+        const supprimable = parent;
+        parent = parent.parentElement;
+        supprimable.remove();
       } else {
-        break; // stop si le parent n'est pas vide
+        break;
       }
     }
   }
 
   for (const id in modifications) {
     const element = document.getElementById(id);
-    const config = modifications[id];
+    const config  = modifications[id];
 
-    if (element) {
-      // Supprimer l'élément si "text" est défini mais vide
-      if (config.text !== undefined && config.text.trim() === "") {
-        element.remove();
+    if (!element) continue;
 
-        // Appelle la suppression récursive sur les parents vides jusqu'à la racine "bloc-cours-1"
-        supprimerConteneursVides(element, "bloc-cours-1");
+    // Cas suppression : uniquement pour les IDs "cours-..." et text vide
+    if (id.startsWith("cours-") &&
+        config.text !== undefined &&
+        config.text.trim() === "") {
+      element.remove();
+      supprimerConteneursVides(element, "cours-1");
+      continue;
+    }
 
-        continue; // passe à l’élément suivant
-      }
-
-      // Appliquer le texte si fourni
-      if (config.text !== undefined) {
-        element.innerHTML = config.text;
-      }
-
-      // Appliquer le lien si c’est un <a> et href fourni
-      if (config.href !== undefined && element.tagName === "A") {
-        element.href = config.href;
-      }
+    // Sinon, on met à jour texte et href sans jamais supprimer header/footer
+    if (config.text !== undefined) {
+      element.innerHTML = config.text;
+    }
+    if (config.href !== undefined && element.tagName === "A") {
+      element.href = config.href;
     }
   }
 }
+
+// Chargement header + footer avec callback
+loadHTML('header-placeholder', 'header.html', appliquerModifications);
+loadHTML('footer-placeholder', 'footer.html', appliquerModifications);
+
+// Pour les éléments déjà présents dans index.html
+document.addEventListener('DOMContentLoaded', appliquerModifications);
