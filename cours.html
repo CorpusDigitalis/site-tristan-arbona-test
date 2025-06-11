@@ -74,6 +74,11 @@
       text-decoration: underline;
     }
 
+    .resource-list li a::before {
+      content: "📄";
+      margin-right: 0.5rem;
+    }
+
     .container {
       max-width: 900px;
       margin: 3rem auto;
@@ -364,10 +369,9 @@
         });
     }
 
-  loadHTML('header-placeholder', 'header.html');
-  loadHTML('footer-placeholder', 'footer.html');
-</script>
-
-<script src="modifications.js"></script>
+    loadHTML('header-placeholder', 'header.html');
+    loadHTML('footer-placeholder', 'footer.html');
+  </script>
+  <script src="modifications.js"></script>
 </body>
 </html>
