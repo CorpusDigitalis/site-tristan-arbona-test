@@ -167,9 +167,7 @@ function appliquerModifications() {
   }
 }
 
-// Chargement header + footer avec callback
-loadHTML('header-placeholder', 'header.html', appliquerModifications);
-loadHTML('footer-placeholder', 'footer.html', appliquerModifications);
-
-// Pour les éléments déjà présents dans index.html
-document.addEventListener('DOMContentLoaded', appliquerModifications);
+// Chargement header + footer avec callback unique
+loadHTML('header-placeholder', 'header.html', () => {
+  loadHTML('footer-placeholder', 'footer.html', appliquerModifications);
+});
