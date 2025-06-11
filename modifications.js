@@ -151,7 +151,9 @@ function appliquerModifications() {
     if (element) {
       const config = modifications[id];
 
-      if (config.text === undefined && config.href === undefined) {
+     if ((config.text === undefined || config.text === "") && config.href === undefined) {
+  // suppression
+}
         const parentLi = element.closest("li");
         if (parentLi) {
           parentLi.remove();
