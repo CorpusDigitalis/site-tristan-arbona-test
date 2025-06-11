@@ -22,7 +22,7 @@ function appliquerModifications() {
         "Je conçois des sites web professionnels sur mesure, pensés pour valoriser l’identité, les différents travaux et l’expertise de professionnels issus de divers secteurs.<br><br>Chaque site est développé de manière personnalisée, avec une attention portée à la lisibilité, à la simplicité d’usage et à l’autonomie du client."
     },
     "titre-header": { text: "Tristan Arbona" },
-    "texte-accueil": { text: "Accueil" },
+    "texte-accueil": { text: "AccueiLlE" },
     "texte-cours": { text: "Cours" },
     "texte-publications": { text: "Publications" },
 
@@ -92,7 +92,7 @@ function appliquerModifications() {
     "cours-1-slide-17": { text: "a", href: "a" },
     "cours-1-slide-18": { text: "a", href: "a" },
     "cours-1-slide-19": { text: "a", href: "a" },
-    "cours-1-slide-20": { text: "a", href: "a" },
+    "cours-1-slide-20": { text: "", href: "" },
 
     "cours-1-exercises": {},
     "cours-1-exercises-title": { text: "Exercices" },
