@@ -27,10 +27,10 @@ function appliquerModifications() {
     "texte-publications": { text: "Publications" },
 
     // Liens + texte modifiables
-    "email": { text: "tTTristan.arbona@gmail.com", href: "mailto:tristan.arbona@gmail.com" },
+    "email": { text: "", href: "mailto:tristan.arbona@gmail.com" },
     "linkedin": { text: "LinkedIn", href: "https://www.linkedin.com/in/tristan-arbona-a4829a269/" },
     "scholar": { text: "Google Scholar", href: "https://scholar.google.com/citations?user=XXXX" },
-    "cv": { text: "CV", href: "https://drive.google.com/file/d/1iy_p1gbycwSr_AFHjfRfNRiofvvcXwD7/view" },
+    "cv": { text: "", href: "https://drive.google.com/file/d/1iy_p1gbycwSr_AFHjfRfNRiofvvcXwD7/view" },
 
     // Footer
     "signature": { text: "© Corpus Digitalis" },
