@@ -154,19 +154,45 @@ function appliquerModifications() {
 
   };
 
+   // Fonction pour supprimer récursivement les conteneurs vides jusqu'à la racine "bloc-cours-1"
+  function supprimerConteneursVides(element, racineId) {
+    let parent = element.parentElement;
+    while (parent && parent.id !== racineId) {
+      // Vérifie si le parent est vide (aucun enfant élément et texte vide)
+      if (parent.children.length === 0 && parent.textContent.trim() === "") {
+        let parentASupprimer = parent;
+        parent = parent.parentElement; // remonte avant suppression
+        parentASupprimer.remove();
+      } else {
+        break; // stop si le parent n'est pas vide
+      }
+    }
+  }
+
   for (const id in modifications) {
     const element = document.getElementById(id);
+    const config = modifications[id];
+
     if (element) {
-      const config = modifications[id];
-      if (config.text !== undefined) element.innerHTML = config.text;
-      if (config.href !== undefined && element.tagName === "A") element.href = config.href;
+      // Supprimer l'élément si "text" est défini mais vide
+      if (config.text !== undefined && config.text.trim() === "") {
+        element.remove();
+
+        // Appelle la suppression récursive sur les parents vides jusqu'à la racine "bloc-cours-1"
+        supprimerConteneursVides(element, "bloc-cours-1");
+
+        continue; // passe à l’élément suivant
+      }
+
+      // Appliquer le texte si fourni
+      if (config.text !== undefined) {
+        element.innerHTML = config.text;
+      }
+
+      // Appliquer le lien si c’est un <a> et href fourni
+      if (config.href !== undefined && element.tagName === "A") {
+        element.href = config.href;
+      }
     }
   }
 }
-
-// Chargement header + footer avec callback
-loadHTML('header-placeholder', 'header.html', appliquerModifications);
-loadHTML('footer-placeholder', 'footer.html', appliquerModifications);
-
-// Pour les éléments déjà présents dans index.html
-document.addEventListener('DOMContentLoaded', appliquerModifications);
