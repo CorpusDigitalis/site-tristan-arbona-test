@@ -170,6 +170,10 @@ function appliquerModifications() {
 }
 
 // Chargement header + footer avec callback unique
-loadHTML('header-placeholder', 'header.html', () => {
-  loadHTML('footer-placeholder', 'footer.html', appliquerModifications);
+document.addEventListener("DOMContentLoaded", () => {
+  loadHTML('header-placeholder', 'header.html', () => {
+    loadHTML('footer-placeholder', 'footer.html', () => {
+      appliquerModifications(); // Appelé après que tout soit chargé
+    });
+  });
 });
