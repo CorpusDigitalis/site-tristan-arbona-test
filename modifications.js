@@ -15,18 +15,21 @@ function loadHTML(id, url, callback) {
 
 function appliquerModifications() {
   const modifications = {
-    // Accueil / Général
+    
+    // Accueil
     "titre-accueil": { text: "Bienvenue" },
     "texte-description": {
       text:
         "JJJJJJe conçois des sites web professionnels sur mesure, pensés pour valoriser l’identité, les différents travaux et l’expertise de professionnels issus de divers secteurs.<br><br>Chaque site est développé de manière personnalisée, avec une attention portée à la lisibilité, à la simplicité d’usage et à l’autonomie du client."
     },
+
+    // Header
     "titre-header": { text: "TTTristan Arbona" },
     "texte-accueil": { text: "Accueil" },
     "texte-cours": { text: "Cours" },
     "texte-publications": { text: "Publications" },
 
-    // Liens + texte modifiables
+    // Footer
     "email": { text: "", href: "mailto:tristan.arbona@gmail.com" },
     "linkedin": { text: "LinkedIn", href: "https://www.linkedin.com/in/tristan-arbona-a4829a269/" },
     "scholar": { text: "Google Scholar", href: "https://scholar.google.com/citations?user=XXXX" },
@@ -65,6 +68,7 @@ function appliquerModifications() {
       href: "https://nouveau-lien-etude.com"
     },
 
+    // Cours
     // Cours 1
 "cours-1": {},
 
@@ -77,21 +81,21 @@ function appliquerModifications() {
 "cours-1-slides-list": {},
 
 // Slides 1 à 20 avec texte et lien modifiables
-"cours-1-slide-1": { text: "En gros ca marche", href: "slides/eco1-slide1.pdf" },
-"cours-1-slide-2": { text: "Diapositive 2", href: "slides/eco1-slide2.pdf" },
-"cours-1-slide-3": { text: "Diapositive 3", href: "slides/eco1-slide3.pdf" },
-"cours-1-slide-4": { text: "Diapositive 4", href: "slides/eco1-slide4.pdf" },
-"cours-1-slide-5": { text: "Diapositive 5", href: "slides/eco1-slide5.pdf" },
-"cours-1-slide-6": { text: "Diapositive 6", href: "slides/eco1-slide6.pdf" },
-"cours-1-slide-7": { text: "Diapositive 7", href: "slides/eco1-slide7.pdf" },
-"cours-1-slide-8": { text: "Diapositive 8", href: "slides/eco1-slide8.pdf" },
-"cours-1-slide-9": { text: "Diapositive 9", href: "slides/eco1-slide9.pdf" },
-"cours-1-slide-10": { text: "Diapositive 10", href: "slides/eco1-slide10.pdf" },
-"cours-1-slide-11": { text: "Diapositive 11", href: "slides/eco1-slide11.pdf" },
-"cours-1-slide-12": { text: "Diapositive 12", href: "slides/eco1-slide12.pdf" },
-"cours-1-slide-13": { text: "Diapositive 13", href: "slides/eco1-slide13.pdf" },
-"cours-1-slide-14": { text: "Diapositive 14", href: "slides/eco1-slide14.pdf" },
-"cours-1-slide-15": { text: "Diapositive 15", href: "slides/eco1-slide15.pdf" },
+"cours-1-slide-1": { text: "", href: "slides/eco1-slide1.pdf" },
+"cours-1-slide-2": { text: "", href: "slides/eco1-slide2.pdf" },
+"cours-1-slide-3": { text: "", href: "slides/eco1-slide3.pdf" },
+"cours-1-slide-4": { text: "", href: "slides/eco1-slide4.pdf" },
+"cours-1-slide-5": { text: "", href: "slides/eco1-slide5.pdf" },
+"cours-1-slide-6": { text: "", href: "slides/eco1-slide6.pdf" },
+"cours-1-slide-7": { text: "", href: "slides/eco1-slide7.pdf" },
+"cours-1-slide-8": { text: "", href: "slides/eco1-slide8.pdf" },
+"cours-1-slide-9": { text: "", href: "slides/eco1-slide9.pdf" },
+"cours-1-slide-10": { text: "", href: "slides/eco1-slide10.pdf" },
+"cours-1-slide-11": { text: "", href: "slides/eco1-slide11.pdf" },
+"cours-1-slide-12": { text: "", href: "slides/eco1-slide12.pdf" },
+"cours-1-slide-13": { text: "", href: "slides/eco1-slide13.pdf" },
+"cours-1-slide-14": { text: "", href: "slides/eco1-slide14.pdf" },
+"cours-1-slide-15": { text: "", href: "slides/eco1-slide15.pdf" },
 "cours-1-slide-16": { text: "", href: "slides/eco1-slide16.pdf" },
 "cours-1-slide-17": { text: "", href: "slides/eco1-slide17.pdf" },
 "cours-1-slide-18": { text: "", href: "slides/eco1-slide18.pdf" },
