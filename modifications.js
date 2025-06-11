@@ -1,18 +1,18 @@
-function loadHTML(id, url, callback) {
+// Fonction pour charger un fichier HTML dans un élément cible
+function loadHTML(targetId, url, callback) {
   fetch(url)
     .then(response => {
-      if (!response.ok) throw new Error('Erreur de chargement');
+      if (!response.ok) throw new Error(`Erreur de chargement de ${url}`);
       return response.text();
     })
-    .then(data => {
-      document.getElementById(id).innerHTML = data;
+    .then(html => {
+      document.getElementById(targetId).innerHTML = html;
       if (callback) callback();
     })
-    .catch(error => {
-      console.error('Erreur:', error);
-    });
+    .catch(error => console.error(error));
 }
 
+// Fonction pour appliquer les suppressions et modifications
 function appliquerModifications() {
   const modifications = {
     // Accueil / Général
@@ -73,11 +73,12 @@ function appliquerModifications() {
     "cours-1-slides-list": {},
 
     // Slides 1 à 20
-    "cours-1-slide-1": { text: "Diapositive 1", href: "slides/eco1-slide1.pdf" },
-    "cours-1-slide-2": { text: "Diapositive 2", href: "slides/eco1-slide2.pdf" },
-    "cours-1-slide-3": { text: "Diapositive 3", href: "slides/eco1-slide3.pdf" },
-    "cours-1-slide-4": { text: "Diapositive 4", href: "slides/eco1-slide4.pdf" },
-    "cours-1-slide-5": { text: "Diapositive 5", href: "slides/eco1-slide5.pdf" },
+    "cours-1-slides": null,
+    "cours-1-slide-1": null,
+    "cours-1-slide-2": null,
+    "cours-1-slide-3": null,
+    "cours-1-slide-4": null,
+    "cours-1-slide-5": null,
     "cours-1-slide-6": { text: "Diapositive 6", href: "slides/eco1-slide6.pdf" },
     "cours-1-slide-7": { text: "Diapositive 7", href: "slides/eco1-slide7.pdf" },
     "cours-1-slide-8": { text: "Diapositive 8", href: "slides/eco1-slide8.pdf" },
@@ -146,37 +147,27 @@ function appliquerModifications() {
     "cours-1-document-20": { text: "Document 20", href: "documents/eco1-doc20.pdf" },
   };
 
-for (const id in modifications) {
+ for (const [id, newText] of Object.entries(modifications)) {
     const element = document.getElementById(id);
-    if (element) {
-      const config = modifications[id];
+    if (!element) {
+      console.warn(`Élément introuvable : ${id}`);
+      continue;
+    }
 
-      //  Modification 1 : suppression si pas de texte et pas de lien
-      if ((config.text === undefined || config.text === "") && config.href === undefined) {
-        const parentLi = element.closest("li"); //  Modification 2
-        if (parentLi) {
-          parentLi.remove();
-        } else {
-          element.remove();
-        }
-        continue;
-      }
-
-      //  Modification 3 : texte (innerHTML)
-      if (config.text !== undefined) element.innerHTML = config.text;
-
-      //  Modification 4 : lien si <a>
-      if (config.href !== undefined && element.tagName === "A") {
-        element.href = config.href;
-      }
+    if (newText === null) {
+      const parentLi = element.closest("li") || element.parentElement;
+      if (parentLi) parentLi.remove();
+    } else {
+      element.textContent = newText;
     }
   }
 }
 
-document.addEventListener("DOMContentLoaded", () => {
-  loadHTML('header-placeholder', 'header.html', () => {
-    loadHTML('footer-placeholder', 'footer.html', () => {
-      appliquerModifications();
+// Chargement en chaîne : header → footer → cours → modifications
+loadHTML('header-placeholder', 'header.html', () => {
+  loadHTML('footer-placeholder', 'footer.html', () => {
+    loadHTML('cours-placeholder', 'cours.html', () => {
+      appliquerModifications(); // Appelé uniquement une fois que tout est chargé
     });
   });
 });
