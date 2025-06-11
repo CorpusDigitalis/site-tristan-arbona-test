@@ -72,6 +72,8 @@ function appliquerModifications() {
       href: "https://nouveau-lien-etude.com"
     },
 
+
+    
     // Cours
     // Cours 1
 "cours-1": {},
@@ -379,6 +381,15 @@ function appliquerModifications() {
       element.href = config.href;
     }
   }
+   // --- Suppression des boîtes de publication vides (texte + lien vides) ---
+  document.querySelectorAll('.publication-item').forEach(pub => {
+    const texte = pub.querySelector('span')?.textContent?.trim() || "";
+    const lien  = pub.querySelector('a')?.textContent?.trim() || "";
+
+    if (!texte && !lien) {
+      pub.remove();
+    }
+  });
 }
 
 // Chargement header + footer avec callback
