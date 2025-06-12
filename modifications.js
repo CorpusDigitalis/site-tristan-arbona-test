@@ -222,7 +222,7 @@ function appliquerModifications() {
     },
     "publication-20-lien": {
       text: "Consulter l’article",
-      href: "https://lien-econometrie-appliquee.com"
+      href: "#"
     },
 
 
