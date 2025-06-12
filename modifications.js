@@ -82,17 +82,6 @@ function appliquerModifications() {
       href: "https://lien-synthese-seminaire.com"
     },
 
-    
-    "publication-5": {},
-    "publication-5-texte": {
-      text: "Étude empirique sur les marchés du travail en Europe."
-    },
-    "publication-5-lien": {
-      text: "Accéder à l’étude",
-      href: "https://lien-etude-emploi.com"
-    },
-
-
 
     
     // Cours
