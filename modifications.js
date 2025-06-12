@@ -72,6 +72,70 @@ function appliquerModifications() {
       href: "https://nouveau-lien-etude.com"
     },
 
+      "publication-4": {},
+    "publication-4-texte": {
+      text: "Synthèse d’un séminaire sur les déséquilibres macroéconomiques."
+    },
+    "publication-4-lien": {
+      text: "Télécharger le document",
+      href: "https://lien-synthese-seminaire.com"
+    },
+
+    "publication-5": {},
+    "publication-5-texte": {
+      text: "Étude empirique sur les marchés du travail en Europe."
+    },
+    "publication-5-lien": {
+      text: "Accéder à l’étude",
+      href: "https://lien-etude-emploi.com"
+    },
+
+    "publication-6": {},
+    "publication-6-texte": {
+      text: "Note de recherche sur l’évolution des taux directeurs."
+    },
+    "publication-6-lien": {
+      text: "Lire la note",
+      href: "https://lien-note-taux.com"
+    },
+
+    "publication-7": {},
+    "publication-7-texte": {
+      text: "Mémoire de licence en économie publique."
+    },
+    "publication-7-lien": {
+      text: "Voir le mémoire",
+      href: "https://lien-memoire-eco.com"
+    },
+
+    "publication-8": {},
+    "publication-8-texte": {
+      text: "Article de revue étudiante sur la crise énergétique."
+    },
+    "publication-8-lien": {
+      text: "Consulter l'article",
+      href: "https://lien-article-energie.com"
+    },
+
+    "publication-9": {},
+    "publication-9-texte": {
+      text: "Communication lors du colloque sur les inégalités."
+    },
+    "publication-9-lien": {
+      text: "Voir la communication",
+      href: "https://lien-colloque-inegalites.com"
+    },
+
+    "publication-10": {},
+    "publication-10-texte": {
+      text: "Rapport de recherche sur la croissance inclusive."
+    },
+    "publication-10-lien": {
+      text: "Télécharger le rapport",
+      href: "https://lien-croissance-inclusive.com"
+    },
+
+
 
     
     // Cours
