@@ -257,7 +257,8 @@ function appliquerModifications() {
 "cours-2-document-20": { text: "Document 20", href: "documents/eco2-doc20.pdf" },
 
 
- 
+
+    
 // Cours 3
 "cours-3": {},
 
