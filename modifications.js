@@ -72,16 +72,6 @@ function appliquerModifications() {
       href: "https://nouveau-lien-etude.com"
     },
 
-    
-    "publication-4": {},
-    "publication-4-texte": {
-      text: "Synthèse d’un séminaire sur les déséquilibres macroéconomiques."
-    },
-    "publication-4-lien": {
-      text: "Télécharger le document",
-      href: "https://lien-synthese-seminaire.com"
-    },
-
 
     
     // Cours
