@@ -72,6 +72,27 @@ function appliquerModifications() {
       href: "https://nouveau-lien-etude.com"
     },
 
+    
+    "publication-4": {},
+    "publication-4-texte": {
+      text: "Synthèse d’un séminaire sur les déséquilibres macroéconomiques."
+    },
+    "publication-4-lien": {
+      text: "Télécharger le document",
+      href: "https://lien-synthese-seminaire.com"
+    },
+
+    
+    "publication-5": {},
+    "publication-5-texte": {
+      text: "Étude empirique sur les marchés du travail en Europe."
+    },
+    "publication-5-lien": {
+      text: "Accéder à l’étude",
+      href: "https://lien-etude-emploi.com"
+    },
+
+
 
     
     // Cours
