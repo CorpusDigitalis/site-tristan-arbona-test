@@ -20,7 +20,7 @@ function appliquerModifications() {
     "titre-accueil": { text: "Bienvenue" },
     "texte-description": {
       text:
-        "Je conçois des sites web professionnels sur mesure, pensés pour valoriser l’identité, les différents travaux et l’expertise de professionnels issus de divers secteurs.<br><br>Chaque site est développé de manière personnalisée, avec une attention portée à la lisibilité, à la simplicité d’usage et à l’autonomie du client."
+        "Je crée des sites web professionnels sur mesure, conçus pour mettre en valeur l’identité, les réalisations et l’expertise de professionnels issus de divers secteurs. Une attention particulière est portée à la clarté, la simplicité d’utilisation et à l’autonomie dans la gestion du site.<br><br>Au-delà de la technique, un suivi personnalisé est offert tout au long du processus de création et après la mise en ligne. Ce partenariat permet d’adapter précisément le site aux besoins évolutifs, assurant ainsi une présence digitale cohérente et efficace.<br><br>Un site web personnel bien conçu est un atout majeur pour renforcer l’image professionnelle, crédibiliser les compétences et ouvrir de nouvelles opportunités. Il sert d’espace d’expression privilégié pour valoriser le travail et les projets."
     },
 
     // Header
@@ -41,7 +41,7 @@ function appliquerModifications() {
     // Publications (nouveaux ID demandés)
     "titre-publications": { text: "Mes publications économiques" },
     "texte-intro": {
-      text: "Retrouvez ci-dessous une sélection de mes contributions académiques récentes."
+      text: "Retrouvez ci-dessous une liste d'exemples de contributions académiques."
     },
     "publication-1": {}, // facultatif, élément conteneur
     "publication-1-texte": {
@@ -137,11 +137,11 @@ function appliquerModifications() {
 
 "publication-11": {},
 "publication-11-texte": {
-  text: "publi 11 non alignée dans le code"
+  text: ""
 },
 "publication-11-lien": {
-  text: "mais bien",
-  href: "#"
+  text: "",
+  href: ""
 },
 
 "publication-12": {},
@@ -488,11 +488,11 @@ function appliquerModifications() {
 
 "publication-50": {},
 "publication-50-texte": {
-  text: "publi 50 donc ca marche !"
+  text: ""
 },
 "publication-50-lien": {
-  text: "hell ye",
-  href: "#"
+  text: "",
+  href: ""
 },
 
 
