@@ -670,7 +670,7 @@ function appliquerModifications() {
 "cours-2-document-17": { text: "Document 17", href: "https://drive.google.com/file/d/ID-DRIVE-DOC-17/view" },
 "cours-2-document-18": { text: "Document 18", href: "https://drive.google.com/file/d/ID-DRIVE-DOC-18/view" },
 "cours-2-document-19": { text: "Document 19", href: "https://drive.google.com/file/d/ID-DRIVE-DOC-19/view" },
-"cours-2-document-20": { text: "Document 20", href: "https://drive.google.com/file/d/ID-DRIVE-DOC-20/view" }
+"cours-2-document-20": { text: "Document 20", href: "https://drive.google.com/file/d/ID-DRIVE-DOC-20/view" },
 
 
 
