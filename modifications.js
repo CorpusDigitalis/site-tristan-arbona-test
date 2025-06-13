@@ -135,369 +135,365 @@ function appliquerModifications() {
       href: "https://lien-croissance-inclusive.com"
     },
 
-     "publication-11": {},
-    "publication-11-texte": {
-      text: "Analyse comparative des modèles d'ajustement structurel."
-    },
-    "publication-11-lien": {
-      text: "Lire l'analyse",
-      href: "https://lien-analyse-ajustement.com"
-    },
+"publication-11": {},
+"publication-11-texte": {
+  text: ""
+},
+"publication-11-lien": {
+  text: "",
+  href: ""
+},
 
-    "publication-12": {},
-    "publication-12-texte": {
-      text: "Compte rendu d’une conférence sur les politiques budgétaires."
-    },
-    "publication-12-lien": {
-      text: "Voir le compte rendu",
-      href: "https://lien-conference-budgetaire.com"
-    },
+"publication-12": {},
+"publication-12-texte": {
+  text: ""
+},
+"publication-12-lien": {
+  text: "",
+  href: ""
+},
 
-    "publication-13": {},
-    "publication-13-texte": {
-      text: "Travail exploratoire sur les cryptomonnaies et la régulation."
-    },
-    "publication-13-lien": {
-      text: "Télécharger le document",
-      href: "https://lien-crypto-regulation.com"
-    },
+"publication-13": {},
+"publication-13-texte": {
+  text: ""
+},
+"publication-13-lien": {
+  text: "",
+  href: ""
+},
 
-    "publication-14": {},
-    "publication-14-texte": {
-      text: "Note synthétique sur la transition écologique."
-    },
-    "publication-14-lien": {
-      text: "Accéder à la note",
-      href: "https://lien-transition-eco.com"
-    },
+"publication-14": {},
+"publication-14-texte": {
+  text: ""
+},
+"publication-14-lien": {
+  text: "",
+  href: ""
+},
 
-    "publication-15": {},
-    "publication-15-texte": {
-      text: "Étude sur les effets de la mondialisation sur les salaires."
-    },
-    "publication-15-lien": {
-      text: "Lire l’étude",
-      href: "https://lien-mondialisation-salaires.com"
-    },
+"publication-15": {},
+"publication-15-texte": {
+  text: ""
+},
+"publication-15-lien": {
+  text: "",
+  href: ""
+},
 
-    "publication-16": {},
-    "publication-16-texte": {
-      text: "Article d’opinion publié dans un journal étudiant."
-    },
-    "publication-16-lien": {
-      text: "Voir l’article",
-      href: "https://lien-opinion-etudiant.com"
-    },
+"publication-16": {},
+"publication-16-texte": {
+  text: ""
+},
+"publication-16-lien": {
+  text: "",
+  href: ""
+},
 
-    "publication-17": {},
-    "publication-17-texte": {
-      text: "Présentation de recherche lors d’un atelier académique."
-    },
-    "publication-17-lien": {
-      text: "Voir la présentation",
-      href: "https://lien-atelier-academique.com"
-    },
+"publication-17": {},
+"publication-17-texte": {
+  text: ""
+},
+"publication-17-lien": {
+  text: "",
+  href: ""
+},
 
-    "publication-18": {},
-    "publication-18-texte": {
-      text: "Rapport sur les investissements étrangers directs."
-    },
-    "publication-18-lien": {
-      text: "Télécharger le rapport",
-      href: "https://lien-investissements-etrangers.com"
-    },
+"publication-18": {},
+"publication-18-texte": {
+  text: ""
+},
+"publication-18-lien": {
+  text: "",
+  href: ""
+},
 
-    "publication-19": {},
-    "publication-19-texte": {
-      text: "Recherche sur les mécanismes de stabilisation automatique."
-    },
-    "publication-19-lien": {
-      text: "Lire la recherche",
-      href: "https://lien-stabilisation-automatique.com"
-    },
+"publication-19": {},
+"publication-19-texte": {
+  text: ""
+},
+"publication-19-lien": {
+  text: "",
+  href: ""
+},
 
-    "publication-20": {},
-    "publication-20-texte": {
-      text: "Article méthodologique sur l’économétrie appliquée."
-    },
-    "publication-20-lien": {
-      text: "Consulter l’article",
-      href: "#"
-    },
+"publication-20": {},
+"publication-20-texte": {
+  text: ""
+},
+"publication-20-lien": {
+  text: "",
+  href: ""
+},
 
-    "publication-21": {},
-    "publication-21-texte": {
-      text: "Publication 21 : étude de cas sectorielle."
-    },
-    "publication-21-lien": {
-      text: "Cliquer ici",
-      href: "#"
-    },
+"publication-21": {},
+"publication-21-texte": {
+  text: ""
+},
+"publication-21-lien": {
+  text: "",
+  href: ""
+},
 
-    "publication-22": {},
-    "publication-22-texte": {
-      text: "Publication 22 : note de cadrage thématique."
-    },
-    "publication-22-lien": {
-      text: "Cliquer ici",
-      href: "#"
-    },
+"publication-22": {},
+"publication-22-texte": {
+  text: ""
+},
+"publication-22-lien": {
+  text: "",
+  href: ""
+},
 
-    "publication-23": {},
-    "publication-23-texte": {
-      text: "Publication 23 : article co-écrit avec un enseignant-chercheur."
-    },
-    "publication-23-lien": {
-      text: "Cliquer ici",
-      href: "#"
-    },
+"publication-23": {},
+"publication-23-texte": {
+  text: ""
+},
+"publication-23-lien": {
+  text: "",
+  href: ""
+},
 
-    "publication-24": {},
-    "publication-24-texte": {
-      text: "Publication 24 : résumé d’intervention à un colloque."
-    },
-    "publication-24-lien": {
-      text: "Cliquer ici",
-      href: "#"
-    },
+"publication-24": {},
+"publication-24-texte": {
+  text: ""
+},
+"publication-24-lien": {
+  text: "",
+  href: ""
+},
 
-    "publication-25": {},
-    "publication-25-texte": {
-      text: "Publication 25 : poster scientifique."
-    },
-    "publication-25-lien": {
-      text: "Cliquer ici",
-      href: "#"
-    },
+"publication-25": {},
+"publication-25-texte": {
+  text: ""
+},
+"publication-25-lien": {
+  text: "",
+  href: ""
+},
 
-    "publication-26": {},
-    "publication-26-texte": {
-      text: "Publication 26 : réflexion personnelle sur une théorie économique."
-    },
-    "publication-26-lien": {
-      text: "Cliquer ici",
-      href: "#"
-    },
+"publication-26": {},
+"publication-26-texte": {
+  text: ""
+},
+"publication-26-lien": {
+  text: "",
+  href: ""
+},
 
-    "publication-27": {},
-    "publication-27-texte": {
-      text: "Publication 27 : projet de fin de semestre."
-    },
-    "publication-27-lien": {
-      text: "Cliquer ici",
-      href: "#"
-    },
+"publication-27": {},
+"publication-27-texte": {
+  text: ""
+},
+"publication-27-lien": {
+  text: "",
+  href: ""
+},
 
-    "publication-28": {},
-    "publication-28-texte": {
-      text: "Publication 28 : introduction à une revue spécialisée."
-    },
-    "publication-28-lien": {
-      text: "Cliquer ici",
-      href: "#"
-    },
+"publication-28": {},
+"publication-28-texte": {
+  text: ""
+},
+"publication-28-lien": {
+  text: "",
+  href: ""
+},
 
-    "publication-29": {},
-    "publication-29-texte": {
-      text: "Publication 29 : synthèse de résultats empiriques."
-    },
-    "publication-29-lien": {
-      text: "Cliquer ici",
-      href: "#"
-    },
+"publication-29": {},
+"publication-29-texte": {
+  text: ""
+},
+"publication-29-lien": {
+  text: "",
+  href: ""
+},
 
-    "publication-30": {},
-    "publication-30-texte": {
-      text: "Publication 30 : article de vulgarisation."
-    },
-    "publication-30-lien": {
-      text: "Cliquer ici",
-      href: "#"
-    },
+"publication-30": {},
+"publication-30-texte": {
+  text: ""
+},
+"publication-30-lien": {
+  text: "",
+  href: ""
+},
 
-      "publication-31": {},
-    "publication-31-texte": {
-      text: "Publication 31 : fiche d’analyse économique."
-    },
-    "publication-31-lien": {
-      text: "Cliquer ici",
-      href: "#"
-    },
+"publication-31": {},
+"publication-31-texte": {
+  text: ""
+},
+"publication-31-lien": {
+  text: "",
+  href: ""
+},
 
-    "publication-32": {},
-    "publication-32-texte": {
-      text: "Publication 32 : présentation PowerPoint d’une soutenance."
-    },
-    "publication-32-lien": {
-      text: "Cliquer ici",
-      href: "#"
-    },
+"publication-32": {},
+"publication-32-texte": {
+  text: ""
+},
+"publication-32-lien": {
+  text: "",
+  href: ""
+},
 
-    "publication-33": {},
-    "publication-33-texte": {
-      text: "Publication 33 : document collaboratif avec un laboratoire."
-    },
-    "publication-33-lien": {
-      text: "Cliquer ici",
-      href: "#"
-    },
+"publication-33": {},
+"publication-33-texte": {
+  text: ""
+},
+"publication-33-lien": {
+  text: "",
+  href: ""
+},
 
-    "publication-34": {},
-    "publication-34-texte": {
-      text: "Publication 34 : note sur la soutenabilité des finances publiques."
-    },
-    "publication-34-lien": {
-      text: "Cliquer ici",
-      href: "#"
-    },
+"publication-34": {},
+"publication-34-texte": {
+  text: ""
+},
+"publication-34-lien": {
+  text: "",
+  href: ""
+},
 
-    "publication-35": {},
-    "publication-35-texte": {
-      text: "Publication 35 : réflexion sur l’économie comportementale."
-    },
-    "publication-35-lien": {
-      text: "Cliquer ici",
-      href: "#"
-    },
+"publication-35": {},
+"publication-35-texte": {
+  text: ""
+},
+"publication-35-lien": {
+  text: "",
+  href: ""
+},
 
-    "publication-36": {},
-    "publication-36-texte": {
-      text: "Publication 36 : essai en économie internationale."
-    },
-    "publication-36-lien": {
-      text: "Cliquer ici",
-      href: "#"
-    },
+"publication-36": {},
+"publication-36-texte": {
+  text: ""
+},
+"publication-36-lien": {
+  text: "",
+  href: ""
+},
 
-    "publication-37": {},
-    "publication-37-texte": {
-      text: "Publication 37 : étude statistique appliquée."
-    },
-    "publication-37-lien": {
-      text: "Cliquer ici",
-      href: "#"
-    },
+"publication-37": {},
+"publication-37-texte": {
+  text: ""
+},
+"publication-37-lien": {
+  text: "",
+  href: ""
+},
 
-    "publication-38": {},
-    "publication-38-texte": {
-      text: "Publication 38 : dossier préparatoire à un mémoire."
-    },
-    "publication-38-lien": {
-      text: "Cliquer ici",
-      href: "#"
-    },
+"publication-38": {},
+"publication-38-texte": {
+  text: ""
+},
+"publication-38-lien": {
+  text: "",
+  href: ""
+},
 
-    "publication-39": {},
-    "publication-39-texte": {
-      text: "Publication 39 : support de présentation orale."
-    },
-    "publication-39-lien": {
-      text: "Cliquer ici",
-      href: "#"
-    },
+"publication-39": {},
+"publication-39-texte": {
+  text: ""
+},
+"publication-39-lien": {
+  text: "",
+  href: ""
+},
 
-    "publication-40": {},
-    "publication-40-texte": {
-      text: "Publication 40 : enquête terrain pour mémoire."
-    },
-    "publication-40-lien": {
-      text: "Cliquer ici",
-      href: "#"
-    },
+"publication-40": {},
+"publication-40-texte": {
+  text: ""
+},
+"publication-40-lien": {
+  text: "",
+  href: ""
+},
 
-    "publication-41": {},
-    "publication-41-texte": {
-      text: "Publication 41 : article explorant une problématique sectorielle."
-    },
-    "publication-41-lien": {
-      text: "Cliquer ici",
-      href: "#"
-    },
+"publication-41": {},
+"publication-41-texte": {
+  text: ""
+},
+"publication-41-lien": {
+  text: "",
+  href: ""
+},
 
-    "publication-42": {},
-    "publication-42-texte": {
-      text: "Publication 42 : document de travail en cours de finalisation."
-    },
-    "publication-42-lien": {
-      text: "Cliquer ici",
-      href: "#"
-    },
+"publication-42": {},
+"publication-42-texte": {
+  text: ""
+},
+"publication-42-lien": {
+  text: "",
+  href: ""
+},
 
-    "publication-43": {},
-    "publication-43-texte": {
-      text: "Publication 43 : analyse comparée de politiques économiques."
-    },
-    "publication-43-lien": {
-      text: "Cliquer ici",
-      href: "#"
-    },
+"publication-43": {},
+"publication-43-texte": {
+  text: ""
+},
+"publication-43-lien": {
+  text: "",
+  href: ""
+},
 
-    "publication-44": {},
-    "publication-44-texte": {
-      text: "Publication 44 : note de synthèse sur un sujet d’actualité."
-    },
-    "publication-44-lien": {
-      text: "Cliquer ici",
-      href: "#"
-    },
+"publication-44": {},
+"publication-44-texte": {
+  text: ""
+},
+"publication-44-lien": {
+  text: "",
+  href: ""
+},
 
-    "publication-45": {},
-    "publication-45-texte": {
-      text: "Publication 45 : présentation orale accompagnée de supports visuels."
-    },
-    "publication-45-lien": {
-      text: "Cliquer ici",
-      href: "#"
-    },
+"publication-45": {},
+"publication-45-texte": {
+  text: ""
+},
+"publication-45-lien": {
+  text: "",
+  href: ""
+},
 
-    "publication-46": {},
-    "publication-46-texte": {
-      text: "Publication 46 : réflexion personnelle sur une problématique de recherche."
-    },
-    "publication-46-lien": {
-      text: "Cliquer ici",
-      href: "#"
-    },
+"publication-46": {},
+"publication-46-texte": {
+  text: ""
+},
+"publication-46-lien": {
+  text: "",
+  href: ""
+},
 
-    "publication-47": {},
-    "publication-47-texte": {
-      text: "Publication 47 : fiche de lecture critique."
-    },
-    "publication-47-lien": {
-      text: "Cliquer ici",
-      href: "#"
-    },
+"publication-47": {},
+"publication-47-texte": {
+  text: ""
+},
+"publication-47-lien": {
+  text: "",
+  href: ""
+},
 
-    "publication-48": {},
-    "publication-48-texte": {
-      text: "Publication 48 : document de synthèse interdisciplinaire."
-    },
-    "publication-48-lien": {
-      text: "Cliquer ici",
-      href: "#"
-    },
+"publication-48": {},
+"publication-48-texte": {
+  text: ""
+},
+"publication-48-lien": {
+  text: "",
+  href: ""
+},
 
-    "publication-49": {},
-    "publication-49-texte": {
-      text: "Publication 49 : proposition de recherche pour un colloque."
-    },
-    "publication-49-lien": {
-      text: "Cliquer ici",
-      href: "#"
-    },
+"publication-49": {},
+"publication-49-texte": {
+  text: ""
+},
+"publication-49-lien": {
+  text: "",
+  href: ""
+},
 
-    "publication-50": {},
-    "publication-50-texte": {
-      text: "Publication 50 : article de fin de cycle académique."
-    },
-    "publication-50-lien": {
-      text: "Cliquer ici",
-      href: "#"
-    },
-
-
-
-
+"publication-50": {},
+"publication-50-texte": {
+  text: ""
+},
+"publication-50-lien": {
+  text: "",
+  href: ""
+},
 
 
 
