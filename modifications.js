@@ -137,20 +137,20 @@ function appliquerModifications() {
 
 "publication-11": {},
 "publication-11-texte": {
-  text: ""
+  text: "publi 11 non alignée dans le code"
 },
 "publication-11-lien": {
-  text: "",
-  href: ""
+  text: "mais bien",
+  href: "#"
 },
 
 "publication-12": {},
 "publication-12-texte": {
-  text: ""
+  text: "pareillement"
 },
 "publication-12-lien": {
-  text: "",
-  href: ""
+  text: "clique sur #",
+  href: "#"
 },
 
 "publication-13": {},
@@ -488,11 +488,11 @@ function appliquerModifications() {
 
 "publication-50": {},
 "publication-50-texte": {
-  text: ""
+  text: "publi 50 donc ca marche !"
 },
 "publication-50-lien": {
-  text: "",
-  href: ""
+  text: "hell ye",
+  href: "#"
 },
 
 
