@@ -43,97 +43,96 @@ function appliquerModifications() {
     "texte-intro": {
       text: "Retrouvez ci-dessous une liste d'exemples de contributions académiques."
     },
-    "publication-1": {}, // facultatif, élément conteneur
-    "publication-1-texte": {
-      text: "Nouvel article sur la politique monétaire européenne."
-    },
-    "publication-1-lien": {
-      text: "Lire l'article complet",
-      href: "https://nouveau-lien-article.com"
-    },
+   
+  "publication-1": {},
+  "publication-1-texte": {
+    "text": "Nouvel article sur la politique monétaire européenne."
+  },
+  "publication-1-lien": {
+    "text": "Lire l'article complet",
+    "href": "https://drive.google.com/file/d/1-IZoG-GmCkJKZ_duSRNgTxFpPJ11pmIs/view?usp=drive_link"
+  },
 
-    
-    "publication-2": {},
-    "publication-2-texte": {
-      text: "Présentation de recherche sur les taux d'intérêt réels."
-    },
-    "publication-2-lien": {
-      text: "Voir la communication",
-      href: "https://nouveau-lien-communication.com"
-    },
+  "publication-2": {},
+  "publication-2-texte": {
+    "text": "Présentation de recherche sur les taux d'intérêt réels."
+  },
+  "publication-2-lien": {
+    "text": "Voir la communication",
+    "href": "https://drive.google.com/file/d/1-IZoG-GmCkJKZ_duSRNgTxFpPJ11pmIs/view?usp=drive_link"
+  },
 
-    
-    "publication-3": {},
-    "publication-3-texte": {
-      text: ""
-    },
-    "publication-3-lien": {
-      text: "",
-      href: "https://nouveau-lien-etude.com"
-    },
+  "publication-3": {},
+  "publication-3-texte": {
+    "text": ""
+  },
+  "publication-3-lien": {
+    "text": "",
+    "href": "https://drive.google.com/file/d/1-IZoG-GmCkJKZ_duSRNgTxFpPJ11pmIs/view?usp=drive_link"
+  },
 
-      "publication-4": {},
-    "publication-4-texte": {
-      text: "Synthèse d’un séminaire sur les déséquilibres macroéconomiques."
-    },
-    "publication-4-lien": {
-      text: "Télécharger le document",
-      href: "https://lien-synthese-seminaire.com"
-    },
+  "publication-4": {},
+  "publication-4-texte": {
+    "text": "Synthèse d’un séminaire sur les déséquilibres macroéconomiques."
+  },
+  "publication-4-lien": {
+    "text": "Télécharger le document",
+    "href": "https://drive.google.com/file/d/1-IZoG-GmCkJKZ_duSRNgTxFpPJ11pmIs/view?usp=drive_link"
+  },
 
-    "publication-5": {},
-    "publication-5-texte": {
-      text: "Étude empirique sur les marchés du travail en Europe."
-    },
-    "publication-5-lien": {
-      text: "Accéder à l’étude",
-      href: "https://lien-etude-emploi.com"
-    },
+  "publication-5": {},
+  "publication-5-texte": {
+    "text": "Étude empirique sur les marchés du travail en Europe."
+  },
+  "publication-5-lien": {
+    "text": "Accéder à l’étude",
+    "href": "https://drive.google.com/file/d/1-IZoG-GmCkJKZ_duSRNgTxFpPJ11pmIs/view?usp=drive_link"
+  },
 
-    "publication-6": {},
-    "publication-6-texte": {
-      text: "Note de recherche sur l’évolution des taux directeurs."
-    },
-    "publication-6-lien": {
-      text: "Lire la note",
-      href: "https://lien-note-taux.com"
-    },
+  "publication-6": {},
+  "publication-6-texte": {
+    "text": "Note de recherche sur l’évolution des taux directeurs."
+  },
+  "publication-6-lien": {
+    "text": "Lire la note",
+    "href": "https://drive.google.com/file/d/1-IZoG-GmCkJKZ_duSRNgTxFpPJ11pmIs/view?usp=drive_link"
+  },
 
-    "publication-7": {},
-    "publication-7-texte": {
-      text: "Mémoire de licence en économie publique."
-    },
-    "publication-7-lien": {
-      text: "Voir le mémoire",
-      href: "https://lien-memoire-eco.com"
-    },
+  "publication-7": {},
+  "publication-7-texte": {
+    "text": "Mémoire de licence en économie publique."
+  },
+  "publication-7-lien": {
+    "text": "Voir le mémoire",
+    "href": "https://drive.google.com/file/d/1-IZoG-GmCkJKZ_duSRNgTxFpPJ11pmIs/view?usp=drive_link"
+  },
 
-    "publication-8": {},
-    "publication-8-texte": {
-      text: "Article de revue étudiante sur la crise énergétique."
-    },
-    "publication-8-lien": {
-      text: "Consulter l'article",
-      href: "https://lien-article-energie.com"
-    },
+  "publication-8": {},
+  "publication-8-texte": {
+    "text": "Article de revue étudiante sur la crise énergétique."
+  },
+  "publication-8-lien": {
+    "text": "Consulter l'article",
+    "href": "https://drive.google.com/file/d/1-IZoG-GmCkJKZ_duSRNgTxFpPJ11pmIs/view?usp=drive_link"
+  },
 
-    "publication-9": {},
-    "publication-9-texte": {
-      text: "Communication lors du colloque sur les inégalités."
-    },
-    "publication-9-lien": {
-      text: "Voir la communication",
-      href: "https://lien-colloque-inegalites.com"
-    },
+  "publication-9": {},
+  "publication-9-texte": {
+    "text": "Communication lors du colloque sur les inégalités."
+  },
+  "publication-9-lien": {
+    "text": "Voir la communication",
+    "href": "https://drive.google.com/file/d/1-IZoG-GmCkJKZ_duSRNgTxFpPJ11pmIs/view?usp=drive_link"
+  },
 
-    "publication-10": {},
-    "publication-10-texte": {
-      text: "Rapport de recherche sur la croissance inclusive."
-    },
-    "publication-10-lien": {
-      text: "Télécharger le rapport",
-      href: "https://lien-croissance-inclusive.com"
-    },
+  "publication-10": {},
+  "publication-10-texte": {
+    "text": "Rapport de recherche sur la croissance inclusive."
+  },
+  "publication-10-lien": {
+    "text": "Télécharger le rapport",
+    "href": "https://drive.google.com/file/d/1-IZoG-GmCkJKZ_duSRNgTxFpPJ11pmIs/view?usp=drive_link"
+  },
 
 "publication-11": {},
 "publication-11-texte": {
