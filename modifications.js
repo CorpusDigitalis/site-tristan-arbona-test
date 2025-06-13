@@ -529,7 +529,11 @@ function appliquerModifications() {
 "cours-1-slide-19": { text: "slides19", href: "https://drive.google.com/file/d/1-IZoG-GmCkJKZ_duSRNgTxFpPJ11pmIs/view?usp=drive_link" },
 "cours-1-slide-20": { text: "slides20", href: "https://drive.google.com/file/d/1-IZoG-GmCkJKZ_duSRNgTxFpPJ11pmIs/view?usp=drive_link" },
 
-// Exercises  
+// Exercises (conteneurs et titres)
+"cours-1-exercises": {},
+"cours-1-exercises-title": { text: "Exercices" },
+"cours-1-exercises-list": {},
+    
 "cours-1-exercise-1": { text: "Exercice 1", href: "https://drive.google.com/file/d/1-IZoG-GmCkJKZ_duSRNgTxFpPJ11pmIs/view?usp=drive_link" },
 "cours-1-exercise-2": { text: "Exercice 2", href: "https://drive.google.com/file/d/1-IZoG-GmCkJKZ_duSRNgTxFpPJ11pmIs/view?usp=drive_link" },
 "cours-1-exercise-3": { text: "Exercice 3", href: "https://drive.google.com/file/d/1-IZoG-GmCkJKZ_duSRNgTxFpPJ11pmIs/view?usp=drive_link" },
@@ -551,7 +555,11 @@ function appliquerModifications() {
 "cours-1-exercise-19": { text: "Exercice 19", href: "https://drive.google.com/file/d/1-IZoG-GmCkJKZ_duSRNgTxFpPJ11pmIs/view?usp=drive_link" },
 "cours-1-exercise-20": { text: "Exercice 20", href: "https://drive.google.com/file/d/1-IZoG-GmCkJKZ_duSRNgTxFpPJ11pmIs/view?usp=drive_link" },
 
-// Documents
+// Documents (conteneurs et titres)
+"cours-1-documents": {},
+"cours-1-documents-title": { text: "Documents" },
+"cours-1-documents-list": {},
+
 "cours-1-document-1": { text: "Document 1", href: "https://drive.google.com/file/d/1-IZoG-GmCkJKZ_duSRNgTxFpPJ11pmIs/view?usp=drive_link" },
 "cours-1-document-2": { text: "Document 2", href: "https://drive.google.com/file/d/1-IZoG-GmCkJKZ_duSRNgTxFpPJ11pmIs/view?usp=drive_link" },
 "cours-1-document-3": { text: "Document 3", href: "https://drive.google.com/file/d/1-IZoG-GmCkJKZ_duSRNgTxFpPJ11pmIs/view?usp=drive_link" },
@@ -571,7 +579,7 @@ function appliquerModifications() {
 "cours-1-document-17": { text: "Document 17", href: "https://drive.google.com/file/d/1-IZoG-GmCkJKZ_duSRNgTxFpPJ11pmIs/view?usp=drive_link" },
 "cours-1-document-18": { text: "Document 18", href: "https://drive.google.com/file/d/1-IZoG-GmCkJKZ_duSRNgTxFpPJ11pmIs/view?usp=drive_link" },
 "cours-1-document-19": { text: "Document 19", href: "https://drive.google.com/file/d/1-IZoG-GmCkJKZ_duSRNgTxFpPJ11pmIs/view?usp=drive_link" },
-"cours-1-document-20": { text: "Document 20", href: "https://drive.google.com/file/d/1-IZoG-GmCkJKZ_duSRNgTxFpPJ11pmIs/view?usp=drive_link" }
+"cours-1-document-20": { text: "Document 20", href: "https://drive.google.com/file/d/1-IZoG-GmCkJKZ_duSRNgTxFpPJ11pmIs/view?usp=drive_link" },
 
 
 
@@ -586,7 +594,6 @@ function appliquerModifications() {
 
 "cours-2-slides-list": {},
 
-// Slides 1 à 20 avec texte et lien modifiables
 // Slides
 "cours-2-slide-1": { text: "slides1", href: "https://drive.google.com/file/d/ID-DRIVE-SLIDE-1/view" },
 "cours-2-slide-2": { text: "slides2", href: "https://drive.google.com/file/d/ID-DRIVE-SLIDE-2/view" },
@@ -609,7 +616,13 @@ function appliquerModifications() {
 "cours-2-slide-19": { text: "slides19", href: "https://drive.google.com/file/d/ID-DRIVE-SLIDE-19/view" },
 "cours-2-slide-20": { text: "slides20", href: "https://drive.google.com/file/d/ID-DRIVE-SLIDE-20/view" },
 
-// Exercises
+// Exercises (conteneurs et titres)
+"cours-2-exercises": {},
+    
+"cours-2-exercises-title": { text: "Exercices" },
+    
+"cours-2-exercises-list": {},
+    
 "cours-2-exercise-1": { text: "Exercice 1", href: "https://drive.google.com/file/d/ID-DRIVE-EX-1/view" },
 "cours-2-exercise-2": { text: "Exercice 2", href: "https://drive.google.com/file/d/ID-DRIVE-EX-2/view" },
 "cours-2-exercise-3": { text: "Exercice 3", href: "https://drive.google.com/file/d/ID-DRIVE-EX-3/view" },
@@ -631,7 +644,13 @@ function appliquerModifications() {
 "cours-2-exercise-19": { text: "Exercice 19", href: "https://drive.google.com/file/d/ID-DRIVE-EX-19/view" },
 "cours-2-exercise-20": { text: "Exercice 20", href: "https://drive.google.com/file/d/ID-DRIVE-EX-20/view" },
 
-// Documents
+// Documents (conteneurs et titres)
+"cours-2-documents": {},
+    
+"cours-2-documents-title": { text: "Documents" },
+    
+"cours-2-documents-list": {},
+    
 "cours-2-document-1": { text: "Document 1", href: "https://drive.google.com/file/d/ID-DRIVE-DOC-1/view" },
 "cours-2-document-2": { text: "Document 2", href: "https://drive.google.com/file/d/ID-DRIVE-DOC-2/view" },
 "cours-2-document-3": { text: "Document 3", href: "https://drive.google.com/file/d/ID-DRIVE-DOC-3/view" },
@@ -666,7 +685,6 @@ function appliquerModifications() {
 
 "cours-3-slides-list": {},
 
-// Slides 1 à 20
 // Slides
 "cours-3-slide-1": { text: "slides1", href: "https://drive.google.com/file/d/ID-DRIVE-SLIDE-1/view" },
 "cours-3-slide-2": { text: "slides2", href: "https://drive.google.com/file/d/ID-DRIVE-SLIDE-2/view" },
@@ -689,7 +707,11 @@ function appliquerModifications() {
 "cours-3-slide-19": { text: "slides19", href: "https://drive.google.com/file/d/ID-DRIVE-SLIDE-19/view" },
 "cours-3-slide-20": { text: "slides20", href: "https://drive.google.com/file/d/ID-DRIVE-SLIDE-20/view" },
 
-// Exercises
+// Exercices
+"cours-3-exercises": {},
+"cours-3-exercises-title": { text: "Exercices" },
+"cours-3-exercises-list": {},
+  
 "cours-3-exercise-1": { text: "Exercice 1", href: "https://drive.google.com/file/d/ID-DRIVE-EX-1/view" },
 "cours-3-exercise-2": { text: "Exercice 2", href: "https://drive.google.com/file/d/ID-DRIVE-EX-2/view" },
 "cours-3-exercise-3": { text: "Exercice 3", href: "https://drive.google.com/file/d/ID-DRIVE-EX-3/view" },
@@ -712,6 +734,10 @@ function appliquerModifications() {
 "cours-3-exercise-20": { text: "Exercice 20", href: "https://drive.google.com/file/d/ID-DRIVE-EX-20/view" },
 
 // Documents
+"cours-3-documents": {},
+"cours-3-documents-title": { text: "Documents" },
+"cours-3-documents-list": {},
+
 "cours-3-document-1": { text: "Document 1", href: "https://drive.google.com/file/d/ID-DRIVE-DOC-1/view" },
 "cours-3-document-2": { text: "Document 2", href: "https://drive.google.com/file/d/ID-DRIVE-DOC-2/view" },
 "cours-3-document-3": { text: "Document 3", href: "https://drive.google.com/file/d/ID-DRIVE-DOC-3/view" },
@@ -731,7 +757,7 @@ function appliquerModifications() {
 "cours-3-document-17": { text: "Document 17", href: "https://drive.google.com/file/d/ID-DRIVE-DOC-17/view" },
 "cours-3-document-18": { text: "Document 18", href: "https://drive.google.com/file/d/ID-DRIVE-DOC-18/view" },
 "cours-3-document-19": { text: "Document 19", href: "https://drive.google.com/file/d/ID-DRIVE-DOC-19/view" },
-"cours-3-document-20": { text: "Document 20", href: "https://drive.google.com/file/d/ID-DRIVE-DOC-20/view" }
+"cours-3-document-20": { text: "Document 20", href: "https://drive.google.com/file/d/ID-DRIVE-DOC-20/view" },
 
 
   };
