@@ -225,6 +225,97 @@ function appliquerModifications() {
       href: "#"
     },
 
+    "publication-21": {},
+    "publication-21-texte": {
+      text: "Publication 21 : étude de cas sectorielle."
+    },
+    "publication-21-lien": {
+      text: "Cliquer ici",
+      href: "#"
+    },
+
+    "publication-22": {},
+    "publication-22-texte": {
+      text: "Publication 22 : note de cadrage thématique."
+    },
+    "publication-22-lien": {
+      text: "Cliquer ici",
+      href: "#"
+    },
+
+    "publication-23": {},
+    "publication-23-texte": {
+      text: "Publication 23 : article co-écrit avec un enseignant-chercheur."
+    },
+    "publication-23-lien": {
+      text: "Cliquer ici",
+      href: "#"
+    },
+
+    "publication-24": {},
+    "publication-24-texte": {
+      text: "Publication 24 : résumé d’intervention à un colloque."
+    },
+    "publication-24-lien": {
+      text: "Cliquer ici",
+      href: "#"
+    },
+
+    "publication-25": {},
+    "publication-25-texte": {
+      text: "Publication 25 : poster scientifique."
+    },
+    "publication-25-lien": {
+      text: "Cliquer ici",
+      href: "#"
+    },
+
+    "publication-26": {},
+    "publication-26-texte": {
+      text: "Publication 26 : réflexion personnelle sur une théorie économique."
+    },
+    "publication-26-lien": {
+      text: "Cliquer ici",
+      href: "#"
+    },
+
+    "publication-27": {},
+    "publication-27-texte": {
+      text: "Publication 27 : projet de fin de semestre."
+    },
+    "publication-27-lien": {
+      text: "Cliquer ici",
+      href: "#"
+    },
+
+    "publication-28": {},
+    "publication-28-texte": {
+      text: "Publication 28 : introduction à une revue spécialisée."
+    },
+    "publication-28-lien": {
+      text: "Cliquer ici",
+      href: "#"
+    },
+
+    "publication-29": {},
+    "publication-29-texte": {
+      text: "Publication 29 : synthèse de résultats empiriques."
+    },
+    "publication-29-lien": {
+      text: "Cliquer ici",
+      href: "#"
+    },
+
+    "publication-30": {},
+    "publication-30-texte": {
+      text: "Publication 30 : article de vulgarisation."
+    },
+    "publication-30-lien": {
+      text: "Cliquer ici",
+      href: "#"
+    },
+
+
 
 
 
