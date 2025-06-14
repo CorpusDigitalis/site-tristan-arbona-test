@@ -50,7 +50,7 @@ function appliquerModifications() {
   },
   "publication-1-lien": {
     "text": "Lire l'article complet",
-    "href": "https://drive.google.com/file/d/1-IZoG-GmCkJKZ_duSRNgTxFpPJ11pmIs/view?usp=drive_link"
+    "href": "https://drive.google.com/file/d/1j4QVEJZNCRVy__QGUi23w4SOMC-8CHBq/view?usp=drive_link"
   },
 
   "publication-2": {},
