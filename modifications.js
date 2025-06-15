@@ -775,22 +775,24 @@ function appliquerModifications() {
     }
   }
 
-  for (const id in modifications) {
+ for (const id in modifications) {
     const element = document.getElementById(id);
     const config  = modifications[id];
 
-    if (!element) continue;
+    if (!element) continue; // id inexistant dans le DOM : on ignore
 
-    // Cas suppression : uniquement pour les IDs "cours-..." et text vide
-    if (id.startsWith("cours-") &&
-        config.text !== undefined &&
-        config.text.trim() === "") {
+    // --------------------
+    // Cas suppression :
+    // --------------------
+    // Si c’est un ID de cours/sous‑partie ET que text === "" alors on supprime
+    if (id.startsWith("cours-") && config.text !== undefined && config.text.trim() === "") {
       element.remove();
-      supprimerConteneursVides(element, "cours-1");
-      continue;
+      continue; // pas besoin de traiter les autres propriétés
     }
 
-    // Sinon, on met à jour texte et href sans jamais supprimer header/footer
+    // --------------------
+    // Sinon mise à jour :
+    // --------------------
     if (config.text !== undefined) {
       element.innerHTML = config.text;
     }
@@ -798,20 +800,57 @@ function appliquerModifications() {
       element.href = config.href;
     }
   }
-   // --- Suppression des boîtes de publication vides (texte + lien vides) ---
-  document.querySelectorAll('.publication-item').forEach(pub => {
-    const texte = pub.querySelector('span')?.textContent?.trim() || "";
-    const lien  = pub.querySelector('a')?.textContent?.trim() || "";
 
+  //  Suppression des publications totalement vides
+
+  document.querySelectorAll(".publication-item").forEach(pub => {
+    const texte = pub.querySelector("span")?.textContent?.trim() || "";
+    const lien  = pub.querySelector("a")?.textContent?.trim() || "";
     if (!texte && !lien) {
       pub.remove();
     }
   });
+
+  //  Nettoyage automatique des sous-parties et cours vides
+
+  nettoyerCoursVides();
 }
 
-// Chargement header + footer avec callback
-loadHTML('header-placeholder', 'header.html', appliquerModifications);
-loadHTML('footer-placeholder', 'footer.html', appliquerModifications);
+// Fonction utilitaire : supprime les sous-parties vides puis les cours
 
-// Pour les éléments déjà présents dans index.html
-document.addEventListener('DOMContentLoaded', appliquerModifications);
+function nettoyerCoursVides() {
+  // Sélectionne tous les blocs <details id="cours-X">
+  document.querySelectorAll('details[id^="cours-"]').forEach(coursElement => {
+    const coursId = coursElement.id; // ex. "cours-1"
+
+    // Les trois sous-parties standard
+    const sousParties = ["slides", "exercises", "documents"];
+    let compteurVides = 0;
+
+    sousParties.forEach(part => {
+      const section = document.getElementById(`${coursId}-${part}`);
+      if (section) {
+        // La liste <ul> supposée porter l’ID `${section.id}-list`
+        const ul = section.querySelector("ul");
+        const aEncoreDesLi = ul && ul.querySelector("li");
+        if (!aEncoreDesLi) {
+          section.remove();
+          compteurVides++;
+        }
+      } else {
+        // Sous-partie déjà supprimée précédemment
+        compteurVides++;
+      }
+    });
+
+    // Si les trois sous‑parties sont absentes ou vides -> supprime le cours
+    if (compteurVides === sousParties.length) {
+      coursElement.remove();
+    }
+  });
+}
+
+loadHTML("header-placeholder", "header.html", appliquerModifications);
+loadHTML("footer-placeholder", "footer.html", appliquerModifications);
+
+document.addEventListener("DOMContentLoaded", appliquerModifications);
