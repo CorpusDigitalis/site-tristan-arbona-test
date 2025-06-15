@@ -30,7 +30,7 @@ function appliquerModifications() {
     "texte-publications": { text: "Publications" },
 
     // Footer
-    "email": { text: "Email", href: "mailto:tristan.arbona@gmail.com" },
+    "email": { text: "tristan.arbona@gmail.com", href: "mailto:tristan.arbona@gmail.com" },
     "linkedin": { text: "LinkedIn", href: "https://www.linkedin.com/in/tristan-arbona-a4829a269/" },
     "scholar": { text: "Google Scholar", href: "https://scholar.google.com/citations?user=XXXX" },
     "cv": { text: "CV", href: "https://drive.google.com/file/d/1iy_p1gbycwSr_AFHjfRfNRiofvvcXwD7/view" },
@@ -495,8 +495,6 @@ function appliquerModifications() {
 },
 
 
-    
-
  // Cours
     // Cours 1
 "cours-1": {},
@@ -536,26 +534,26 @@ function appliquerModifications() {
 "cours-1-exercises-title": { text: "Exercices" },
 "cours-1-exercises-list": {},
     
-"cours-1-exercise-1": { text: "", href: "https://drive.google.com/file/d/1-IZoG-GmCkJKZ_duSRNgTxFpPJ11pmIs/view?usp=drive_link" },
-"cours-1-exercise-2": { text: "", href: "https://drive.google.com/file/d/1-IZoG-GmCkJKZ_duSRNgTxFpPJ11pmIs/view?usp=drive_link" },
-"cours-1-exercise-3": { text: "", href: "https://drive.google.com/file/d/1-IZoG-GmCkJKZ_duSRNgTxFpPJ11pmIs/view?usp=drive_link" },
-"cours-1-exercise-4": { text: "", href: "https://drive.google.com/file/d/1-IZoG-GmCkJKZ_duSRNgTxFpPJ11pmIs/view?usp=drive_link" },
-"cours-1-exercise-5": { text: "", href: "https://drive.google.com/file/d/1-IZoG-GmCkJKZ_duSRNgTxFpPJ11pmIs/view?usp=drive_link" },
-"cours-1-exercise-6": { text: "", href: "https://drive.google.com/file/d/1-IZoG-GmCkJKZ_duSRNgTxFpPJ11pmIs/view?usp=drive_link" },
-"cours-1-exercise-7": { text: "", href: "https://drive.google.com/file/d/1-IZoG-GmCkJKZ_duSRNgTxFpPJ11pmIs/view?usp=drive_link" },
-"cours-1-exercise-8": { text: "", href: "https://drive.google.com/file/d/1-IZoG-GmCkJKZ_duSRNgTxFpPJ11pmIs/view?usp=drive_link" },
-"cours-1-exercise-9": { text: "", href: "https://drive.google.com/file/d/1-IZoG-GmCkJKZ_duSRNgTxFpPJ11pmIs/view?usp=drive_link" },
-"cours-1-exercise-10": { text: "", href: "https://drive.google.com/file/d/1-IZoG-GmCkJKZ_duSRNgTxFpPJ11pmIs/view?usp=drive_link" },
-"cours-1-exercise-11": { text: "", href: "https://drive.google.com/file/d/1-IZoG-GmCkJKZ_duSRNgTxFpPJ11pmIs/view?usp=drive_link" },
-"cours-1-exercise-12": { text: "", href: "https://drive.google.com/file/d/1-IZoG-GmCkJKZ_duSRNgTxFpPJ11pmIs/view?usp=drive_link" },
-"cours-1-exercise-13": { text: "", href: "https://drive.google.com/file/d/1-IZoG-GmCkJKZ_duSRNgTxFpPJ11pmIs/view?usp=drive_link" },
-"cours-1-exercise-14": { text: "", href: "https://drive.google.com/file/d/1-IZoG-GmCkJKZ_duSRNgTxFpPJ11pmIs/view?usp=drive_link" },
-"cours-1-exercise-15": { text: "", href: "https://drive.google.com/file/d/1-IZoG-GmCkJKZ_duSRNgTxFpPJ11pmIs/view?usp=drive_link" },
-"cours-1-exercise-16": { text: "", href: "https://drive.google.com/file/d/1-IZoG-GmCkJKZ_duSRNgTxFpPJ11pmIs/view?usp=drive_link" },
-"cours-1-exercise-17": { text: "", href: "https://drive.google.com/file/d/1-IZoG-GmCkJKZ_duSRNgTxFpPJ11pmIs/view?usp=drive_link" },
-"cours-1-exercise-18": { text: "", href: "https://drive.google.com/file/d/1-IZoG-GmCkJKZ_duSRNgTxFpPJ11pmIs/view?usp=drive_link" },
-"cours-1-exercise-19": { text: "", href: "https://drive.google.com/file/d/1-IZoG-GmCkJKZ_duSRNgTxFpPJ11pmIs/view?usp=drive_link" },
-"cours-1-exercise-20": { text: "", href: "https://drive.google.com/file/d/1-IZoG-GmCkJKZ_duSRNgTxFpPJ11pmIs/view?usp=drive_link" },
+"cours-1-exercise-1": { text: "Exercice 1", href: "https://drive.google.com/file/d/1-IZoG-GmCkJKZ_duSRNgTxFpPJ11pmIs/view?usp=drive_link" },
+"cours-1-exercise-2": { text: "Exercice 2", href: "https://drive.google.com/file/d/1-IZoG-GmCkJKZ_duSRNgTxFpPJ11pmIs/view?usp=drive_link" },
+"cours-1-exercise-3": { text: "Exercice 3", href: "https://drive.google.com/file/d/1-IZoG-GmCkJKZ_duSRNgTxFpPJ11pmIs/view?usp=drive_link" },
+"cours-1-exercise-4": { text: "Exercice 4", href: "https://drive.google.com/file/d/1-IZoG-GmCkJKZ_duSRNgTxFpPJ11pmIs/view?usp=drive_link" },
+"cours-1-exercise-5": { text: "Exercice 5", href: "https://drive.google.com/file/d/1-IZoG-GmCkJKZ_duSRNgTxFpPJ11pmIs/view?usp=drive_link" },
+"cours-1-exercise-6": { text: "Exercice 6", href: "https://drive.google.com/file/d/1-IZoG-GmCkJKZ_duSRNgTxFpPJ11pmIs/view?usp=drive_link" },
+"cours-1-exercise-7": { text: "Exercice 7", href: "https://drive.google.com/file/d/1-IZoG-GmCkJKZ_duSRNgTxFpPJ11pmIs/view?usp=drive_link" },
+"cours-1-exercise-8": { text: "Exercice 8", href: "https://drive.google.com/file/d/1-IZoG-GmCkJKZ_duSRNgTxFpPJ11pmIs/view?usp=drive_link" },
+"cours-1-exercise-9": { text: "Exercice 9", href: "https://drive.google.com/file/d/1-IZoG-GmCkJKZ_duSRNgTxFpPJ11pmIs/view?usp=drive_link" },
+"cours-1-exercise-10": { text: "Exercice 10", href: "https://drive.google.com/file/d/1-IZoG-GmCkJKZ_duSRNgTxFpPJ11pmIs/view?usp=drive_link" },
+"cours-1-exercise-11": { text: "Exercice 11", href: "https://drive.google.com/file/d/1-IZoG-GmCkJKZ_duSRNgTxFpPJ11pmIs/view?usp=drive_link" },
+"cours-1-exercise-12": { text: "Exercice 12", href: "https://drive.google.com/file/d/1-IZoG-GmCkJKZ_duSRNgTxFpPJ11pmIs/view?usp=drive_link" },
+"cours-1-exercise-13": { text: "Exercice 13", href: "https://drive.google.com/file/d/1-IZoG-GmCkJKZ_duSRNgTxFpPJ11pmIs/view?usp=drive_link" },
+"cours-1-exercise-14": { text: "Exercice 14", href: "https://drive.google.com/file/d/1-IZoG-GmCkJKZ_duSRNgTxFpPJ11pmIs/view?usp=drive_link" },
+"cours-1-exercise-15": { text: "Exercice 15", href: "https://drive.google.com/file/d/1-IZoG-GmCkJKZ_duSRNgTxFpPJ11pmIs/view?usp=drive_link" },
+"cours-1-exercise-16": { text: "Exercice 16", href: "https://drive.google.com/file/d/1-IZoG-GmCkJKZ_duSRNgTxFpPJ11pmIs/view?usp=drive_link" },
+"cours-1-exercise-17": { text: "Exercice 17", href: "https://drive.google.com/file/d/1-IZoG-GmCkJKZ_duSRNgTxFpPJ11pmIs/view?usp=drive_link" },
+"cours-1-exercise-18": { text: "Exercice 18", href: "https://drive.google.com/file/d/1-IZoG-GmCkJKZ_duSRNgTxFpPJ11pmIs/view?usp=drive_link" },
+"cours-1-exercise-19": { text: "Exercice 19", href: "https://drive.google.com/file/d/1-IZoG-GmCkJKZ_duSRNgTxFpPJ11pmIs/view?usp=drive_link" },
+"cours-1-exercise-20": { text: "Exercice 20", href: "https://drive.google.com/file/d/1-IZoG-GmCkJKZ_duSRNgTxFpPJ11pmIs/view?usp=drive_link" },
 
 // Documents (conteneurs et titres)
 "cours-1-documents": {},
@@ -777,24 +775,22 @@ function appliquerModifications() {
     }
   }
 
- for (const id in modifications) {
+  for (const id in modifications) {
     const element = document.getElementById(id);
     const config  = modifications[id];
 
-    if (!element) continue; // id inexistant dans le DOM : on ignore
+    if (!element) continue;
 
-    // --------------------
-    // Cas suppression :
-    // --------------------
-    // Si c’est un ID de cours/sous‑partie ET que text === "" alors on supprime
-    if (id.startsWith("cours-") && config.text !== undefined && config.text.trim() === "") {
+    // Cas suppression : uniquement pour les IDs "cours-..." et text vide
+    if (id.startsWith("cours-") &&
+        config.text !== undefined &&
+        config.text.trim() === "") {
       element.remove();
-      continue; // pas besoin de traiter les autres propriétés
+      supprimerConteneursVides(element, "cours-1");
+      continue;
     }
 
-    // --------------------
-    // Sinon mise à jour :
-    // --------------------
+    // Sinon, on met à jour texte et href sans jamais supprimer header/footer
     if (config.text !== undefined) {
       element.innerHTML = config.text;
     }
@@ -802,57 +798,20 @@ function appliquerModifications() {
       element.href = config.href;
     }
   }
+   // --- Suppression des boîtes de publication vides (texte + lien vides) ---
+  document.querySelectorAll('.publication-item').forEach(pub => {
+    const texte = pub.querySelector('span')?.textContent?.trim() || "";
+    const lien  = pub.querySelector('a')?.textContent?.trim() || "";
 
-  //  Suppression des publications totalement vides
-
-  document.querySelectorAll(".publication-item").forEach(pub => {
-    const texte = pub.querySelector("span")?.textContent?.trim() || "";
-    const lien  = pub.querySelector("a")?.textContent?.trim() || "";
     if (!texte && !lien) {
       pub.remove();
     }
   });
-
-  //  Nettoyage automatique des sous-parties et cours vides
-
-  nettoyerCoursVides();
 }
 
-// Fonction utilitaire : supprime les sous-parties vides puis les cours
+// Chargement header + footer avec callback
+loadHTML('header-placeholder', 'header.html', appliquerModifications);
+loadHTML('footer-placeholder', 'footer.html', appliquerModifications);
 
-function nettoyerCoursVides() {
-  // Sélectionne tous les blocs <details id="cours-X">
-  document.querySelectorAll('details[id^="cours-"]').forEach(coursElement => {
-    const coursId = coursElement.id; // ex. "cours-1"
-
-    // Les trois sous-parties standard
-    const sousParties = ["slides", "exercises", "documents"];
-    let compteurVides = 0;
-
-    sousParties.forEach(part => {
-      const section = document.getElementById(`${coursId}-${part}`);
-      if (section) {
-        // La liste <ul> supposée porter l’ID `${section.id}-list`
-        const ul = section.querySelector("ul");
-        const aEncoreDesLi = ul && ul.querySelector("li");
-        if (!aEncoreDesLi) {
-          section.remove();
-          compteurVides++;
-        }
-      } else {
-        // Sous-partie déjà supprimée précédemment
-        compteurVides++;
-      }
-    });
-
-    // Si les trois sous‑parties sont absentes ou vides -> supprime le cours
-    if (compteurVides === sousParties.length) {
-      coursElement.remove();
-    }
-  });
-}
-
-loadHTML("header-placeholder", "header.html", appliquerModifications);
-loadHTML("footer-placeholder", "footer.html", appliquerModifications);
-
-document.addEventListener("DOMContentLoaded", appliquerModifications);
+// Pour les éléments déjà présents dans index.html
+document.addEventListener('DOMContentLoaded', appliquerModifications);
