@@ -988,43 +988,68 @@ function appliquerModifications() {
 
   };
 
- function supprimerConteneursVides(element, racineId) {
-    let parent = element.parentElement;
-    while (parent && parent.id !== racineId) {
-      if (parent.children.length === 0 && parent.textContent.trim() === "") {
-        const supprimable = parent;
-        parent = parent.parentElement;
-        supprimable.remove();
-      } else {
-        break;
-      }
-    }
-  }
-
-  for (const id in modifications) {
+ for (const id in modifications) {
     const element = document.getElementById(id);
-    const config  = modifications[id];
-
+    const config = modifications[id];
     if (!element) continue;
 
-    // Cas suppression : uniquement pour les IDs "cours-..." et text vide
-    if (id.startsWith("cours-") &&
-        config.text !== undefined &&
-        config.text.trim() === "") {
-      element.remove();
-      supprimerConteneursVides(element, "cours-1");
-      continue;
-    }
-
-    // Sinon, on met à jour texte et href sans jamais supprimer header/footer
     if (config.text !== undefined) {
       element.innerHTML = config.text;
     }
-    if (config.href !== undefined && element.tagName === "A") {
+    if (config.href !== undefined && element.tagName.toLowerCase() === "a") {
       element.href = config.href;
     }
   }
-   // --- Suppression des boîtes de publication vides (texte + lien vides) ---
+
+  // SUPPRESSION SPECIFIQUE POUR LES COURS, selon ta fonction fournie
+
+  const coursIds = ['cours-1', 'cours-2', 'cours-3', 'cours-4', 'cours-5', 'cours-6'];
+
+  coursIds.forEach((racineId) => {
+    // Suppression des <a> vides + leur <li> parent
+    Object.entries(modifications).forEach(([id, contenu]) => {
+      if (id.startsWith(racineId)) {
+        const ancre = document.getElementById(id);
+        if (!ancre) {
+          console.log(`ID introuvable : ${id}`);
+          return;
+        }
+        // ici on vérifie si le texte est vide ou non
+        const texte = contenu.text ?? null;
+        if (texte === "" || texte === null || texte === undefined) {
+          const li = ancre.closest('li');
+          if (li) {
+            li.remove();
+            console.log(`Suppression de <li> parent de ${id}`);
+          } else {
+            ancre.remove();
+            console.log(`Suppression de ${id}`);
+          }
+        }
+      }
+    });
+
+    // Suppression des sections vides (slides, exercise, documents)
+    ['slides', 'exercise', 'documents'].forEach((type) => {
+      const ul = document.querySelector(`#${racineId}-${type}-list`);
+      if (ul && ul.querySelector('li') === null) {
+        const details = document.getElementById(`${racineId}-${type}`);
+        if (details) {
+          details.remove();
+          console.log(`Suppression de la section ${racineId}-${type}`);
+        }
+      }
+    });
+
+    // Suppression du cours entier s'il n'a plus aucune section <details>
+    const detailsCours = document.getElementById(racineId);
+    if (detailsCours && !detailsCours.querySelector('details')) {
+      detailsCours.remove();
+      console.log(`Suppression du cours entier ${racineId} (vide)`);
+    }
+  });
+
+  // --- Suppression des boîtes de publication vides (texte + lien vides) ---
   document.querySelectorAll('.publication-item').forEach(pub => {
     const texte = pub.querySelector('span')?.textContent?.trim() || "";
     const lien  = pub.querySelector('a')?.textContent?.trim() || "";
