@@ -849,7 +849,7 @@ function appliquerModifications() {
 "cours-5-title": { text: "Cours 5 - Titre du cours 5", href: "#" },
 
 // Slides du cours 5 (exemple 1 à 20)
-"cours-5-slide-1": { text: "Slide 1", href: "https://drive.google.com/slide1" },
+"cours-5-slide-1": { text: "oui oui ca marche ainsi", href: "https://drive.google.com/slide1" },
 "cours-5-slide-2": { text: "Slide 2", href: "https://drive.google.com/slide2" },
 "cours-5-slide-3": { text: "Slide 3", href: "https://drive.google.com/slide3" },
 "cours-5-slide-4": { text: "Slide 4", href: "https://drive.google.com/slide4" },
