@@ -1017,13 +1017,16 @@ function appliquerModifications() {
       }
     });
 
-    // Suppression du cours entier s'il n'a plus aucune section <details>
-    const detailsCours = document.getElementById(racineId);
-    if (detailsCours && !detailsCours.querySelector('details')) {
-      detailsCours.remove();
-      console.log(`Suppression du cours entier ${racineId} (vide)`);
-    }
-  });
+   const detailsCours = document.getElementById(racineId);
+if (detailsCours) {
+  const allSubDetails = detailsCours.querySelectorAll('details');
+  const allAreEmpty = [...allSubDetails].every(sub => sub.querySelectorAll('li').length === 0);
+
+  if (allSubDetails.length === 0 || allAreEmpty) {
+    detailsCours.remove();
+    console.log(`Suppression du cours entier ${racineId} (vide ou sous-parties vides)`);
+  }
+});
 
   // --- Suppression des boîtes de publication vides (texte + lien vides) ---
   document.querySelectorAll('.publication-item').forEach(pub => {
