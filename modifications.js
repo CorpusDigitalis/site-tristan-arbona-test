@@ -1005,28 +1005,27 @@ function appliquerModifications() {
       }
     });
 
-    // Suppression des sections vides (slides, exercise, documents)
-    ['slides', 'exercise', 'documents'].forEach((type) => {
-      const ul = document.querySelector(`#${racineId}-${type}-list`);
-      if (ul && ul.querySelector('li') === null) {
-        const details = document.getElementById(`${racineId}-${type}`);
-        if (details) {
-          details.remove();
-          console.log(`Suppression de la section ${racineId}-${type}`);
-        }
-      }
-    });
+    ['slides', 'exercises', 'documents'].forEach((type) => {    // exercises au pluriel
+  const ul = document.querySelector(`#${racineId}-${type}-list`);
+  if (ul && ul.querySelector('li') === null) {
+    const details = document.getElementById(`${racineId}-${type}`);
+    if (details) details.remove();
+  }
+});
 
-   const detailsCours = document.getElementById(racineId);
+const detailsCours = document.getElementById(racineId);
 if (detailsCours) {
   const allSubDetails = detailsCours.querySelectorAll('details');
-  const allAreEmpty = [...allSubDetails].every(sub => sub.querySelectorAll('li').length === 0);
+  const allAreEmpty = [...allSubDetails].every(sub =>
+                      sub.querySelectorAll('li').length === 0);
 
   if (allSubDetails.length === 0 || allAreEmpty) {
     detailsCours.remove();
     console.log(`Suppression du cours entier ${racineId} (vide ou sous-parties vides)`);
   }
-});
+}   // ← ACCOLADE FERMANT LE if(detailsCours)
+});  // ← ACCOLADE FERMANT le forEach + parenthèse
+
 
   // --- Suppression des boîtes de publication vides (texte + lien vides) ---
   document.querySelectorAll('.publication-item').forEach(pub => {
