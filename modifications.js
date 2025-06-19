@@ -501,7 +501,7 @@ function appliquerModifications() {
 
 "cours-1-title": { text: "Économie ouverte - Partie 1" },
 
-"cours-1-slides-title": { text: "Diapositives" },
+"cours-1-slides-title": { text: "" },
 
 // Slides
 "cours-1-slide-1": { text: "", href: "https://drive.google.com/file/d/1-IZoG-GmCkJKZ_duSRNgTxFpPJ11pmIs/view?usp=drive_link" },
@@ -526,7 +526,7 @@ function appliquerModifications() {
 "cours-1-slide-20": { text: "", href: "https://drive.google.com/file/d/1-IZoG-GmCkJKZ_duSRNgTxFpPJ11pmIs/view?usp=drive_link" },
 
 // Exercises 
-"cours-1-exercises-title": { text: "Exercices" },
+"cours-1-exercises-title": { text: "" },
     
 "cours-1-exercise-1": { text: "", href: "https://drive.google.com/file/d/1-IZoG-GmCkJKZ_duSRNgTxFpPJ11pmIs/view?usp=drive_link" },
 "cours-1-exercise-2": { text: "", href: "https://drive.google.com/file/d/1-IZoG-GmCkJKZ_duSRNgTxFpPJ11pmIs/view?usp=drive_link" },
@@ -550,7 +550,7 @@ function appliquerModifications() {
 "cours-1-exercise-20": { text: "", href: "https://drive.google.com/file/d/1-IZoG-GmCkJKZ_duSRNgTxFpPJ11pmIs/view?usp=drive_link" },
 
 // Documents
-"cours-1-documents-title": { text: "Documents" },
+"cours-1-documents-title": { text: "" },
 
 "cours-1-document-1": { text: "", href: "https://drive.google.com/file/d/1-IZoG-GmCkJKZ_duSRNgTxFpPJ11pmIs/view?usp=drive_link" },
 "cours-1-document-2": { text: "", href: "https://drive.google.com/file/d/1-IZoG-GmCkJKZ_duSRNgTxFpPJ11pmIs/view?usp=drive_link" },
