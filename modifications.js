@@ -496,16 +496,12 @@ function appliquerModifications() {
 
 
  // Cours
-    // Cours 1
-"cours-1": {},
+    
+// Cours 1
 
 "cours-1-title": { text: "Économie ouverte - Partie 1" },
 
-"cours-1-slides": {},
-
 "cours-1-slides-title": { text: "Diapositives" },
-
-"cours-1-slides-list": {},
 
 // Slides
 "cours-1-slide-1": { text: "slides1", href: "https://drive.google.com/file/d/1-IZoG-GmCkJKZ_duSRNgTxFpPJ11pmIs/view?usp=drive_link" },
@@ -529,10 +525,8 @@ function appliquerModifications() {
 "cours-1-slide-19": { text: "slides19", href: "https://drive.google.com/file/d/1-IZoG-GmCkJKZ_duSRNgTxFpPJ11pmIs/view?usp=drive_link" },
 "cours-1-slide-20": { text: "slides20", href: "https://drive.google.com/file/d/1-IZoG-GmCkJKZ_duSRNgTxFpPJ11pmIs/view?usp=drive_link" },
 
-// Exercises (conteneurs et titres)
-"cours-1-exercises": {},
+// Exercises 
 "cours-1-exercises-title": { text: "Exercices" },
-"cours-1-exercises-list": {},
     
 "cours-1-exercise-1": { text: "Exercice 1", href: "https://drive.google.com/file/d/1-IZoG-GmCkJKZ_duSRNgTxFpPJ11pmIs/view?usp=drive_link" },
 "cours-1-exercise-2": { text: "Exercice 2", href: "https://drive.google.com/file/d/1-IZoG-GmCkJKZ_duSRNgTxFpPJ11pmIs/view?usp=drive_link" },
@@ -555,10 +549,8 @@ function appliquerModifications() {
 "cours-1-exercise-19": { text: "Exercice 19", href: "https://drive.google.com/file/d/1-IZoG-GmCkJKZ_duSRNgTxFpPJ11pmIs/view?usp=drive_link" },
 "cours-1-exercise-20": { text: "Exercice 20", href: "https://drive.google.com/file/d/1-IZoG-GmCkJKZ_duSRNgTxFpPJ11pmIs/view?usp=drive_link" },
 
-// Documents (conteneurs et titres)
-"cours-1-documents": {},
+// Documents
 "cours-1-documents-title": { text: "Documents" },
-"cours-1-documents-list": {},
 
 "cours-1-document-1": { text: "Document 1", href: "https://drive.google.com/file/d/1-IZoG-GmCkJKZ_duSRNgTxFpPJ11pmIs/view?usp=drive_link" },
 "cours-1-document-2": { text: "Document 2", href: "https://drive.google.com/file/d/1-IZoG-GmCkJKZ_duSRNgTxFpPJ11pmIs/view?usp=drive_link" },
@@ -584,15 +576,10 @@ function appliquerModifications() {
 
 
 // Cours 2
-"cours-2": {},
 
 "cours-2-title": { text: "Économie ouverte - Partie 2" },
 
-"cours-2-slides": {},
-
 "cours-2-slides-title": { text: "Diapositives" },
-
-"cours-2-slides-list": {},
 
 // Slides
 "cours-2-slide-1": { text: "slides1", href: "https://drive.google.com/file/d/ID-DRIVE-SLIDE-1/view" },
@@ -616,12 +603,8 @@ function appliquerModifications() {
 "cours-2-slide-19": { text: "slides19", href: "https://drive.google.com/file/d/ID-DRIVE-SLIDE-19/view" },
 "cours-2-slide-20": { text: "slides20", href: "https://drive.google.com/file/d/ID-DRIVE-SLIDE-20/view" },
 
-// Exercises (conteneurs et titres)
-"cours-2-exercises": {},
-    
+// Exercises
 "cours-2-exercises-title": { text: "Exercices" },
-    
-"cours-2-exercises-list": {},
     
 "cours-2-exercise-1": { text: "Exercice 1", href: "https://drive.google.com/file/d/ID-DRIVE-EX-1/view" },
 "cours-2-exercise-2": { text: "Exercice 2", href: "https://drive.google.com/file/d/ID-DRIVE-EX-2/view" },
@@ -644,12 +627,9 @@ function appliquerModifications() {
 "cours-2-exercise-19": { text: "Exercice 19", href: "https://drive.google.com/file/d/ID-DRIVE-EX-19/view" },
 "cours-2-exercise-20": { text: "Exercice 20", href: "https://drive.google.com/file/d/ID-DRIVE-EX-20/view" },
 
-// Documents (conteneurs et titres)
-"cours-2-documents": {},
+// Documents
     
 "cours-2-documents-title": { text: "Documents" },
-    
-"cours-2-documents-list": {},
     
 "cours-2-document-1": { text: "Document 1", href: "https://drive.google.com/file/d/ID-DRIVE-DOC-1/view" },
 "cours-2-document-2": { text: "Document 2", href: "https://drive.google.com/file/d/ID-DRIVE-DOC-2/view" },
@@ -675,15 +655,10 @@ function appliquerModifications() {
 
 
 // Cours 3
-"cours-3": {},
 
 "cours-3-title": { text: "Économie ouverte - Partie 3" },
 
-"cours-3-slides": {},
-
 "cours-3-slides-title": { text: "Diapositives" },
-
-"cours-3-slides-list": {},
 
 // Slides
 "cours-3-slide-1": { text: "slides1", href: "https://drive.google.com/file/d/ID-DRIVE-SLIDE-1/view" },
@@ -708,9 +683,7 @@ function appliquerModifications() {
 "cours-3-slide-20": { text: "slides20", href: "https://drive.google.com/file/d/ID-DRIVE-SLIDE-20/view" },
 
 // Exercices
-"cours-3-exercises": {},
 "cours-3-exercises-title": { text: "Exercices" },
-"cours-3-exercises-list": {},
   
 "cours-3-exercise-1": { text: "Exercice 1", href: "https://drive.google.com/file/d/ID-DRIVE-EX-1/view" },
 "cours-3-exercise-2": { text: "Exercice 2", href: "https://drive.google.com/file/d/ID-DRIVE-EX-2/view" },
@@ -734,9 +707,7 @@ function appliquerModifications() {
 "cours-3-exercise-20": { text: "Exercice 20", href: "https://drive.google.com/file/d/ID-DRIVE-EX-20/view" },
 
 // Documents
-"cours-3-documents": {},
 "cours-3-documents-title": { text: "Documents" },
-"cours-3-documents-list": {},
 
 "cours-3-document-1": { text: "Document 1", href: "https://drive.google.com/file/d/ID-DRIVE-DOC-1/view" },
 "cours-3-document-2": { text: "Document 2", href: "https://drive.google.com/file/d/ID-DRIVE-DOC-2/view" },
@@ -787,10 +758,8 @@ function appliquerModifications() {
 "cours-4-slide-19": { text: "slides19", href: "https://drive.google.com/file/d/1-IZoG-GmCkJKZ_duSRNgTxFpPJ11pmIs/view?usp=drive_link" },
 "cours-4-slide-20": { text: "slides20", href: "https://drive.google.com/file/d/1-IZoG-GmCkJKZ_duSRNgTxFpPJ11pmIs/view?usp=drive_link" },
 
-// Exercises (conteneurs et titres)
-"cours-4-exercises": {},
+// Exercises 
 "cours-4-exercises-title": { text: "Exercices" },
-"cours-4-exercises-list": {},
 
 "cours-4-exercise-1": { text: "Exercice 1", href: "https://drive.google.com/file/d/1-IZoG-GmCkJKZ_duSRNgTxFpPJ11pmIs/view?usp=drive_link" },
 "cours-4-exercise-2": { text: "Exercice 2", href: "https://drive.google.com/file/d/1-IZoG-GmCkJKZ_duSRNgTxFpPJ11pmIs/view?usp=drive_link" },
@@ -813,10 +782,8 @@ function appliquerModifications() {
 "cours-4-exercise-19": { text: "Exercice 19", href: "https://drive.google.com/file/d/1-IZoG-GmCkJKZ_duSRNgTxFpPJ11pmIs/view?usp=drive_link" },
 "cours-4-exercise-20": { text: "Exercice 20", href: "https://drive.google.com/file/d/1-IZoG-GmCkJKZ_duSRNgTxFpPJ11pmIs/view?usp=drive_link" },
 
-// Documents (conteneurs et titres)
-"cours-4-documents": {},
+// Documents
 "cours-4-documents-title": { text: "Documents" },
-"cours-4-documents-list": {},
 
 "cours-4-document-1": { text: "Document 1", href: "https://drive.google.com/file/d/1-IZoG-GmCkJKZ_duSRNgTxFpPJ11pmIs/view?usp=drive_link" },
 "cours-4-document-2": { text: "Document 2", href: "https://drive.google.com/file/d/1-IZoG-GmCkJKZ_duSRNgTxFpPJ11pmIs/view?usp=drive_link" },
@@ -839,10 +806,14 @@ function appliquerModifications() {
 "cours-4-document-19": { text: "Document 19", href: "https://drive.google.com/file/d/1-IZoG-GmCkJKZ_duSRNgTxFpPJ11pmIs/view?usp=drive_link" },
 "cours-4-document-20": { text: "Document 20", href: "https://drive.google.com/file/d/1-IZoG-GmCkJKZ_duSRNgTxFpPJ11pmIs/view?usp=drive_link" },
 
-    // Titre du cours 5
-"cours-5-title": { text: "Cours 5 - Titre du cours 5", href: "#" },
+    
+// cours 5
+    
+"cours-5-title": { text: "Cours 5 - Titre du cours 5" },
 
-// Slides du cours 5 (exemple 1 à 20)
+"cours-5-slides-title": { text: "Diapositives" },
+
+// Slides
 "cours-5-slide-1": { text: "oui oui ca marche ainsi", href: "https://drive.google.com/slide1" },
 "cours-5-slide-2": { text: "Slide 2", href: "https://drive.google.com/slide2" },
 "cours-5-slide-3": { text: "Slide 3", href: "https://drive.google.com/slide3" },
@@ -864,7 +835,9 @@ function appliquerModifications() {
 "cours-5-slide-19": { text: "Slide 19", href: "https://drive.google.com/slide19" },
 "cours-5-slide-20": { text: "Slide 20", href: "https://drive.google.com/slide20" },
 
-// Exercices du cours 5 (1 à 20)
+// Exercises 
+"cours-5-exercises-title": { text: "Exercices" },
+    
 "cours-5-exercise-1": { text: "Exercice 1", href: "https://drive.google.com/exercise1" },
 "cours-5-exercise-2": { text: "Exercice 2", href: "https://drive.google.com/exercise2" },
 "cours-5-exercise-3": { text: "Exercice 3", href: "https://drive.google.com/exercise3" },
@@ -886,7 +859,9 @@ function appliquerModifications() {
 "cours-5-exercise-19": { text: "Exercice 19", href: "https://drive.google.com/exercise19" },
 "cours-5-exercise-20": { text: "Exercice 20", href: "https://drive.google.com/exercise20" },
 
-// Documents du cours 5 (1 à 20)
+// Documents
+"cours-5-documents-title": { text: "Documents" },
+    
 "cours-5-document-1": { text: "Document 1", href: "https://drive.google.com/document1" },
 "cours-5-document-2": { text: "Document 2", href: "https://drive.google.com/document2" },
 "cours-5-document-3": { text: "Document 3", href: "https://drive.google.com/document3" },
@@ -908,10 +883,13 @@ function appliquerModifications() {
 "cours-5-document-19": { text: "Document 19", href: "https://drive.google.com/document19" },
 "cours-5-document-20": { text: "Document 20", href: "https://drive.google.com/document20" },
 
-    // Titre du cours 6
-"cours-6-title": { text: "Cours 6 - Titre du cours 6", href: "#" },
+// cours 6
+    
+"cours-6-title": { text: "Cours 6 - Titre du cours 6" },
 
-// Slides du cours 6 (exemple 1 à 20)
+"cours-6-slides-title": { text: "Diapositives" },
+
+// Slides
 "cours-6-slide-1":  { text: "Slide 1",  href: "https://drive.google.com/slide1"  },
 "cours-6-slide-2":  { text: "Slide 2",  href: "https://drive.google.com/slide2"  },
 "cours-6-slide-3":  { text: "Slide 3",  href: "https://drive.google.com/slide3"  },
@@ -933,7 +911,9 @@ function appliquerModifications() {
 "cours-6-slide-19": { text: "Slide 19", href: "https://drive.google.com/slide19" },
 "cours-6-slide-20": { text: "Slide 20", href: "https://drive.google.com/slide20" },
 
-// Exercices du cours 6 (1 à 20)
+// Exercises 
+"cours-6-exercises-title": { text: "Exercices" },
+  
 "cours-6-exercise-1":  { text: "Exercice 1",  href: "https://drive.google.com/exercise1"  },
 "cours-6-exercise-2":  { text: "Exercice 2",  href: "https://drive.google.com/exercise2"  },
 "cours-6-exercise-3":  { text: "Exercice 3",  href: "https://drive.google.com/exercise3"  },
@@ -955,7 +935,9 @@ function appliquerModifications() {
 "cours-6-exercise-19": { text: "Exercice 19", href: "https://drive.google.com/exercise19" },
 "cours-6-exercise-20": { text: "Exercice 20", href: "https://drive.google.com/exercise20" },
 
-// Documents du cours 6 (1 à 20)
+// Documents
+"cours-6-documents-title": { text: "Documents" },
+    
 "cours-6-document-1":  { text: "Document 1",  href: "https://drive.google.com/document1"  },
 "cours-6-document-2":  { text: "Document 2",  href: "https://drive.google.com/document2"  },
 "cours-6-document-3":  { text: "Document 3",  href: "https://drive.google.com/document3"  },
