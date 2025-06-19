@@ -761,15 +761,9 @@ function appliquerModifications() {
 
     
 // Cours 4
-"cours-4": {},
-
 "cours-4-title": { text: "Économie ouverte - Partie 4" },
 
-"cours-4-slides": {},
-
 "cours-4-slides-title": { text: "Diapositives" },
-
-"cours-4-slides-list": {},
 
 // Slides
 "cours-4-slide-1": { text: "slides1", href: "https://drive.google.com/file/d/1-IZoG-GmCkJKZ_duSRNgTxFpPJ11pmIs/view?usp=drive_link" },
