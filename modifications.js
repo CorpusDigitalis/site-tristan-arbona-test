@@ -964,14 +964,10 @@ function appliquerModifications() {
 
   };
 
-function appliquerModifications() {
-
-  /* ---------- 1. Appliquer les textes / liens ---------- */
   for (const id in modifications) {
     const element = document.getElementById(id);
-    if (!element) continue;
-
     const config = modifications[id];
+    if (!element) continue;
 
     if (config.text !== undefined) {
       element.innerHTML = config.text;
@@ -981,58 +977,72 @@ function appliquerModifications() {
     }
   }
 
-  /* ---------- 2. Nettoyage des cours ---------- */
+  // SUPPRESSION SPECIFIQUE POUR LES COURS, selon ta fonction fournie
+
   const coursIds = ['cours-1', 'cours-2', 'cours-3', 'cours-4', 'cours-5', 'cours-6'];
 
   coursIds.forEach((racineId) => {
-
-    /* 2‑a. Supprimer les liens vides (+ <li> parent) */
+    // Suppression des <a> vides + leur <li> parent
     Object.entries(modifications).forEach(([id, contenu]) => {
-      if (!id.startsWith(racineId)) return;
-
-      const ancre = document.getElementById(id);
-      if (!ancre) return;
-
-      const texte = contenu.text ?? null;
-      if (texte === "") {                       // seule vraie condition de suppression
-        const li = ancre.closest('li');
-        li ? li.remove() : ancre.remove();
+      if (id.startsWith(racineId)) {
+        const ancre = document.getElementById(id);
+        if (!ancre) {
+          console.log(`ID introuvable : ${id}`);
+          return;
+        }
+        // ici on vérifie si le texte est vide ou non
+        const texte = contenu.text ?? null;
+        if (texte === "" || texte === null || texte === undefined) {
+          const li = ancre.closest('li');
+          if (li) {
+            li.remove();
+            console.log(`Suppression de <li> parent de ${id}`);
+          } else {
+            ancre.remove();
+            console.log(`Suppression de ${id}`);
+          }
+        }
       }
     });
 
-    /* 2‑b. Supprimer les sous‑parties vides */
-    ['slides', 'exercises', 'documents'].forEach((type) => {
+    // Suppression des sections vides (slides, exercise, documents)
+    ['slides', 'exercise', 'documents'].forEach((type) => {
       const ul = document.querySelector(`#${racineId}-${type}-list`);
       if (ul && ul.querySelector('li') === null) {
         const details = document.getElementById(`${racineId}-${type}`);
-        if (details) details.remove();
+        if (details) {
+          details.remove();
+          console.log(`Suppression de la section ${racineId}-${type}`);
+        }
       }
     });
 
-    /* 2‑c. Supprimer le cours entier si plus de contenu */
+    // Suppression du cours entier s'il n'a plus aucune section <details>
     const detailsCours = document.getElementById(racineId);
-    if (detailsCours) {
-      const sousPartiesRestantes = detailsCours.querySelectorAll('details').length;
-      const titre = detailsCours.querySelector(`#${racineId}-title`);
-      const titreVide = !titre || titre.textContent.trim() === "";
-
-      if (sousPartiesRestantes === 0 && titreVide) {
-        detailsCours.remove();
-      }
+    if (detailsCours && !detailsCours.querySelector('details')) {
+      detailsCours.remove();
+      console.log(`Suppression du cours entier ${racineId} (vide)`);
     }
   });
 
-  /* ---------- 3. Nettoyage des publications vides ---------- */
+  // --- Suppression des boîtes de publication vides (texte + lien vides) ---
   document.querySelectorAll('.publication-item').forEach(pub => {
-    const txt = pub.querySelector('span')?.textContent.trim() || "";
-    const lnk = pub.querySelector('a')?.textContent.trim() || "";
-    if (!txt && !lnk) pub.remove();
+    const texte = pub.querySelector('span')?.textContent?.trim() || "";
+    const lien  = pub.querySelector('a')?.textContent?.trim() || "";
+
+    if (!texte && !lien) {
+      pub.remove();
+    }
   });
 }
 
-/* ---------- 4. Chargement header / footer + exécution ---------- */
+// Chargement header + footer avec callback
 loadHTML('header-placeholder', 'header.html', appliquerModifications);
 loadHTML('footer-placeholder', 'footer.html', appliquerModifications);
+
+// Pour les éléments déjà présents dans index.html
 document.addEventListener('DOMContentLoaded', appliquerModifications);
+
+
 
 
