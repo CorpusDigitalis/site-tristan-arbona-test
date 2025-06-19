@@ -499,7 +499,7 @@ function appliquerModifications() {
     
 // Cours 1
 
-"cours-1-title": { text: "Économie ouverte - Partie 1" },
+"cours-1-title": { text: "" },
 
 "cours-1-slides-title": { text: "" },
 
