@@ -964,79 +964,75 @@ function appliquerModifications() {
 
   };
 
-for (const id in modifications) {
-  const element = document.getElementById(id);
-  const config = modifications[id];
-  if (!element) continue;
+function appliquerModifications() {
 
-  if (config.text !== undefined) {
-    element.innerHTML = config.text;
+  /* ---------- 1. Appliquer les textes / liens ---------- */
+  for (const id in modifications) {
+    const element = document.getElementById(id);
+    if (!element) continue;
+
+    const config = modifications[id];
+
+    if (config.text !== undefined) {
+      element.innerHTML = config.text;
+    }
+    if (config.href !== undefined && element.tagName.toLowerCase() === "a") {
+      element.href = config.href;
+    }
   }
-  if (config.href !== undefined && element.tagName.toLowerCase() === "a") {
-    element.href = config.href;
-  }
-}
 
-// SUPPRESSION SPECIFIQUE POUR LES COURS
-const coursIds = ['cours-1', 'cours-2', 'cours-3', 'cours-4', 'cours-5', 'cours-6'];
+  /* ---------- 2. Nettoyage des cours ---------- */
+  const coursIds = ['cours-1', 'cours-2', 'cours-3', 'cours-4', 'cours-5', 'cours-6'];
 
-coursIds.forEach((racineId) => {
-  // Suppression des <a> vides + leur <li> parent
-  Object.entries(modifications).forEach(([id, contenu]) => {
-    if (id.startsWith(racineId)) {
+  coursIds.forEach((racineId) => {
+
+    /* 2‑a. Supprimer les liens vides (+ <li> parent) */
+    Object.entries(modifications).forEach(([id, contenu]) => {
+      if (!id.startsWith(racineId)) return;
+
       const ancre = document.getElementById(id);
       if (!ancre) return;
 
       const texte = contenu.text ?? null;
-      if (texte === "" || texte === null || texte === undefined) {
+      if (texte === "") {                       // seule vraie condition de suppression
         const li = ancre.closest('li');
-        if (li) {
-          li.remove();
-        } else {
-          ancre.remove();
-        }
+        li ? li.remove() : ancre.remove();
+      }
+    });
+
+    /* 2‑b. Supprimer les sous‑parties vides */
+    ['slides', 'exercises', 'documents'].forEach((type) => {
+      const ul = document.querySelector(`#${racineId}-${type}-list`);
+      if (ul && ul.querySelector('li') === null) {
+        const details = document.getElementById(`${racineId}-${type}`);
+        if (details) details.remove();
+      }
+    });
+
+    /* 2‑c. Supprimer le cours entier si plus de contenu */
+    const detailsCours = document.getElementById(racineId);
+    if (detailsCours) {
+      const sousPartiesRestantes = detailsCours.querySelectorAll('details').length;
+      const titre = detailsCours.querySelector(`#${racineId}-title`);
+      const titreVide = !titre || titre.textContent.trim() === "";
+
+      if (sousPartiesRestantes === 0 && titreVide) {
+        detailsCours.remove();
       }
     }
   });
 
-  // Suppression des sections vides (slides, exercise, documents)
-  ['slides', 'exercise', 'documents'].forEach((type) => {
-    const ul = document.querySelector(`#${racineId}-${type}-list`);
-    if (ul && ul.querySelector('li') === null) {
-      const details = document.getElementById(`${racineId}-${type}`);
-      if (details) {
-        details.remove();
-      }
-    }
+  /* ---------- 3. Nettoyage des publications vides ---------- */
+  document.querySelectorAll('.publication-item').forEach(pub => {
+    const txt = pub.querySelector('span')?.textContent.trim() || "";
+    const lnk = pub.querySelector('a')?.textContent.trim() || "";
+    if (!txt && !lnk) pub.remove();
   });
+}
 
-  // Suppression du cours entier s'il n'a plus de contenu
-  const detailsCours = document.getElementById(racineId);
-  if (detailsCours) {
-    const subSections = detailsCours.querySelectorAll('details');
-    const summary = detailsCours.querySelector('summary');
-
-    // S'il n'y a plus aucune sous-section <details>
-    if (subSections.length === 0) {
-      detailsCours.remove(); // supprime tout le bloc <details id="cours-X">
-    }
-  }
-});
-
-// SUPPRESSION des publications vides
-document.querySelectorAll('.publication-item').forEach(pub => {
-  const texte = pub.querySelector('span')?.textContent?.trim() || "";
-  const lien  = pub.querySelector('a')?.textContent?.trim() || "";
-
-  if (!texte && !lien) {
-    pub.remove();
-  }
-});
-
-// Chargement header + footer avec callback
+/* ---------- 4. Chargement header / footer + exécution ---------- */
 loadHTML('header-placeholder', 'header.html', appliquerModifications);
 loadHTML('footer-placeholder', 'footer.html', appliquerModifications);
-
-// Pour les éléments déjà présents dans index.html
 document.addEventListener('DOMContentLoaded', appliquerModifications);
+
 
