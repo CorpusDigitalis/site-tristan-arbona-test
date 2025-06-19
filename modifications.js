@@ -740,6 +740,11 @@ function appliquerModifications() {
 // Slides
 "cours-4-slides-title": { text: "Slides" },
 
+// Cours 4
+
+// Slides
+"cours-4-slides-title": { text: "Slides" },
+
 "cours-4-slide-1": { text: "Slide 1", href: "https://drive.google.com/file/d/1-example-slide4-1/view?usp=drive_link" },
 "cours-4-slide-2": { text: "Slide 2", href: "https://drive.google.com/file/d/1-example-slide4-2/view?usp=drive_link" },
 "cours-4-slide-3": { text: "Slide 3", href: "https://drive.google.com/file/d/1-example-slide4-3/view?usp=drive_link" },
@@ -808,6 +813,7 @@ function appliquerModifications() {
 "cours-4-document-18": { text: "Document 18", href: "https://drive.google.com/file/d/1-example-document4-18/view?usp=drive_link" },
 "cours-4-document-19": { text: "Document 19", href: "https://drive.google.com/file/d/1-example-document4-19/view?usp=drive_link" },
 "cours-4-document-20": { text: "Document 20", href: "https://drive.google.com/file/d/1-example-document4-20/view?usp=drive_link" },
+
 
     
 // cours 5
